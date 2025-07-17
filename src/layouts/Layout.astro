@@ -1,0 +1,71 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="A personal recipe collection" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+		<title>{title} | My Recipes</title>
+	</head>
+	<body class="bg-slate-50 text-slate-800">
+
+		<header class="bg-white shadow-md sticky top-0 z-50">
+			<nav class="container mx-auto px-4 flex justify-between items-center h-16">
+				<a href="/recipes/" class="text-2xl font-bold text-green-700">Recipe Site</a>
+
+				<div class="hidden md:flex space-x-6 items-center">
+					<a href="/recipes">All Recipes</a>
+					<a href="/recipes/favorites">Favorites</a>
+					<a href="/recipes/shopping-list">Shopping List</a>
+				</div>
+				
+				<div class="md:hidden">
+					<button id="menu-btn" type="button" class="z-50 block hamburger md:hidden focus:outline-none">
+						<span class="hamburger-top"></span>
+						<span class="hamburger-middle"></span>
+						<span class="hamburger-bottom"></span>
+					</button>
+				</div>
+			</nav>
+
+			<div id="menu" class="hidden md:hidden">
+				<div class="absolute z-40 flex flex-col items-center self-end py-8 mt-1 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
+					<a href="/recipes" class="hover:text-green-700">All Recipes</a>
+					<a href="/recipes/favorites" class="hover:text-green-700">Favorites</a>
+					<a href="/recipes/shopping-list" class="hover:text-green-700">Shopping List</a>
+				</div>
+			</div>
+		</header>
+		
+		<main>
+			<slot />
+		</main>
+
+		<footer class="text-center p-8 mt-16 text-slate-500">
+			<p></p>
+		</footer>
+
+		<script>
+      const btn = document.getElementById('menu-btn')
+      const menu = document.getElementById('menu')
+
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('open')
+        menu.classList.toggle('hidden')
+      })
+    </script>
+	</body>
+</html>

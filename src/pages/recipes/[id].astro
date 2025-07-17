@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ActionButtons from '../../components/recipes/ActionButtons.jsx';
+import IngredientChecklist from '../../components/recipes/IngredientChecklist.jsx';
+import type { Recipe } from '../../types';
+
+export async function getStaticPaths() {
+  const allJsonFiles = await import.meta.glob('/src/content/recipes/*.json');
+
+  const allRecipes = (await Promise.all(
+    Object.values(allJsonFiles).map(async (getJson) =>
+      (await getJson() as { default: Recipe[] }).default
+    )
+  )).flat();
+
+  return allRecipes.map(recipe => ({
+    params: { id: recipe.id },
+    props: { recipe },
+  }));
+}
+
+const { recipe } = Astro.props;
+
+const prepMinutes = parseInt(recipe.time.prep) || 0;
+const cookMinutes = parseInt(recipe.time.cook) || 0;
+const restMinutes = parseInt(recipe.time.rest) || 0;
+recipe.time.total = `${prepMinutes + cookMinutes + restMinutes} min`;
+---
+<Layout title={recipe.title}>
+  <main class="container mx-auto p-4 max-w-4xl">
+    <h1 class="text-5xl font-bold mb-2">{recipe.title}</h1>
+    <p class="text-lg text-gray-600 mb-4">{recipe.description}</p>
+    <img src={recipe.thumbnail} alt="" class="w-full h-96 object-cover rounded-lg mb-6" />
+
+    <ActionButtons recipeId={recipe.id} client:load />
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8 text-center">
+      <div><div class="font-bold">Prep Time</div><div>{recipe.time.prep}</div></div>
+      <div><div class="font-bold">Cook Time</div><div>{recipe.time.cook}</div></div>
+      <div><div class="font-bold">Total Time</div><div>{recipe.time.total}</div></div>
+      <div><div class="font-bold">Servings</div><div>{recipe.servings}</div></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="md:col-span-1">
+        <h2 class="text-3xl font-semibold mb-4">Ingredients</h2>
+        <IngredientChecklist ingredients={recipe.ingredients} client:load />
+      </div>
+      <div class="md:col-span-2">
+        <h2 class="text-3xl font-semibold mb-4">Instructions</h2>
+        <ol class="list-decimal list-inside space-y-4">
+          {recipe.instructions.map(step => (
+            <li>{step}</li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </main>
+</Layout>
