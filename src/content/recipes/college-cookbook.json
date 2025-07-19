@@ -4,22 +4,61 @@
     "title": "Baked Ziti",
     "thumbnail": "/images/baked-ziti.jpg",
     "category": "Main Course",
-    "cuisines": ["Italian", "American"],
+    "cuisines": [
+      "Italian",
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Large Skillet", "Large Pot", "9x13 Baking Dish"],
-    "time": { "prep": 15, "cook": 30, "rest": 0 },
+    "cookware": [
+      "Large Skillet",
+      "Large Pot",
+      "9x13 Baking Dish"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 30,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Brandon",
     "description": "A classic layered pasta bake with ground beef, mozzarella, and a rich marinara sauce.",
     "ingredients": [
-      { "item": "Ziti Pasta", "quantity": "1-2", "unit": "lb" },
-      { "item": "Ground Beef (lean preferred)", "quantity": 1, "unit": "lb" },
-      { "item": "Onion", "quantity": 1, "unit": "count" },
-      { "item": "Spaghetti Sauce (Marinara)", "quantity": 2, "unit": "26 oz jar" },
-      { "item": "Mozzarella Cheese (Shredded)", "quantity": 12, "unit": "oz" },
-      { "item": "Sour Cream (Optional)", "quantity": 1, "unit": "cup" },
-      { "item": "Parmesan Cheese", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "Ziti Pasta",
+        "quantity": "1-2",
+        "unit": "lb"
+      },
+      {
+        "item": "Ground Beef (lean preferred)",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "Onion",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "Spaghetti Sauce (Marinara)",
+        "quantity": 2,
+        "unit": "26 oz jar"
+      },
+      {
+        "item": "Mozzarella Cheese (Shredded)",
+        "quantity": 12,
+        "unit": "oz"
+      },
+      {
+        "item": "Sour Cream (Optional)",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "Parmesan Cheese",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Preheat the oven to 350 degrees F (175 degrees C).",
@@ -39,25 +78,77 @@
     "title": "Mini Skillet Cookie",
     "thumbnail": "/images/mini-skillet-cookie.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Small Saucepan", "Handheld Mixer", "Mini Cast Iron Skillet"],
-    "time": { "prep": 15, "cook": 18, "rest": 10 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Small Saucepan",
+      "Handheld Mixer",
+      "Mini Cast Iron Skillet"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 18,
+      "rest": 10
+    },
     "servings": 2,
     "date": "2025-07-17",
     "author": "Brandon",
     "description": "A warm, gooey, and decadent cookie baked in a mini cast iron skillet, perfect for sharing.",
     "ingredients": [
-      { "item": "butter", "quantity": 0.25, "unit": "cup" },
-      { "item": "dark brown sugar", "quantity": 3, "unit": "tbsp" },
-      { "item": "granulated sugar", "quantity": 2, "unit": "tbsp" },
-      { "item": "large egg yolk", "quantity": 1, "unit": "count" },
-      { "item": "water", "quantity": 1, "unit": "tbsp" },
-      { "item": "vanilla extract", "quantity": 0.5, "unit": "tsp" },
-      { "item": "all purpose flour", "quantity": 0.5, "unit": "cup" },
-      { "item": "baking soda", "quantity": 0.25, "unit": "tsp" },
-      { "item": "salt", "quantity": 0.125, "unit": "tsp" },
-      { "item": "milk chocolate chunks", "quantity": 0.33, "unit": "cup" }
+      {
+        "item": "butter",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "dark brown sugar",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "granulated sugar",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "large egg yolk",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "water",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "vanilla extract",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "all purpose flour",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "baking soda",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "salt",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "item": "milk chocolate chunks",
+        "quantity": 0.33,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Heat oven to 350 degrees F.",
@@ -77,21 +168,56 @@
     "title": "Christmas Crack",
     "thumbnail": "/images/christmas-crack.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Cookie Sheet", "Medium Saucepan"],
-    "time": { "prep": 10, "cook": 6, "rest": 30 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Cookie Sheet",
+      "Medium Saucepan"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 6,
+      "rest": 30
+    },
     "servings": 20,
     "date": "2025-07-17",
     "author": "Brandon",
     "description": "An addictive holiday treat made with saltine crackers, homemade toffee, and melted chocolate.",
     "ingredients": [
-      { "item": "saltine crackers (1 sleeve)", "quantity": 40, "unit": "count" },
-      { "item": "salted butter (2 sticks)", "quantity": 1, "unit": "cup" },
-      { "item": "light brown sugar", "quantity": 1, "unit": "cup" },
-      { "item": "pure vanilla extract", "quantity": 1, "unit": "tsp" },
-      { "item": "milk chocolate chips", "quantity": 1, "unit": "12 oz bag" },
-      { "item": "Nuts or sprinkles (for topping)", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "saltine crackers (1 sleeve)",
+        "quantity": 40,
+        "unit": "count"
+      },
+      {
+        "item": "salted butter (2 sticks)",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "light brown sugar",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "pure vanilla extract",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "milk chocolate chips",
+        "quantity": 1,
+        "unit": "12 oz bag"
+      },
+      {
+        "item": "Nuts or sprinkles (for topping)",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Preheat the oven to 400 degrees F.",
@@ -112,32 +238,110 @@
     "title": "White Bean Chicken Chili",
     "thumbnail": "/images/white-bean-chicken-chili.jpg",
     "category": "Soup",
-    "cuisines": ["American", "Mexican"],
+    "cuisines": [
+      "American",
+      "Mexican"
+    ],
     "diets": [],
-    "cookware": ["Large Pot", "Wooden Spoon"],
-    "time": { "prep": 10, "cook": 30, "rest": 0 },
+    "cookware": [
+      "Large Pot",
+      "Wooden Spoon"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 30,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A creamy and hearty chili made with tender chicken, white beans, and green chilis.",
     "ingredients": [
-      { "item": "extra-virgin olive oil", "quantity": 1, "unit": "tbsp" },
-      { "item": "small yellow onion, diced", "quantity": 1, "unit": "count" },
-      { "item": "jalapeño, seeded and minced", "quantity": 1, "unit": "count" },
-      { "item": "garlic, minced", "quantity": 2, "unit": "cloves" },
-      { "item": "oregano", "quantity": 0.5, "unit": "tsp" },
-      { "item": "ground cumin", "quantity": 0.5, "unit": "tsp" },
-      { "item": "green chilies", "quantity": 2, "unit": "4.5 oz can" },
-      { "item": "boneless skinless chicken breasts, cut into thirds", "quantity": 3, "unit": "count" },
-      { "item": "low-sodium chicken broth", "quantity": 5, "unit": "cup" },
-      { "item": "Kosher salt", "quantity": 0, "unit": "to taste" },
-      { "item": "Freshly ground black pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "pinto beans, drained and rinsed", "quantity": 2, "unit": "15 oz can" },
-      { "item": "frozen corn", "quantity": 1.5, "unit": "cup" },
-      { "item": "sour cream", "quantity": 0.5, "unit": "cup" },
-      { "item": "Freshly chopped cilantro, for garnish", "quantity": 0, "unit": "to taste" },
-      { "item": "shredded Monterey Jack", "quantity": 0.25, "unit": "cup" },
-      { "item": "crushed tortilla chips", "quantity": 0.25, "unit": "cup" }
+      {
+        "item": "extra-virgin olive oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "small yellow onion, diced",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "jalapeño, seeded and minced",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "garlic, minced",
+        "quantity": 2,
+        "unit": "cloves"
+      },
+      {
+        "item": "oregano",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "ground cumin",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "green chilies",
+        "quantity": 2,
+        "unit": "4.5 oz can"
+      },
+      {
+        "item": "boneless skinless chicken breasts, cut into thirds",
+        "quantity": 3,
+        "unit": "count"
+      },
+      {
+        "item": "low-sodium chicken broth",
+        "quantity": 5,
+        "unit": "cup"
+      },
+      {
+        "item": "Kosher salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Freshly ground black pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "pinto beans, drained and rinsed",
+        "quantity": 2,
+        "unit": "15 oz can"
+      },
+      {
+        "item": "frozen corn",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "sour cream",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Freshly chopped cilantro, for garnish",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "shredded Monterey Jack",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "crushed tortilla chips",
+        "quantity": 0.25,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "In a large pot, over medium heat, heat oil.",
@@ -157,26 +361,79 @@
     "title": "Chicken Florentine",
     "thumbnail": "/images/chicken-florentine.jpg",
     "category": "Main Course",
-    "cuisines": ["Italian", "French"],
+    "cuisines": [
+      "Italian",
+      "French"
+    ],
     "diets": [],
-    "cookware": ["Large Pan"],
-    "time": { "prep": 10, "cook": 25, "rest": 0 },
+    "cookware": [
+      "Large Pan"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 25,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "Tender chicken breasts in a creamy parmesan sauce with spinach and mushrooms.",
     "ingredients": [
-      { "item": "boneless skinless chicken breasts (thin cut preferred)", "quantity": 4, "unit": "count" },
-      { "item": "butter (divided use)", "quantity": 3, "unit": "tbsp" },
-      { "item": "Salt and pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "white mushrooms (sliced)", "quantity": 8, "unit": "oz" },
-      { "item": "garlic (minced)", "quantity": 1.5, "unit": "tsp" },
-      { "item": "flour", "quantity": 1, "unit": "tbsp" },
-      { "item": "white wine (or apple cider vinegar)", "quantity": 0.33, "unit": "cup" },
-      { "item": "heavy cream", "quantity": 0.75, "unit": "cup" },
-      { "item": "grated parmesan cheese", "quantity": 0.25, "unit": "cup" },
-      { "item": "baby spinach leaves", "quantity": 3, "unit": "cup" },
-      { "item": "chopped parsley", "quantity": 2, "unit": "tbsp" }
+      {
+        "item": "boneless skinless chicken breasts (thin cut preferred)",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "butter (divided use)",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Salt and pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "white mushrooms (sliced)",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "item": "garlic (minced)",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "flour",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "white wine (or apple cider vinegar)",
+        "quantity": 0.33,
+        "unit": "cup"
+      },
+      {
+        "item": "heavy cream",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "grated parmesan cheese",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "baby spinach leaves",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "item": "chopped parsley",
+        "quantity": 2,
+        "unit": "tbsp"
+      }
     ],
     "instructions": [
       "Heat 2 tablespoons of butter over medium heat in a large pan.",
@@ -203,30 +460,99 @@
     "title": "Homemade Hamburger Helper Cheeseburger Macaroni",
     "thumbnail": "/images/homemade-hamburger-helper-cheeseburger-macaroni.jpg",
     "category": "Main Course",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Large Skillet", "Saucepan"],
-    "time": { "prep": 5, "cook": 25, "rest": 0 },
+    "cookware": [
+      "Large Skillet",
+      "Saucepan"
+    ],
+    "time": {
+      "prep": 5,
+      "cook": 25,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A classic one-pan comfort food with ground beef, macaroni, and a creamy cheese sauce.",
     "ingredients": [
-      { "item": "olive oil", "quantity": 1, "unit": "tsp" },
-      { "item": "ground 85 percent lean ground beef", "quantity": 1, "unit": "lb" },
-      { "item": "medium onion chopped", "quantity": 0.5, "unit": "count" },
-      { "item": "chicken or beef broth", "quantity": 2, "unit": "cup" },
-      { "item": "water", "quantity": 1, "unit": "cup" },
-      { "item": "ketchup", "quantity": 0.5, "unit": "cup" },
-      { "item": "tomato paste", "quantity": 0.25, "unit": "cup" },
-      { "item": "garlic powder", "quantity": 2, "unit": "tsp" },
-      { "item": "kosher salt and freshly ground black pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "macaroni dry", "quantity": 2.5, "unit": "cup" },
-      { "item": "butter", "quantity": 3, "unit": "tbsp" },
-      { "item": "flour", "quantity": 3, "unit": "tbsp" },
-      { "item": "milk", "quantity": 1, "unit": "cup" },
-      { "item": "medium Cheddar cheese shredded", "quantity": 2, "unit": "cup" },
-      { "item": "Fresh parsley for garnish", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "olive oil",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "ground 85 percent lean ground beef",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "medium onion chopped",
+        "quantity": 0.5,
+        "unit": "count"
+      },
+      {
+        "item": "chicken or beef broth",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "water",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "ketchup",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "tomato paste",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "garlic powder",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "item": "kosher salt and freshly ground black pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "macaroni dry",
+        "quantity": 2.5,
+        "unit": "cup"
+      },
+      {
+        "item": "butter",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "flour",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "milk",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "medium Cheddar cheese shredded",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "Fresh parsley for garnish",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Heat olive oil in a large skillet over medium high heat and add ground beef.",
@@ -247,27 +573,88 @@
     "title": "Easy Chickpea Curry",
     "thumbnail": "/images/easy-chickpea-curry.jpg",
     "category": "Main Course",
-    "cuisines": ["Indian"],
-    "diets": ["Vegan", "Vegetarian", "Dairy-Free", "Gluten-Free"],
-    "cookware": ["Large Pot"],
-    "time": { "prep": 5, "cook": 25, "rest": 0 },
+    "cuisines": [
+      "Indian"
+    ],
+    "diets": [
+      "Vegan",
+      "Vegetarian",
+      "Dairy-Free",
+      "Gluten-Free"
+    ],
+    "cookware": [
+      "Large Pot"
+    ],
+    "time": {
+      "prep": 5,
+      "cook": 25,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A quick, easy, and flavorful vegetarian curry with chickpeas in a creamy coconut tomato sauce.",
     "ingredients": [
-      { "item": "vegetable oil or coconut oil", "quantity": 2, "unit": "tbsp" },
-      { "item": "medium onion, sliced", "quantity": 1, "unit": "count" },
-      { "item": "garlic, minced", "quantity": 3, "unit": "cloves" },
-      { "item": "crushed red pepper flakes", "quantity": 0.25, "unit": "tsp" },
-      { "item": "curry powder", "quantity": "1-2", "unit": "tbsp" },
-      { "item": "cumin", "quantity": 1, "unit": "tsp" },
-      { "item": "crushed tomatoes", "quantity": 1, "unit": "15 oz can" },
-      { "item": "coconut milk", "quantity": 1, "unit": "13.5 oz can" },
-      { "item": "chickpeas, drained and rinsed", "quantity": 2, "unit": "15 oz can" },
-      { "item": "Salt and pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "Chopped fresh cilantro and lime wedges, for garnish (optional)", "quantity": 0, "unit": "to taste" },
-      { "item": "Naan bread and rice, to serve (optional)", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "vegetable oil or coconut oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "medium onion, sliced",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "garlic, minced",
+        "quantity": 3,
+        "unit": "cloves"
+      },
+      {
+        "item": "crushed red pepper flakes",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "curry powder",
+        "quantity": "1-2",
+        "unit": "tbsp"
+      },
+      {
+        "item": "cumin",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "crushed tomatoes",
+        "quantity": 1,
+        "unit": "15 oz can"
+      },
+      {
+        "item": "coconut milk",
+        "quantity": 1,
+        "unit": "13.5 oz can"
+      },
+      {
+        "item": "chickpeas, drained and rinsed",
+        "quantity": 2,
+        "unit": "15 oz can"
+      },
+      {
+        "item": "Salt and pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Chopped fresh cilantro and lime wedges, for garnish (optional)",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Naan bread and rice, to serve (optional)",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "In a large, heavy bottomed pot or high-walled pan, heat the oil over medium-low.",
@@ -289,22 +676,62 @@
     "title": "Arroz Con Leche",
     "thumbnail": "/images/arroz-con-leche.jpg",
     "category": "Dessert",
-    "cuisines": ["Mexican", "Latin American"],
-    "diets": ["Vegetarian", "Gluten-Free"],
-    "cookware": ["Medium Saucepan"],
-    "time": { "prep": 5, "cook": 30, "rest": 0 },
+    "cuisines": [
+      "Mexican",
+      "Latin American"
+    ],
+    "diets": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "cookware": [
+      "Medium Saucepan"
+    ],
+    "time": {
+      "prep": 5,
+      "cook": 30,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A sweet and creamy rice pudding dessert, spiced with cinnamon.",
     "ingredients": [
-      { "item": "short white rice", "quantity": 0.75, "unit": "cup" },
-      { "item": "water", "quantity": 2.5, "unit": "cup" },
-      { "item": "cinnamon stick", "quantity": 1, "unit": "small piece" },
-      { "item": "whole milk", "quantity": 0.75, "unit": "cup" },
-      { "item": "condensed milk", "quantity": 0.5, "unit": "cup" },
-      { "item": "raisins (optional)", "quantity": 0.25, "unit": "cup" },
-      { "item": "Ground cinnamon for dusting", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "short white rice",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "water",
+        "quantity": 2.5,
+        "unit": "cup"
+      },
+      {
+        "item": "cinnamon stick",
+        "quantity": 1,
+        "unit": "small piece"
+      },
+      {
+        "item": "whole milk",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "condensed milk",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "raisins (optional)",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "Ground cinnamon for dusting",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Place water, rice and the piece of cinnamon in a medium saucepan.",
@@ -328,25 +755,77 @@
     "title": "Tres Leches",
     "thumbnail": "/images/tres-leches.jpg",
     "category": "Dessert",
-    "cuisines": ["Mexican", "Latin American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Baking Dish", "Mixer"],
-    "time": { "prep": 15, "cook": 30, "rest": 60 },
+    "cuisines": [
+      "Mexican",
+      "Latin American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Baking Dish",
+      "Mixer"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 30,
+      "rest": 60
+    },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A light and airy sponge cake soaked in a sweet mixture of three milks.",
     "ingredients": [
-      { "item": "flour", "quantity": 1.5, "unit": "cup" },
-      { "item": "baking powder", "quantity": 1, "unit": "tsp" },
-      { "item": "butter", "quantity": 0.5, "unit": "cup" },
-      { "item": "sugar", "quantity": 2, "unit": "cup" },
-      { "item": "eggs", "quantity": 5, "unit": "count" },
-      { "item": "vanilla extract", "quantity": 1.5, "unit": "tsp" },
-      { "item": "whole milk", "quantity": 2, "unit": "cup" },
-      { "item": "condensed milk", "quantity": 1, "unit": "can" },
-      { "item": "evaporated milk", "quantity": 1, "unit": "can" },
-      { "item": "heavy cream", "quantity": 1.5, "unit": "cup" }
+      {
+        "item": "flour",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "baking powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "butter",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "sugar",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "eggs",
+        "quantity": 5,
+        "unit": "count"
+      },
+      {
+        "item": "vanilla extract",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "whole milk",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "condensed milk",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "evaporated milk",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "heavy cream",
+        "quantity": 1.5,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Sift flour and baking powder into a bowl.",
@@ -367,28 +846,89 @@
     "title": "Fideo",
     "thumbnail": "/images/fideo.jpg",
     "category": "Main Course",
-    "cuisines": ["Mexican"],
+    "cuisines": [
+      "Mexican"
+    ],
     "diets": [],
-    "cookware": ["Medium Pot", "Medium Saucepan"],
-    "time": { "prep": 10, "cook": 20, "rest": 0 },
+    "cookware": [
+      "Medium Pot",
+      "Medium Saucepan"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 20,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A comforting noodle soup with ground beef and vegetables in a savory tomato broth.",
     "ingredients": [
-      { "item": "Vegetable oil", "quantity": 3, "unit": "tbsp" },
-      { "item": "onion (diced or large slices)", "quantity": 0.5, "unit": "count" },
-      { "item": "garlic (minced)", "quantity": 2, "unit": "cloves" },
-      { "item": "Fideo noodles (looks like short spaghetti)", "quantity": 1, "unit": "7oz bag" },
-      { "item": "tomato sauce", "quantity": 1, "unit": "8 oz can" },
-      { "item": "crushed tomatoes (can also have green chiles)", "quantity": 1, "unit": "8 oz can" },
-      { "item": "chicken broth", "quantity": 12, "unit": "oz" },
-      { "item": "ground beef", "quantity": 1, "unit": "lb" },
-      { "item": "large carrots (cut into small-ish pieces)", "quantity": 3, "unit": "count" },
-      { "item": "bell pepper of choice (cut into pieces)", "quantity": 2, "unit": "count" },
-      { "item": "Salt", "quantity": 0, "unit": "to taste" },
-      { "item": "Pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "Lime", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "Vegetable oil",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "onion (diced or large slices)",
+        "quantity": 0.5,
+        "unit": "count"
+      },
+      {
+        "item": "garlic (minced)",
+        "quantity": 2,
+        "unit": "cloves"
+      },
+      {
+        "item": "Fideo noodles (looks like short spaghetti)",
+        "quantity": 1,
+        "unit": "7oz bag"
+      },
+      {
+        "item": "tomato sauce",
+        "quantity": 1,
+        "unit": "8 oz can"
+      },
+      {
+        "item": "crushed tomatoes (can also have green chiles)",
+        "quantity": 1,
+        "unit": "8 oz can"
+      },
+      {
+        "item": "chicken broth",
+        "quantity": 12,
+        "unit": "oz"
+      },
+      {
+        "item": "ground beef",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "large carrots (cut into small-ish pieces)",
+        "quantity": 3,
+        "unit": "count"
+      },
+      {
+        "item": "bell pepper of choice (cut into pieces)",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "Salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Lime",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Noodles: Add 1 tbsp of oil to a medium pot with the onion medium heat until onions are soft (adding a small dash of water if the onions get dehydrated).",
@@ -408,24 +948,68 @@
     "title": "Chicken Noodle Soup",
     "thumbnail": "/images/chicken-noodle-soup.jpg",
     "category": "Soup",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Large Pot"],
-    "time": { "prep": 15, "cook": 45, "rest": 0 },
+    "cookware": [
+      "Large Pot"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 45,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A simple and classic chicken noodle soup with tender chicken and vegetables.",
     "ingredients": [
-      { "item": "Olive oil", "quantity": 0, "unit": "to taste" },
-      { "item": "Chicken breasts", "quantity": 4, "unit": "count" },
-      { "item": "large Carrots (diced)", "quantity": "3 or 4", "unit": "count" },
-      { "item": "stalks of Celery (diced)", "quantity": "2 or 3", "unit": "count" },
-      { "item": "Onion (diced)", "quantity": 0.5, "unit": "count" },
-      { "item": "Chicken Broth/bouillon", "quantity": 0, "unit": "to taste" },
-      { "item": "Egg Noodles (Thick and short)", "quantity": 1, "unit": "bag" },
-      { "item": "Salt", "quantity": 0, "unit": "to taste" },
-      { "item": "Pepper", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "Olive oil",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Chicken breasts",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "large Carrots (diced)",
+        "quantity": "3 or 4",
+        "unit": "count"
+      },
+      {
+        "item": "stalks of Celery (diced)",
+        "quantity": "2 or 3",
+        "unit": "count"
+      },
+      {
+        "item": "Onion (diced)",
+        "quantity": 0.5,
+        "unit": "count"
+      },
+      {
+        "item": "Chicken Broth/bouillon",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Egg Noodles (Thick and short)",
+        "quantity": 1,
+        "unit": "bag"
+      },
+      {
+        "item": "Salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Boil the chicken in a large pot and can skim off the top- low and slow is the game until the inner temp of chicken is 165f.",
@@ -442,25 +1026,76 @@
     "title": "Chocolate Chip Cookies",
     "thumbnail": "/images/chocolate-chip-cookies.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Large Bowl", "Baking Sheet"],
-    "time": { "prep": 15, "cook": 14, "rest": 30 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Large Bowl",
+      "Baking Sheet"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 14,
+      "rest": 30
+    },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "Classic, large chocolate chip cookies with a complex flavor from resting the dough.",
     "ingredients": [
-      { "item": "granulated sugar", "quantity": 0.5, "unit": "cup" },
-      { "item": "brown sugar, packed", "quantity": 0.75, "unit": "cup" },
-      { "item": "salt", "quantity": 1, "unit": "tsp" },
-      { "item": "unsalted butter, melted", "quantity": 0.5, "unit": "cup" },
-      { "item": "egg", "quantity": 1, "unit": "count" },
-      { "item": "vanilla extract", "quantity": 1, "unit": "tsp" },
-      { "item": "all-purpose flour", "quantity": 1.25, "unit": "cup" },
-      { "item": "baking soda", "quantity": 0.5, "unit": "tsp" },
-      { "item": "milk or semi-sweet chocolate chunks", "quantity": 4, "unit": "oz" },
-      { "item": "dark chocolate chunk, or your preference", "quantity": 4, "unit": "oz" }
+      {
+        "item": "granulated sugar",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "brown sugar, packed",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "unsalted butter, melted",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "egg",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "vanilla extract",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "all-purpose flour",
+        "quantity": 1.25,
+        "unit": "cup"
+      },
+      {
+        "item": "baking soda",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "milk or semi-sweet chocolate chunks",
+        "quantity": 4,
+        "unit": "oz"
+      },
+      {
+        "item": "dark chocolate chunk, or your preference",
+        "quantity": 4,
+        "unit": "oz"
+      }
     ],
     "instructions": [
       "In a large bowl, whisk together the sugars, salt, and butter until a paste forms with no lumps.",
@@ -482,23 +1117,67 @@
     "title": "Quiche",
     "thumbnail": "/images/quiche.jpg",
     "category": "Main Course",
-    "cuisines": ["French"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Pie Dish", "Mixer", "Large Bowl"],
-    "time": { "prep": 20, "cook": 50, "rest": 15 },
+    "cuisines": [
+      "French"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Pie Dish",
+      "Mixer",
+      "Large Bowl"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 50,
+      "rest": 15
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A versatile and savory egg custard baked in a flaky pie crust, customizable with your favorite fillings.",
     "ingredients": [
-      { "item": "unbaked Flaky Pie Crust or All Butter Pie Crust", "quantity": 1, "unit": "count" },
-      { "item": "large eggs", "quantity": 4, "unit": "count" },
-      { "item": "whole milk", "quantity": 0.5, "unit": "cup" },
-      { "item": "heavy cream or heavy whipping cream", "quantity": 0.5, "unit": "cup" },
-      { "item": "salt", "quantity": 0.25, "unit": "tsp" },
-      { "item": "pepper", "quantity": 0.25, "unit": "tsp" },
-      { "item": "shredded or crumbled cheese", "quantity": "up to 1", "unit": "cup" },
-      { "item": "add-ins (vegetables, meat)", "quantity": "up to 2", "unit": "cup" }
+      {
+        "item": "unbaked Flaky Pie Crust or All Butter Pie Crust",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "large eggs",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "whole milk",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "heavy cream or heavy whipping cream",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "salt",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "shredded or crumbled cheese",
+        "quantity": "up to 1",
+        "unit": "cup"
+      },
+      {
+        "item": "add-ins (vegetables, meat)",
+        "quantity": "up to 2",
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Make pie dough the night before because it needs to chill in the refrigerator for at least 2 hours before rolling out and blind baking (next step).",
@@ -520,28 +1199,93 @@
     "title": "Royal Broccoli Souffle",
     "thumbnail": "/images/royal-broccoli-souffle.jpg",
     "category": "Side Dish",
-    "cuisines": ["French"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Souffle Dish", "Food Processor", "Small Saucepan", "Large Bowl"],
-    "time": { "prep": 20, "cook": 33, "rest": 30 },
+    "cuisines": [
+      "French"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Souffle Dish",
+      "Food Processor",
+      "Small Saucepan",
+      "Large Bowl"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 33,
+      "rest": 30
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A light and airy souffle featuring blended broccoli, cheese, and perfectly beaten egg whites.",
     "ingredients": [
-      { "item": "large egg whites", "quantity": 4, "unit": "count" },
-      { "item": "chopped fresh broccoli florets", "quantity": 2, "unit": "cup" },
-      { "item": "water", "quantity": 0.25, "unit": "cup" },
-      { "item": "butter", "quantity": 2, "unit": "tbsp" },
-      { "item": "all-purpose flour", "quantity": 3, "unit": "tbsp" },
-      { "item": "cayenne pepper", "quantity": 0.25, "unit": "tsp" },
-      { "item": "fat-free milk", "quantity": 0.75, "unit": "cup" },
-      { "item": "grated Parmesan cheese", "quantity": 2, "unit": "tbsp" },
-      { "item": "ground mustard", "quantity": 1, "unit": "tsp" },
-      { "item": "salt", "quantity": 0.5, "unit": "tsp" },
-      { "item": "pepper", "quantity": 0.25, "unit": "tsp" },
-      { "item": "large egg yolk, beaten", "quantity": 1, "unit": "count" },
-      { "item": "cream of tartar", "quantity": 0.25, "unit": "tsp" }
+      {
+        "item": "large egg whites",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "chopped fresh broccoli florets",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "water",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "butter",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "all-purpose flour",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "cayenne pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "fat-free milk",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "grated Parmesan cheese",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "ground mustard",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "large egg yolk, beaten",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "cream of tartar",
+        "quantity": 0.25,
+        "unit": "tsp"
+      }
     ],
     "instructions": [
       "Let egg whites stand at room temperature 30 minutes.",
@@ -565,21 +1309,55 @@
     "title": "King Ranch Chicken Casserole",
     "thumbnail": "/images/king-ranch-chicken-casserole.jpg",
     "category": "Main Course",
-    "cuisines": ["American", "Tex-Mex"],
+    "cuisines": [
+      "American",
+      "Tex-Mex"
+    ],
     "diets": [],
-    "cookware": ["Large Bowl", "Casserole Dish"],
-    "time": { "prep": 20, "cook": 40, "rest": 0 },
+    "cookware": [
+      "Large Bowl",
+      "Casserole Dish"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 40,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Jackie",
     "description": "A classic Tex-Mex casserole with layers of chicken, creamy mushroom soup, tortillas, and cheese.",
     "ingredients": [
-      { "item": "Chicken breasts", "quantity": "3 or more", "unit": "count" },
-      { "item": "Corn tortillas", "quantity": 12, "unit": "count" },
-      { "item": "Bag of frozen veggies (carrots, peas, green beans, etc)", "quantity": 1, "unit": "lb" },
-      { "item": "Cream of Mushroom", "quantity": 1, "unit": "can" },
-      { "item": "Golden Mushroom", "quantity": 1, "unit": "can" },
-      { "item": "Cheese (cheddar or monterey jack)", "quantity": 0, "unit": "enough for 3 layers" }
+      {
+        "item": "Chicken breasts",
+        "quantity": "3 or more",
+        "unit": "count"
+      },
+      {
+        "item": "Corn tortillas",
+        "quantity": 12,
+        "unit": "count"
+      },
+      {
+        "item": "Bag of frozen veggies (carrots, peas, green beans, etc)",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "Cream of Mushroom",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "Golden Mushroom",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "Cheese (cheddar or monterey jack)",
+        "quantity": 0,
+        "unit": "enough for 3 layers"
+      }
     ],
     "instructions": [
       "The primary difference is instead of bell peppers I use a bag of frozen veggies.",
@@ -600,18 +1378,38 @@
     "title": "Orange Chicken",
     "thumbnail": "/images/orange-chicken.jpg",
     "category": "Main Course",
-    "cuisines": ["Chinese-American"],
+    "cuisines": [
+      "Chinese-American"
+    ],
     "diets": [],
-    "cookware": ["Skillet"],
-    "time": { "prep": 10, "cook": 15, "rest": 0 },
+    "cookware": [
+      "Skillet"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 15,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "A quick and easy orange chicken with a sweet and spicy glaze.",
     "ingredients": [
-      { "item": "Chicken", "quantity": 1, "unit": "lb" },
-      { "item": "Orange Concentrate", "quantity": 1, "unit": "cup" },
-      { "item": "Thai Sweet Chili Sauce", "quantity": 0, "unit": "generous amounts" }
+      {
+        "item": "Chicken",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "Orange Concentrate",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "Thai Sweet Chili Sauce",
+        "quantity": 0,
+        "unit": "generous amounts"
+      }
     ],
     "instructions": [
       "Cut chicken and brown in a skillet.",
@@ -627,24 +1425,69 @@
     "title": "Slow Cooked Bacon Ranch Chicken Pasta",
     "thumbnail": "/images/slow-cooked-bacon-ranch-chicken-pasta.jpg",
     "category": "Main Course",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Slow Cooker", "Medium Bowl"],
-    "time": { "prep": 10, "cook": 240, "rest": 0 },
+    "cookware": [
+      "Slow Cooker",
+      "Medium Bowl"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 240,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "An easy slow cooker recipe for creamy, savory chicken pasta with bacon and ranch flavors.",
     "ingredients": [
-      { "item": "Chicken Breasts", "quantity": 1, "unit": "lb" },
-      { "item": "Bacon Slices", "quantity": 6, "unit": "count" },
-      { "item": "Garlic Finely Chopped", "quantity": "2-3", "unit": "cloves" },
-      { "item": "Ranch Dressing + Seasoning Mix Package", "quantity": 1, "unit": "oz" },
-      { "item": "Cream of Chicken Soup", "quantity": 1, "unit": "can" },
-      { "item": "Sour Cream", "quantity": 1, "unit": "cup" },
-      { "item": "Pepper", "quantity": 0.5, "unit": "tsp" },
-      { "item": "Water", "quantity": 0.5, "unit": "cup" },
-      { "item": "Spaghetti", "quantity": 8, "unit": "oz" }
+      {
+        "item": "Chicken Breasts",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "Bacon Slices",
+        "quantity": 6,
+        "unit": "count"
+      },
+      {
+        "item": "Garlic Finely Chopped",
+        "quantity": "2-3",
+        "unit": "cloves"
+      },
+      {
+        "item": "Ranch Dressing + Seasoning Mix Package",
+        "quantity": 1,
+        "unit": "oz"
+      },
+      {
+        "item": "Cream of Chicken Soup",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "Sour Cream",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "Pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "Water",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Spaghetti",
+        "quantity": 8,
+        "unit": "oz"
+      }
     ],
     "instructions": [
       "Spray a 4-quart crockpot with cooking spray.",
@@ -661,20 +1504,48 @@
     "title": "Chicken Casserole",
     "thumbnail": "/images/chicken-casserole.jpg",
     "category": "Main Course",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["9x13 Baking Dish"],
-    "time": { "prep": 10, "cook": 30, "rest": 0 },
+    "cookware": [
+      "9x13 Baking Dish"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 30,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "A simple and comforting chicken casserole with a creamy soup base and a crunchy stuffing topping.",
     "ingredients": [
-      { "item": "Hot water", "quantity": 1.66, "unit": "cup" },
-      { "item": "Stove-top stuffing (for chicken)", "quantity": 6, "unit": "oz" },
-      { "item": "Boneless chicken breasts cut into bit-sized pieces", "quantity": 1.5, "unit": "lbs" },
-      { "item": "Cream of chicken soup", "quantity": 1, "unit": "10.75 oz can" },
-      { "item": "Sour cream", "quantity": 0.33, "unit": "cup" }
+      {
+        "item": "Hot water",
+        "quantity": 1.66,
+        "unit": "cup"
+      },
+      {
+        "item": "Stove-top stuffing (for chicken)",
+        "quantity": 6,
+        "unit": "oz"
+      },
+      {
+        "item": "Boneless chicken breasts cut into bit-sized pieces",
+        "quantity": 1.5,
+        "unit": "lbs"
+      },
+      {
+        "item": "Cream of chicken soup",
+        "quantity": 1,
+        "unit": "10.75 oz can"
+      },
+      {
+        "item": "Sour cream",
+        "quantity": 0.33,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Preheat the oven to 400 degrees.",
@@ -691,20 +1562,49 @@
     "title": "Grandma’s Chicken Casserole",
     "thumbnail": "/images/grandmas-chicken-casserole.jpg",
     "category": "Main Course",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["9x13 Baking Dish", "Medium Bowl"],
-    "time": { "prep": 10, "cook": 33, "rest": 0 },
+    "cookware": [
+      "9x13 Baking Dish",
+      "Medium Bowl"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 33,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "A creamy chicken casserole with a cheesy center and a crispy Panko bread crumb topping.",
     "ingredients": [
-      { "item": "Chopped cooked chicken", "quantity": 3, "unit": "cup" },
-      { "item": "Cream of chicken soup", "quantity": 2, "unit": "can" },
-      { "item": "Shredded cheddar cheese", "quantity": 2, "unit": "cup" },
-      { "item": "Plain Crispy Panko Bread Crumbs", "quantity": 3, "unit": "cup" },
-      { "item": "Melted Butter", "quantity": 6, "unit": "tbsp" }
+      {
+        "item": "Chopped cooked chicken",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "item": "Cream of chicken soup",
+        "quantity": 2,
+        "unit": "can"
+      },
+      {
+        "item": "Shredded cheddar cheese",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "Plain Crispy Panko Bread Crumbs",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "item": "Melted Butter",
+        "quantity": 6,
+        "unit": "tbsp"
+      }
     ],
     "instructions": [
       "Preheat the oven to 350 degrees.",
@@ -721,33 +1621,114 @@
     "title": "Taco Soup",
     "thumbnail": "/images/taco-soup.jpg",
     "category": "Soup",
-    "cuisines": ["Mexican", "American"],
+    "cuisines": [
+      "Mexican",
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Large Pot"],
-    "time": { "prep": 15, "cook": 45, "rest": 0 },
+    "cookware": [
+      "Large Pot"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 45,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "A hearty and flavorful soup with all the classic tastes of a taco, including ground beef, beans, corn, and peppers.",
     "ingredients": [
-      { "item": "ground beef", "quantity": 1, "unit": "lb" },
-      { "item": "diced onion", "quantity": 1, "unit": "count" },
-      { "item": "green chiles", "quantity": 1, "unit": "4 oz can" },
-      { "item": "chicken stock", "quantity": 2, "unit": "cup" },
-      { "item": "diced tomatoes", "quantity": 1, "unit": "28 oz can" },
-      { "item": "taco seasoning", "quantity": 2, "unit": "tbsp" },
-      { "item": "drained black beans", "quantity": 2, "unit": "14 oz can" },
-      { "item": "frozen corn", "quantity": 1, "unit": "cup" },
-      { "item": "diced green bell pepper", "quantity": 1, "unit": "count" },
-      { "item": "diced red bell pepper", "quantity": 1, "unit": "count" },
-      { "item": "chili powder", "quantity": 1, "unit": "tbsp" },
-      { "item": "sea salt", "quantity": 1, "unit": "tbsp" },
-      { "item": "smoked paprika", "quantity": 1, "unit": "tbsp" },
-      { "item": "cumin", "quantity": 1, "unit": "tbsp" },
-      { "item": "onion powder", "quantity": 1, "unit": "tbsp" },
-      { "item": "garlic powder", "quantity": 1, "unit": "tbsp" },
-      { "item": "oregano", "quantity": 1, "unit": "tbsp" },
-      { "item": "black pepper", "quantity": 0.5, "unit": "tbsp" }
+      {
+        "item": "ground beef",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "diced onion",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "green chiles",
+        "quantity": 1,
+        "unit": "4 oz can"
+      },
+      {
+        "item": "chicken stock",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "diced tomatoes",
+        "quantity": 1,
+        "unit": "28 oz can"
+      },
+      {
+        "item": "taco seasoning",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "drained black beans",
+        "quantity": 2,
+        "unit": "14 oz can"
+      },
+      {
+        "item": "frozen corn",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "diced green bell pepper",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "diced red bell pepper",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "chili powder",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "sea salt",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "smoked paprika",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "cumin",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "onion powder",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "garlic powder",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "oregano",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "black pepper",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      }
     ],
     "instructions": [
       "Prepare onion, bell peppers, and beef.",
@@ -764,29 +1745,95 @@
     "title": "Honey Walnut Shrimp",
     "thumbnail": "/images/honey-walnut-shrimp.jpg",
     "category": "Main Course",
-    "cuisines": ["Chinese-American"],
+    "cuisines": [
+      "Chinese-American"
+    ],
     "diets": [],
-    "cookware": ["Small Saucepan", "Large Skillet", "Medium Bowl"],
-    "time": { "prep": 15, "cook": 10, "rest": 0 },
+    "cookware": [
+      "Small Saucepan",
+      "Large Skillet",
+      "Medium Bowl"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 10,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "Crispy fried shrimp tossed in a creamy honey sauce and served with candied walnuts.",
     "ingredients": [
-      { "item": "water", "quantity": 1, "unit": "c." },
-      { "item": "granulated sugar", "quantity": 1, "unit": "c." },
-      { "item": "walnuts", "quantity": 1, "unit": "c." },
-      { "item": "shrimp, peeled and deveined", "quantity": 1, "unit": "lb." },
-      { "item": "Kosher salt", "quantity": 0, "unit": "to taste" },
-      { "item": "Freshly ground black pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "large eggs, beaten", "quantity": 2, "unit": "count" },
-      { "item": "cornstarch", "quantity": 1, "unit": "c." },
-      { "item": "Vegetable oil for frying", "quantity": 1, "unit": "inch" },
-      { "item": "mayonnaise", "quantity": 0.25, "unit": "c." },
-      { "item": "honey", "quantity": 2, "unit": "tbsp." },
-      { "item": "heavy cream", "quantity": 2, "unit": "tbsp." },
-      { "item": "Cooked white rice, for serving", "quantity": 0, "unit": "to taste" },
-      { "item": "Thinly sliced green onions, for garnish", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "water",
+        "quantity": 1,
+        "unit": "c."
+      },
+      {
+        "item": "granulated sugar",
+        "quantity": 1,
+        "unit": "c."
+      },
+      {
+        "item": "walnuts",
+        "quantity": 1,
+        "unit": "c."
+      },
+      {
+        "item": "shrimp, peeled and deveined",
+        "quantity": 1,
+        "unit": "lb."
+      },
+      {
+        "item": "Kosher salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Freshly ground black pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "large eggs, beaten",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "cornstarch",
+        "quantity": 1,
+        "unit": "c."
+      },
+      {
+        "item": "Vegetable oil for frying",
+        "quantity": 1,
+        "unit": "inch"
+      },
+      {
+        "item": "mayonnaise",
+        "quantity": 0.25,
+        "unit": "c."
+      },
+      {
+        "item": "honey",
+        "quantity": 2,
+        "unit": "tbsp."
+      },
+      {
+        "item": "heavy cream",
+        "quantity": 2,
+        "unit": "tbsp."
+      },
+      {
+        "item": "Cooked white rice, for serving",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Thinly sliced green onions, for garnish",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "In a small saucepan over medium heat, combine water and sugar and bring to a boil.",
@@ -804,25 +1851,74 @@
     "title": "Enchilada Casserole",
     "thumbnail": "/images/enchilada-casserole.jpg",
     "category": "Main Course",
-    "cuisines": ["Mexican", "Tex-Mex"],
+    "cuisines": [
+      "Mexican",
+      "Tex-Mex"
+    ],
     "diets": [],
-    "cookware": ["9x13 Baking Dish"],
-    "time": { "prep": 15, "cook": 35, "rest": 0 },
+    "cookware": [
+      "9x13 Baking Dish"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 35,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "A layered casserole with all the flavors of enchiladas, made easy with ground meat, rice, and beans.",
     "ingredients": [
-      { "item": "ground turkey or beef", "quantity": 1, "unit": "lb" },
-      { "item": "taco seasoning low sodium", "quantity": 1, "unit": "packet" },
-      { "item": "minute brown or white rice cooked", "quantity": 1, "unit": "bag" },
-      { "item": "pinto beans (drained and rinsed)", "quantity": 1, "unit": "can" },
-      { "item": "enchilada sauce el Paso (biggest can)", "quantity": 1, "unit": "can" },
-      { "item": "unsalted corn (drained)", "quantity": 1, "unit": "can" },
-      { "item": "Mexican shredded cheese", "quantity": 1, "unit": "big bag" },
-      { "item": "Fritos (or mission corn tortillas)", "quantity": 2, "unit": "medium bag" },
-      { "item": "sour cream for toping", "quantity": 1, "unit": "tub" },
-      { "item": "avocado for toping", "quantity": 1, "unit": "count" }
+      {
+        "item": "ground turkey or beef",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "taco seasoning low sodium",
+        "quantity": 1,
+        "unit": "packet"
+      },
+      {
+        "item": "minute brown or white rice cooked",
+        "quantity": 1,
+        "unit": "bag"
+      },
+      {
+        "item": "pinto beans (drained and rinsed)",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "enchilada sauce el Paso (biggest can)",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "unsalted corn (drained)",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "Mexican shredded cheese",
+        "quantity": 1,
+        "unit": "big bag"
+      },
+      {
+        "item": "Fritos (or mission corn tortillas)",
+        "quantity": 2,
+        "unit": "medium bag"
+      },
+      {
+        "item": "sour cream for toping",
+        "quantity": 1,
+        "unit": "tub"
+      },
+      {
+        "item": "avocado for toping",
+        "quantity": 1,
+        "unit": "count"
+      }
     ],
     "instructions": [
       "Preheat oven to 350 F.",
@@ -841,29 +1937,94 @@
     "title": "Shrimp Jambalaya",
     "thumbnail": "/images/shrimp-jambalaya.jpg",
     "category": "Main Course",
-    "cuisines": ["Cajun", "Creole"],
+    "cuisines": [
+      "Cajun",
+      "Creole"
+    ],
     "diets": [],
-    "cookware": ["Large Pot"],
-    "time": { "prep": 15, "cook": 30, "rest": 0 },
+    "cookware": [
+      "Large Pot"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 30,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "A classic Louisiana one-pot rice dish with shrimp, the 'holy trinity' of vegetables, and Creole spices.",
     "ingredients": [
-      { "item": "Red pepper flakes", "quantity": 0, "unit": "to taste" },
-      { "item": "Creole (cajun) seasoning", "quantity": 0, "unit": "to taste" },
-      { "item": "cayenne", "quantity": 1, "unit": "tbsp" },
-      { "item": "thyme", "quantity": 1, "unit": "tsp" },
-      { "item": "bay leaf", "quantity": 1, "unit": "count" },
-      { "item": "green bell peppers", "quantity": 2, "unit": "count" },
-      { "item": "onions", "quantity": "1-2", "unit": "count" },
-      { "item": "celery", "quantity": "1-2", "unit": "stalk" },
-      { "item": "garlic cloves", "quantity": "2-3", "unit": "count" },
-      { "item": "diced shiitake mushrooms", "quantity": 1, "unit": "package" },
-      { "item": "diced fire roasted tomatoes", "quantity": 1, "unit": "15oz can" },
-      { "item": "chicken broth", "quantity": 1, "unit": "qt" },
-      { "item": "rice", "quantity": 1.5, "unit": "cup" },
-      { "item": "shrimp", "quantity": 1, "unit": "bag" }
+      {
+        "item": "Red pepper flakes",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Creole (cajun) seasoning",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "cayenne",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "thyme",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "bay leaf",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "green bell peppers",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "onions",
+        "quantity": "1-2",
+        "unit": "count"
+      },
+      {
+        "item": "celery",
+        "quantity": "1-2",
+        "unit": "stalk"
+      },
+      {
+        "item": "garlic cloves",
+        "quantity": "2-3",
+        "unit": "count"
+      },
+      {
+        "item": "diced shiitake mushrooms",
+        "quantity": 1,
+        "unit": "package"
+      },
+      {
+        "item": "diced fire roasted tomatoes",
+        "quantity": 1,
+        "unit": "15oz can"
+      },
+      {
+        "item": "chicken broth",
+        "quantity": 1,
+        "unit": "qt"
+      },
+      {
+        "item": "rice",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "shrimp",
+        "quantity": 1,
+        "unit": "bag"
+      }
     ],
     "instructions": [
       "Chop up vegetables and prepare other ingredients.",
@@ -880,25 +2041,76 @@
     "title": "Chicken Parmesan",
     "thumbnail": "/images/chicken-parmesan.jpg",
     "category": "Main Course",
-    "cuisines": ["Italian", "American"],
+    "cuisines": [
+      "Italian",
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Mixing Bowls", "Deep Skillet", "9x13 Baking Dish"],
-    "time": { "prep": 15, "cook": 20, "rest": 0 },
+    "cookware": [
+      "Mixing Bowls",
+      "Deep Skillet",
+      "9x13 Baking Dish"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 20,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "Crispy breaded chicken cutlets topped with marinara sauce and melted mozzarella cheese.",
     "ingredients": [
-      { "item": "Panko Bread Crumbs", "quantity": 1.5, "unit": "cup" },
-      { "item": "Garlic Powder", "quantity": 0.5, "unit": "tsp" },
-      { "item": "Freshly Grated Parmesan Cheese", "quantity": 0.25, "unit": "cup" },
-      { "item": "large Eggs beaten with 1 tbsp water", "quantity": 2, "unit": "count" },
-      { "item": "Flour", "quantity": 0.5, "unit": "cup" },
-      { "item": "Boneless Chicken Cutlets", "quantity": 1.5, "unit": "lbs" },
-      { "item": "Salt and Pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "Vegetable Oil (or Olive Oil)", "quantity": 0.25, "unit": "cup" },
-      { "item": "Shredded Mozzarella Cheese", "quantity": 1, "unit": "cup" },
-      { "item": "Marinara (or Other Sauces)", "quantity": 1, "unit": "jar" }
+      {
+        "item": "Panko Bread Crumbs",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Garlic Powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "Freshly Grated Parmesan Cheese",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "large Eggs beaten with 1 tbsp water",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "Flour",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Boneless Chicken Cutlets",
+        "quantity": 1.5,
+        "unit": "lbs"
+      },
+      {
+        "item": "Salt and Pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Vegetable Oil (or Olive Oil)",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "Shredded Mozzarella Cheese",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "Marinara (or Other Sauces)",
+        "quantity": 1,
+        "unit": "jar"
+      }
     ],
     "instructions": [
       "Preheat the oven to 400 degrees!",
@@ -919,24 +2131,68 @@
     "title": "White Wine Braised Chicken",
     "thumbnail": "/images/white-wine-braised-chicken.jpg",
     "category": "Main Course",
-    "cuisines": ["French"],
+    "cuisines": [
+      "French"
+    ],
     "diets": [],
-    "cookware": ["Dutch Oven"],
-    "time": { "prep": 10, "cook": 40, "rest": 0 },
+    "cookware": [
+      "Dutch Oven"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 40,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
     "description": "Tender, fall-off-the-bone chicken braised in a savory white wine and chicken broth reduction.",
     "ingredients": [
-      { "item": "olive oil", "quantity": 1, "unit": "tbsp" },
-      { "item": "chicken thighs", "quantity": 4, "unit": "count" },
-      { "item": "chicken drumsticks", "quantity": 4, "unit": "count" },
-      { "item": "Kosher salt and freshly ground black pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "shallots, sliced", "quantity": 4, "unit": "count" },
-      { "item": "garlic, peeled, crushed", "quantity": 4, "unit": "cloves" },
-      { "item": "thyme", "quantity": 4, "unit": "sprigs" },
-      { "item": "dry white wine", "quantity": 0.75, "unit": "cup" },
-      { "item": "low-sodium chicken broth", "quantity": 2, "unit": "cup" }
+      {
+        "item": "olive oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "chicken thighs",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "chicken drumsticks",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "Kosher salt and freshly ground black pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "shallots, sliced",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "garlic, peeled, crushed",
+        "quantity": 4,
+        "unit": "cloves"
+      },
+      {
+        "item": "thyme",
+        "quantity": 4,
+        "unit": "sprigs"
+      },
+      {
+        "item": "dry white wine",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "low-sodium chicken broth",
+        "quantity": 2,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Preheat the oven to 425°.",
@@ -955,27 +2211,88 @@
     "title": "Ratatouille",
     "thumbnail": "/images/ratatouille.jpg",
     "category": "Main Course",
-    "cuisines": ["French"],
-    "diets": ["Vegan", "Vegetarian", "Gluten-Free", "Dairy-Free"],
-    "cookware": ["Cast Iron Skillet"],
-    "time": { "prep": 30, "cook": 60, "rest": 0 },
+    "cuisines": [
+      "French"
+    ],
+    "diets": [
+      "Vegan",
+      "Vegetarian",
+      "Gluten-Free",
+      "Dairy-Free"
+    ],
+    "cookware": [
+      "Cast Iron Skillet"
+    ],
+    "time": {
+      "prep": 30,
+      "cook": 60,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A classic French vegetable stew with thinly sliced eggplant, zucchini, and tomatoes baked in a rich tomato sauce.",
     "ingredients": [
-      { "item": "eggplant", "quantity": 1, "unit": "count" },
-      { "item": "zucchini", "quantity": 1, "unit": "count" },
-      { "item": "yellow squash", "quantity": 1, "unit": "count" },
-      { "item": "roma tomatoes", "quantity": 6, "unit": "count" },
-      { "item": "crushed tomatoes", "quantity": 1, "unit": "24 oz can" },
-      { "item": "tomato sauce", "quantity": 1, "unit": "can" },
-      { "item": "garlic", "quantity": 4, "unit": "cloves" },
-      { "item": "yellow onion", "quantity": 1, "unit": "count" },
-      { "item": "bell peppers", "quantity": 2, "unit": "count" },
-      { "item": "basil", "quantity": 0, "unit": "to taste" },
-      { "item": "parsley", "quantity": 0, "unit": "to taste" },
-      { "item": "thyme", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "eggplant",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "zucchini",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "yellow squash",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "roma tomatoes",
+        "quantity": 6,
+        "unit": "count"
+      },
+      {
+        "item": "crushed tomatoes",
+        "quantity": 1,
+        "unit": "24 oz can"
+      },
+      {
+        "item": "tomato sauce",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "garlic",
+        "quantity": 4,
+        "unit": "cloves"
+      },
+      {
+        "item": "yellow onion",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "bell peppers",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "basil",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "parsley",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "thyme",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Slice squashes and tomatoes into thin uniform slices (may be necessary to quarter eggplant).",
@@ -994,28 +2311,90 @@
     "title": "Deep Dish Pizza",
     "thumbnail": "/images/deep-dish-pizza.jpg",
     "category": "Main Course",
-    "cuisines": ["American", "Italian"],
+    "cuisines": [
+      "American",
+      "Italian"
+    ],
     "diets": [],
-    "cookware": ["Cast Iron Skillet", "Medium Bowl"],
-    "time": { "prep": 30, "cook": 28, "rest": 120 },
+    "cookware": [
+      "Cast Iron Skillet",
+      "Medium Bowl"
+    ],
+    "time": {
+      "prep": 30,
+      "cook": 28,
+      "rest": 120
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A Chicago-style deep dish pizza with a thick crust, layered with cheese, toppings, and sauce.",
     "ingredients": [
-      { "item": "water", "quantity": 1.03, "unit": "cup" },
-      { "item": "active dry yeast", "quantity": 1, "unit": "package" },
-      { "item": "flour", "quantity": 3, "unit": "cup" },
-      { "item": "corn meal", "quantity": 0.75, "unit": "cup" },
-      { "item": "kosher salt", "quantity": 1.25, "unit": "tsp" },
-      { "item": "sugar", "quantity": 1, "unit": "tsp" },
-      { "item": "cream of tartar", "quantity": 0.125, "unit": "tsp" },
-      { "item": "vegetable oil", "quantity": 0.33, "unit": "cup" },
-      { "item": "San Marzano Tomatoes", "quantity": 1, "unit": "can" },
-      { "item": "tomato paste", "quantity": 1, "unit": "tbsp" },
-      { "item": "white onion", "quantity": 0.5, "unit": "count" },
-      { "item": "garlic", "quantity": 3, "unit": "cloves" },
-      { "item": "Basil, Oregano, and Rosemary", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "water",
+        "quantity": 1.03,
+        "unit": "cup"
+      },
+      {
+        "item": "active dry yeast",
+        "quantity": 1,
+        "unit": "package"
+      },
+      {
+        "item": "flour",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "item": "corn meal",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "kosher salt",
+        "quantity": 1.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "sugar",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "cream of tartar",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "item": "vegetable oil",
+        "quantity": 0.33,
+        "unit": "cup"
+      },
+      {
+        "item": "San Marzano Tomatoes",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "tomato paste",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "white onion",
+        "quantity": 0.5,
+        "unit": "count"
+      },
+      {
+        "item": "garlic",
+        "quantity": 3,
+        "unit": "cloves"
+      },
+      {
+        "item": "Basil, Oregano, and Rosemary",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Put water, yeast, and sugar in a bowl until it gets frothy (~10 minutes).",
@@ -1046,19 +2425,45 @@
     "title": "Pie Crust",
     "thumbnail": "/images/pie-crust.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Mixing Bowl"],
-    "time": { "prep": 10, "cook": 0, "rest": 30 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Mixing Bowl"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 0,
+      "rest": 30
+    },
     "servings": 2,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A simple and flaky pie crust made with shortening, perfect for any sweet or savory pie.",
     "ingredients": [
-      { "item": "shortening/Crisco (butter flavor)", "quantity": 1, "unit": "stick" },
-      { "item": "flour", "quantity": 3, "unit": "cup" },
-      { "item": "salt", "quantity": 1, "unit": "tsp" },
-      { "item": "cold water", "quantity": 1, "unit": "cup" }
+      {
+        "item": "shortening/Crisco (butter flavor)",
+        "quantity": 1,
+        "unit": "stick"
+      },
+      {
+        "item": "flour",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "item": "salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "cold water",
+        "quantity": 1,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Mix shortening, flour, and salt.",
@@ -1074,23 +2479,67 @@
     "title": "Dutch Apple Pie",
     "thumbnail": "/images/dutch-apple-pie.jpg",
     "category": "Dessert",
-    "cuisines": ["American", "Dutch"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Pie Plate", "Mixing Bowl"],
-    "time": { "prep": 20, "cook": 50, "rest": 30 },
+    "cuisines": [
+      "American",
+      "Dutch"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Pie Plate",
+      "Mixing Bowl"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 50,
+      "rest": 30
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A delicious apple pie with a sweet apple filling and a crumbly streusel topping.",
     "ingredients": [
-      { "item": "pie crust", "quantity": 1, "unit": "count" },
-      { "item": "honeycrisp apples", "quantity": 8, "unit": "cup" },
-      { "item": "brown sugar", "quantity": 0.66, "unit": "cup" },
-      { "item": "flour", "quantity": 1.25, "unit": "cup" },
-      { "item": "cinnamon", "quantity": 0.25, "unit": "tsp" },
-      { "item": "lemon juice", "quantity": 1, "unit": "tbsp" },
-      { "item": "white sugar", "quantity": 0.5, "unit": "cup" },
-      { "item": "butter", "quantity": 0.5, "unit": "cup" }
+      {
+        "item": "pie crust",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "honeycrisp apples",
+        "quantity": 8,
+        "unit": "cup"
+      },
+      {
+        "item": "brown sugar",
+        "quantity": 0.66,
+        "unit": "cup"
+      },
+      {
+        "item": "flour",
+        "quantity": 1.25,
+        "unit": "cup"
+      },
+      {
+        "item": "cinnamon",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "lemon juice",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "white sugar",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "butter",
+        "quantity": 0.5,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Make pie crust first to allow time to sit in fridge.",
@@ -1111,31 +2560,104 @@
     "title": "Chicken Pot Pie",
     "thumbnail": "/images/chicken-pot-pie.jpg",
     "category": "Main Course",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Cast Iron Skillet", "Pie Plate"],
-    "time": { "prep": 20, "cook": 45, "rest": 10 },
+    "cookware": [
+      "Cast Iron Skillet",
+      "Pie Plate"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 45,
+      "rest": 10
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A savory pie filled with chicken and vegetables in a creamy sauce, topped with a flaky pie crust.",
     "ingredients": [
-      { "item": "pie crust", "quantity": 1, "unit": "count" },
-      { "item": "white meat chicken", "quantity": 1, "unit": "lb" },
-      { "item": "butter", "quantity": 4, "unit": "tbsp" },
-      { "item": "onion", "quantity": 0.5, "unit": "count" },
-      { "item": "celery", "quantity": 0, "unit": "to taste" },
-      { "item": "carrots", "quantity": 0, "unit": "to taste" },
-      { "item": "thyme", "quantity": 0, "unit": "to taste" },
-      { "item": "flour", "quantity": 4, "unit": "tbsp" },
-      { "item": "white wine", "quantity": 0.25, "unit": "cup" },
-      { "item": "chicken stock", "quantity": 2, "unit": "cup" },
-      { "item": "Kosher salt", "quantity": 0, "unit": "to taste" },
-      { "item": "Black pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "Parsley", "quantity": 0, "unit": "to taste" },
-      { "item": "frozen peas", "quantity": 0.5, "unit": "cup" },
-      { "item": "heavy cream", "quantity": 0.25, "unit": "cup" },
-      { "item": "Sage", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "pie crust",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "white meat chicken",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "butter",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "item": "onion",
+        "quantity": 0.5,
+        "unit": "count"
+      },
+      {
+        "item": "celery",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "carrots",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "thyme",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "flour",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "item": "white wine",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "chicken stock",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "Kosher salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Black pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Parsley",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "frozen peas",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "heavy cream",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "Sage",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Make pie crust ahead of time and allow to cool.",
@@ -1159,29 +2681,94 @@
     "title": "Chicken Tikka Masala",
     "thumbnail": "/images/chicken-tikka-masala.jpg",
     "category": "Main Course",
-    "cuisines": ["Indian"],
+    "cuisines": [
+      "Indian"
+    ],
     "diets": [],
-    "cookware": ["Skillet", "Mixing Bowl"],
-    "time": { "prep": 10, "cook": 20, "rest": 30 },
+    "cookware": [
+      "Skillet",
+      "Mixing Bowl"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 20,
+      "rest": 30
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A popular Indian dish of marinated chicken in a creamy, spiced tomato sauce.",
     "ingredients": [
-      { "item": "yogurt", "quantity": 1, "unit": "cup" },
-      { "item": "lemon juice", "quantity": 1, "unit": "tbsp" },
-      { "item": "Cumin", "quantity": 0, "unit": "to taste" },
-      { "item": "Cinnamon", "quantity": 0, "unit": "to taste" },
-      { "item": "Paprika", "quantity": 0, "unit": "to taste" },
-      { "item": "Cayenne Pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "Black Pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "Ginger", "quantity": 0, "unit": "to taste" },
-      { "item": "Salt", "quantity": 0, "unit": "to taste" },
-      { "item": "Chicken Breasts", "quantity": 3, "unit": "count" },
-      { "item": "butter", "quantity": 1, "unit": "tbsp" },
-      { "item": "garlic", "quantity": 1, "unit": "clove" },
-      { "item": "jalapeno Pepper", "quantity": 1, "unit": "count" },
-      { "item": "Heavy Cream", "quantity": 1, "unit": "cup" }
+      {
+        "item": "yogurt",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "lemon juice",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Cumin",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Cinnamon",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Paprika",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Cayenne Pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Black Pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Ginger",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Chicken Breasts",
+        "quantity": 3,
+        "unit": "count"
+      },
+      {
+        "item": "butter",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "garlic",
+        "quantity": 1,
+        "unit": "clove"
+      },
+      {
+        "item": "jalapeno Pepper",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "Heavy Cream",
+        "quantity": 1,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Combine yogurt, lemon juice, 2 tbsp cumin, 1 tsp cinnamon, 2 tsp cayenne, 1 tsp ginger, 1 tsp black pepper, 1 tsp salt.",
@@ -1201,25 +2788,75 @@
     "title": "Sausage Rigatoni",
     "thumbnail": "/images/sausage-rigatoni.jpg",
     "category": "Main Course",
-    "cuisines": ["Italian", "American"],
+    "cuisines": [
+      "Italian",
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Large Pot", "Skillet"],
-    "time": { "prep": 10, "cook": 20, "rest": 0 },
+    "cookware": [
+      "Large Pot",
+      "Skillet"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 20,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A hearty pasta dish with spicy Italian sausage, bell peppers, and a rich tomato sauce.",
     "ingredients": [
-      { "item": "spicy Italian Sausage", "quantity": 3, "unit": "count" },
-      { "item": "bell peppers", "quantity": 2, "unit": "count" },
-      { "item": "onion", "quantity": 0.5, "unit": "count" },
-      { "item": "garlic", "quantity": 2, "unit": "cloves" },
-      { "item": "can crushed tomato", "quantity": 1, "unit": "24 oz can" },
-      { "item": "can tomato sauce", "quantity": 1, "unit": "15 oz can" },
-      { "item": "Oregano", "quantity": 0, "unit": "to taste" },
-      { "item": "Rosemary", "quantity": 0, "unit": "to taste" },
-      { "item": "Basil", "quantity": 0, "unit": "to taste" },
-      { "item": "Mezzi Rigatoni Noodles", "quantity": 1, "unit": "lb" }
+      {
+        "item": "spicy Italian Sausage",
+        "quantity": 3,
+        "unit": "count"
+      },
+      {
+        "item": "bell peppers",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "onion",
+        "quantity": 0.5,
+        "unit": "count"
+      },
+      {
+        "item": "garlic",
+        "quantity": 2,
+        "unit": "cloves"
+      },
+      {
+        "item": "can crushed tomato",
+        "quantity": 1,
+        "unit": "24 oz can"
+      },
+      {
+        "item": "can tomato sauce",
+        "quantity": 1,
+        "unit": "15 oz can"
+      },
+      {
+        "item": "Oregano",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Rosemary",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Basil",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Mezzi Rigatoni Noodles",
+        "quantity": 1,
+        "unit": "lb"
+      }
     ],
     "instructions": [
       "Cook Sausage and onions.",
@@ -1235,29 +2872,93 @@
     "title": "White Mom Pork Chops",
     "thumbnail": "/images/white-mom-pork-chops.jpg",
     "category": "Main Course",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Skillet"],
-    "time": { "prep": 5, "cook": 15, "rest": 30 },
+    "cookware": [
+      "Skillet"
+    ],
+    "time": {
+      "prep": 5,
+      "cook": 15,
+      "rest": 30
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "Tender pork chops with a flavorful spice rub, finished in a sweet and tangy pan sauce.",
     "ingredients": [
-      { "item": "pork chops", "quantity": 4, "unit": "count" },
-      { "item": "Salt", "quantity": 0, "unit": "to taste" },
-      { "item": "flour", "quantity": 1, "unit": "tbsp" },
-      { "item": "chili powder", "quantity": 1, "unit": "tsp" },
-      { "item": "garlic powder", "quantity": 1, "unit": "tsp" },
-      { "item": "onion powder", "quantity": 1, "unit": "tsp" },
-      { "item": "paprika", "quantity": 0.5, "unit": "tsp" },
-      { "item": "black pepper", "quantity": 0.5, "unit": "tsp" },
-      { "item": "olive oil", "quantity": 1, "unit": "tbsp" },
-      { "item": "chicken stock", "quantity": 1, "unit": "cup" },
-      { "item": "apple cider vinegar", "quantity": 1, "unit": "tbsp" },
-      { "item": "honey", "quantity": 2, "unit": "tsp" },
-      { "item": "butter", "quantity": 1, "unit": "tbsp" },
-      { "item": "parsley", "quantity": 2, "unit": "tbsp" }
+      {
+        "item": "pork chops",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "Salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "flour",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "chili powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "garlic powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "onion powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "paprika",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "black pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "olive oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "chicken stock",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "apple cider vinegar",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "honey",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "item": "butter",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "parsley",
+        "quantity": 2,
+        "unit": "tbsp"
+      }
     ],
     "instructions": [
       "Salt and Pepper both sides of the pork chop and allow to tenderize for about 30 minutes (don’t really need to wait that long necessarily).",
@@ -1278,26 +2979,80 @@
     "title": "Chocolate Eclair Cake",
     "thumbnail": "/images/chocolate-eclair-cake.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["9x13 Pan"],
-    "time": { "prep": 20, "cook": 0, "rest": 1440 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "9x13 Pan"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 0,
+      "rest": 1440
+    },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A no-bake layered dessert with graham crackers, vanilla pudding, and a rich chocolate frosting.",
     "ingredients": [
-      { "item": "French Vanilla instant pudding", "quantity": 2, "unit": "package" },
-      { "item": "milk", "quantity": 3, "unit": "cup" },
-      { "item": "Cool Whip", "quantity": 8, "unit": "oz" },
-      { "item": "graham crackers", "quantity": 1, "unit": "box" },
-      { "item": "powdered sugar", "quantity": 1.5, "unit": "cup" },
-      { "item": "unsweetened chocolate", "quantity": 2, "unit": "oz" },
-      { "item": "butter", "quantity": 1, "unit": "tbsp" },
-      { "item": "melted butter", "quantity": 2, "unit": "tbsp" },
-      { "item": "vanilla", "quantity": 1, "unit": "tbsp" },
-      { "item": "Karo light corn syrup", "quantity": 2, "unit": "tbsp" },
-      { "item": "milk", "quantity": "2-3", "unit": "tbsp" }
+      {
+        "item": "French Vanilla instant pudding",
+        "quantity": 2,
+        "unit": "package"
+      },
+      {
+        "item": "milk",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "item": "Cool Whip",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "item": "graham crackers",
+        "quantity": 1,
+        "unit": "box"
+      },
+      {
+        "item": "powdered sugar",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "unsweetened chocolate",
+        "quantity": 2,
+        "unit": "oz"
+      },
+      {
+        "item": "butter",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "melted butter",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "vanilla",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Karo light corn syrup",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "milk",
+        "quantity": "2-3",
+        "unit": "tbsp"
+      }
     ],
     "instructions": [
       "Mix pudding with milk and blend well.",
@@ -1319,20 +3074,49 @@
     "title": "Biscuits and Gravy",
     "thumbnail": "/images/biscuits-and-gravy.jpg",
     "category": "Breakfast",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Skillet", "Baking Sheet"],
-    "time": { "prep": 5, "cook": 15, "rest": 0 },
+    "cookware": [
+      "Skillet",
+      "Baking Sheet"
+    ],
+    "time": {
+      "prep": 5,
+      "cook": 15,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A classic Southern breakfast featuring warm buttermilk biscuits smothered in a creamy pork sausage gravy.",
     "ingredients": [
-      { "item": "jumbo buttermilk biscuits", "quantity": 1, "unit": "can" },
-      { "item": "pork sausage", "quantity": 1, "unit": "package" },
-      { "item": "flour", "quantity": 0.25, "unit": "cup" },
-      { "item": "milk", "quantity": 2.5, "unit": "cup" },
-      { "item": "Salt and Pepper", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "jumbo buttermilk biscuits",
+        "quantity": 1,
+        "unit": "can"
+      },
+      {
+        "item": "pork sausage",
+        "quantity": 1,
+        "unit": "package"
+      },
+      {
+        "item": "flour",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "milk",
+        "quantity": 2.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Salt and Pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Bake biscuits.",
@@ -1347,19 +3131,45 @@
     "title": "Sugar Tarts",
     "thumbnail": "/images/sugar-tarts.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Pie Pan"],
-    "time": { "prep": 15, "cook": 20, "rest": 30 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Pie Pan"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 20,
+      "rest": 30
+    },
     "servings": 18,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "Simple, sweet pastries made from pie crust, filled with butter, sugar, and cinnamon.",
     "ingredients": [
-      { "item": "pie crust", "quantity": 1, "unit": "recipe" },
-      { "item": "butter", "quantity": 0, "unit": "to taste" },
-      { "item": "sugar", "quantity": 0, "unit": "to taste" },
-      { "item": "cinnamon", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "pie crust",
+        "quantity": 1,
+        "unit": "recipe"
+      },
+      {
+        "item": "butter",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "sugar",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "cinnamon",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Preheat oven to 400 degrees.",
@@ -1379,25 +3189,73 @@
     "title": "Pot Roast",
     "thumbnail": "/images/pot-roast.jpg",
     "category": "Main Course",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Dutch Oven"],
-    "time": { "prep": 15, "cook": 300, "rest": 0 },
+    "cookware": [
+      "Dutch Oven"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 300,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A slow-cooked beef chuck roast with potatoes and carrots, resulting in tender meat and a rich gravy.",
     "ingredients": [
-      { "item": "boneless chuck roast", "quantity": 2.5, "unit": "lbs" },
-      { "item": "medium onions", "quantity": 3, "unit": "count" },
-      { "item": "beef bouillon cubes", "quantity": 3, "unit": "count" },
-      { "item": "hot water", "quantity": 1.5, "unit": "cup" },
-      { "item": "Salt and Pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "Worcestershire sauce", "quantity": "1-2", "unit": "tbsp" },
-      { "item": "medium sized potatoes", "quantity": "4-5", "unit": "count" },
-      { "item": "baby carrots", "quantity": 16, "unit": "oz" },
-      { "item": "flour", "quantity": 2, "unit": "tbsp" },
-      { "item": "cold water", "quantity": 0.5, "unit": "cup" }
+      {
+        "item": "boneless chuck roast",
+        "quantity": 2.5,
+        "unit": "lbs"
+      },
+      {
+        "item": "medium onions",
+        "quantity": 3,
+        "unit": "count"
+      },
+      {
+        "item": "beef bouillon cubes",
+        "quantity": 3,
+        "unit": "count"
+      },
+      {
+        "item": "hot water",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Salt and Pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Worcestershire sauce",
+        "quantity": "1-2",
+        "unit": "tbsp"
+      },
+      {
+        "item": "medium sized potatoes",
+        "quantity": "4-5",
+        "unit": "count"
+      },
+      {
+        "item": "baby carrots",
+        "quantity": 16,
+        "unit": "oz"
+      },
+      {
+        "item": "flour",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "cold water",
+        "quantity": 0.5,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Preheat oven 350 degrees.",
@@ -1422,24 +3280,69 @@
     "title": "Stuffed Pork Tenderloin",
     "thumbnail": "/images/stuffed-pork-tenderloin.jpg",
     "category": "Main Course",
-    "cuisines": ["American", "French"],
+    "cuisines": [
+      "American",
+      "French"
+    ],
     "diets": [],
-    "cookware": ["Cast Iron Skillet"],
-    "time": { "prep": 20, "cook": 25, "rest": 0 },
+    "cookware": [
+      "Cast Iron Skillet"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 25,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "An elegant pork tenderloin stuffed with a savory mixture of bacon, mushrooms, and onions.",
     "ingredients": [
-      { "item": "olive oil", "quantity": 4, "unit": "tbsp" },
-      { "item": "bacon", "quantity": 2, "unit": "slices" },
-      { "item": "portabella mushrooms", "quantity": 6, "unit": "oz" },
-      { "item": "onion", "quantity": 0.33, "unit": "cup" },
-      { "item": "salt", "quantity": 1.5, "unit": "tsp" },
-      { "item": "black pepper", "quantity": 0.5, "unit": "tsp" },
-      { "item": "garlic", "quantity": 1, "unit": "clove" },
-      { "item": "parsley", "quantity": 0.25, "unit": "cup" },
-      { "item": "pork tenderloin", "quantity": 1.5, "unit": "lb" }
+      {
+        "item": "olive oil",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "item": "bacon",
+        "quantity": 2,
+        "unit": "slices"
+      },
+      {
+        "item": "portabella mushrooms",
+        "quantity": 6,
+        "unit": "oz"
+      },
+      {
+        "item": "onion",
+        "quantity": 0.33,
+        "unit": "cup"
+      },
+      {
+        "item": "salt",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "black pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "garlic",
+        "quantity": 1,
+        "unit": "clove"
+      },
+      {
+        "item": "parsley",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "pork tenderloin",
+        "quantity": 1.5,
+        "unit": "lb"
+      }
     ],
     "instructions": [
       "Preheat oven to 400 degrees.",
@@ -1460,28 +3363,93 @@
     "title": "Potato and Lentil Soup",
     "thumbnail": "/images/potato-and-lentil-soup.jpg",
     "category": "Soup",
-    "cuisines": ["Vegetarian"],
-    "diets": ["Vegan", "Vegetarian", "Dairy-Free", "Gluten-Free"],
-    "cookware": ["Dutch Oven"],
-    "time": { "prep": 10, "cook": 35, "rest": 0 },
+    "cuisines": [
+      "Vegetarian"
+    ],
+    "diets": [
+      "Vegan",
+      "Vegetarian",
+      "Dairy-Free",
+      "Gluten-Free"
+    ],
+    "cookware": [
+      "Dutch Oven"
+    ],
+    "time": {
+      "prep": 10,
+      "cook": 35,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A hearty and healthy vegetarian soup with potatoes and lentils in a savory tomato broth.",
     "ingredients": [
-      { "item": "vegetable oil", "quantity": 2, "unit": "tbsp" },
-      { "item": "garlic", "quantity": 3, "unit": "cloves" },
-      { "item": "onion", "quantity": 0.25, "unit": "cup" },
-      { "item": "large carrot", "quantity": 1, "unit": "count" },
-      { "item": "tomato paste", "quantity": 2, "unit": "tbsp" },
-      { "item": "tomato sauce", "quantity": 0.25, "unit": "cup" },
-      { "item": "lentils", "quantity": 1.25, "unit": "cup" },
-      { "item": "potatoes", "quantity": 12, "unit": "oz" },
-      { "item": "salt", "quantity": 2, "unit": "tsp" },
-      { "item": "black pepper", "quantity": 0.25, "unit": "tsp" },
-      { "item": "thyme", "quantity": 0.25, "unit": "tsp" },
-      { "item": "oregano", "quantity": 0.5, "unit": "tsp" },
-      { "item": "water", "quantity": "4-5", "unit": "cup" }
+      {
+        "item": "vegetable oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "garlic",
+        "quantity": 3,
+        "unit": "cloves"
+      },
+      {
+        "item": "onion",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "large carrot",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "tomato paste",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "tomato sauce",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "lentils",
+        "quantity": 1.25,
+        "unit": "cup"
+      },
+      {
+        "item": "potatoes",
+        "quantity": 12,
+        "unit": "oz"
+      },
+      {
+        "item": "salt",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "item": "black pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "thyme",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "oregano",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "water",
+        "quantity": "4-5",
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Heat oil in a large dutch oven.",
@@ -1502,24 +3470,72 @@
     "title": "Banana Muffins / Banana Bread",
     "thumbnail": "/images/banana-muffins-or-banana-bread.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Large Bowl", "Muffin Pan", "Loaf Pan"],
-    "time": { "prep": 15, "cook": 40, "rest": 10 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Large Bowl",
+      "Muffin Pan",
+      "Loaf Pan"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 40,
+      "rest": 10
+    },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A moist and delicious classic, perfect for using up ripe bananas, can be made as either muffins or a loaf.",
     "ingredients": [
-      { "item": "Flour", "quantity": 2, "unit": "cup" },
-      { "item": "Baking Soda", "quantity": 1, "unit": "tsp" },
-      { "item": "Salt", "quantity": 0.25, "unit": "tsp" },
-      { "item": "Cinnamon (Optional)", "quantity": 0.5, "unit": "tsp" },
-      { "item": "Unsalted Butter, Softened", "quantity": 0.5, "unit": "cup" },
-      { "item": "Brown Sugar", "quantity": 0.75, "unit": "cup" },
-      { "item": "eggs, beaten", "quantity": 2, "unit": "count" },
-      { "item": "Mashed Ripe Bananas", "quantity": 2.66, "unit": "cup" },
-      { "item": "Vanilla Extract", "quantity": 1, "unit": "tsp" }
+      {
+        "item": "Flour",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "Baking Soda",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "Salt",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "Cinnamon (Optional)",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "Unsalted Butter, Softened",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Brown Sugar",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "eggs, beaten",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "Mashed Ripe Bananas",
+        "quantity": 2.66,
+        "unit": "cup"
+      },
+      {
+        "item": "Vanilla Extract",
+        "quantity": 1,
+        "unit": "tsp"
+      }
     ],
     "instructions": [
       "Preheat the oven to 350 degrees F.",
@@ -1538,32 +3554,111 @@
     "title": "Shepherd's Pie / Cottage Pie",
     "thumbnail": "/images/shepherds-pie-or-cottage-pie.jpg",
     "category": "Main Course",
-    "cuisines": ["British", "Irish"],
+    "cuisines": [
+      "British",
+      "Irish"
+    ],
     "diets": [],
-    "cookware": ["Large Pot", "Skillet", "Pie Plate"],
-    "time": { "prep": 30, "cook": 45, "rest": 0 },
+    "cookware": [
+      "Large Pot",
+      "Skillet",
+      "Pie Plate"
+    ],
+    "time": {
+      "prep": 30,
+      "cook": 45,
+      "rest": 0
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A comforting casserole of ground meat and vegetables in a savory gravy, topped with creamy mashed potatoes.",
     "ingredients": [
-      { "item": "potatoes", "quantity": 3, "unit": "lbs" },
-      { "item": "aged white cheddar", "quantity": "3-4", "unit": "oz" },
-      { "item": "butter", "quantity": 0.5, "unit": "cup" },
-      { "item": "chives", "quantity": 0.5, "unit": "cup" },
-      { "item": "kosher salt", "quantity": 0, "unit": "to taste" },
-      { "item": "pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "egg yolks", "quantity": 2, "unit": "count" },
-      { "item": "milk", "quantity": 0.5, "unit": "cup" },
-      { "item": "ground lamb or ground beef", "quantity": 1, "unit": "lb" },
-      { "item": "large onion", "quantity": 0.5, "unit": "count" },
-      { "item": "medium carrots", "quantity": 4, "unit": "count" },
-      { "item": "garlic", "quantity": 3, "unit": "cloves" },
-      { "item": "Tomato paste", "quantity": 4, "unit": "tbsp" },
-      { "item": "Rosemary and Thyme sprigs", "quantity": 0, "unit": "to taste" },
-      { "item": "flour", "quantity": 1.5, "unit": "tbsp" },
-      { "item": "Worcestershire sauce", "quantity": 0, "unit": "dashes" },
-      { "item": "Frozen Peas", "quantity": 0.5, "unit": "cup" }
+      {
+        "item": "potatoes",
+        "quantity": 3,
+        "unit": "lbs"
+      },
+      {
+        "item": "aged white cheddar",
+        "quantity": "3-4",
+        "unit": "oz"
+      },
+      {
+        "item": "butter",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "chives",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "kosher salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "egg yolks",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "milk",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "ground lamb or ground beef",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "large onion",
+        "quantity": 0.5,
+        "unit": "count"
+      },
+      {
+        "item": "medium carrots",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "garlic",
+        "quantity": 3,
+        "unit": "cloves"
+      },
+      {
+        "item": "Tomato paste",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Rosemary and Thyme sprigs",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "flour",
+        "quantity": 1.5,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Worcestershire sauce",
+        "quantity": 0,
+        "unit": "dashes"
+      },
+      {
+        "item": "Frozen Peas",
+        "quantity": 0.5,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Peel, slice, and boil potatoes in water for ~20 minutes or until soft.",
@@ -1591,22 +3686,61 @@
     "title": "Alfredo Sauce",
     "thumbnail": "/images/alfredo-sauce.jpg",
     "category": "Sauce",
-    "cuisines": ["Italian"],
-    "diets": ["Vegetarian", "Gluten-Free"],
-    "cookware": ["Saucepan"],
-    "time": { "prep": 2, "cook": 10, "rest": 0 },
+    "cuisines": [
+      "Italian"
+    ],
+    "diets": [
+      "Vegetarian",
+      "Gluten-Free"
+    ],
+    "cookware": [
+      "Saucepan"
+    ],
+    "time": {
+      "prep": 2,
+      "cook": 10,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A simple, rich, and creamy cheese sauce perfect for pasta.",
     "ingredients": [
-      { "item": "Butter", "quantity": 0.5, "unit": "cup" },
-      { "item": "Whipping cream or Heavy cream", "quantity": 1.5, "unit": "cup" },
-      { "item": "Garlic minced", "quantity": 2, "unit": "tsp" },
-      { "item": "Italian seasoning", "quantity": 0.5, "unit": "tsp" },
-      { "item": "salt", "quantity": 0.5, "unit": "tsp" },
-      { "item": "pepper", "quantity": 0.25, "unit": "tsp" },
-      { "item": "parmesan cheese", "quantity": 2, "unit": "cup" }
+      {
+        "item": "Butter",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Whipping cream or Heavy cream",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Garlic minced",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "item": "Italian seasoning",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "parmesan cheese",
+        "quantity": 2,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Mix on low heat."
@@ -1618,31 +3752,104 @@
     "title": "Bolognese Pasta",
     "thumbnail": "/images/bolognese-pasta.jpg",
     "category": "Main Course",
-    "cuisines": ["Italian"],
+    "cuisines": [
+      "Italian"
+    ],
     "diets": [],
-    "cookware": ["Large Pot", "Dutch Oven"],
-    "time": { "prep": 20, "cook": 210, "rest": 0 },
+    "cookware": [
+      "Large Pot",
+      "Dutch Oven"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 210,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A rich, slow-cooked meat sauce with beef, pork, and pancetta, finished with milk and cream.",
     "ingredients": [
-      { "item": "onion", "quantity": 1, "unit": "count" },
-      { "item": "carrots", "quantity": 2, "unit": "count" },
-      { "item": "celery stalks", "quantity": 3, "unit": "count" },
-      { "item": "beef", "quantity": 1, "unit": "lb" },
-      { "item": "pork", "quantity": 1, "unit": "lb" },
-      { "item": "Pancetta", "quantity": 0, "unit": "to taste" },
-      { "item": "tomato paste", "quantity": 0.25, "unit": "cup" },
-      { "item": "white wine", "quantity": 1, "unit": "cup" },
-      { "item": "chicken stock", "quantity": 32, "unit": "oz" },
-      { "item": "milk", "quantity": 1, "unit": "cup" },
-      { "item": "Bay leaf", "quantity": 1, "unit": "count" },
-      { "item": "Nutmeg", "quantity": 0, "unit": "to taste" },
-      { "item": "Kosher salt", "quantity": 0, "unit": "to taste" },
-      { "item": "Black pepper", "quantity": 0, "unit": "to taste" },
-      { "item": "heavy cream", "quantity": 0.5, "unit": "cup" },
-      { "item": "Pasta", "quantity": 1, "unit": "lb" }
+      {
+        "item": "onion",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "carrots",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "celery stalks",
+        "quantity": 3,
+        "unit": "count"
+      },
+      {
+        "item": "beef",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "pork",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "Pancetta",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "tomato paste",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "white wine",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "chicken stock",
+        "quantity": 32,
+        "unit": "oz"
+      },
+      {
+        "item": "milk",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "Bay leaf",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "Nutmeg",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Kosher salt",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Black pepper",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "heavy cream",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Pasta",
+        "quantity": 1,
+        "unit": "lb"
+      }
     ],
     "instructions": [
       "Chop onion, carrot, and celery and set aside.",
@@ -1663,24 +3870,68 @@
     "title": "Improv Garlic Honey Chicken",
     "thumbnail": "/images/improv-garlic-honey-chicken.jpg",
     "category": "Main Course",
-    "cuisines": ["Asian"],
+    "cuisines": [
+      "Asian"
+    ],
     "diets": [],
-    "cookware": ["Pan"],
-    "time": { "prep": 5, "cook": 15, "rest": 0 },
+    "cookware": [
+      "Pan"
+    ],
+    "time": {
+      "prep": 5,
+      "cook": 15,
+      "rest": 0
+    },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A quick, improvised chicken dish with a sweet and savory glaze made from honey, garlic, and soy sauce.",
     "ingredients": [
-      { "item": "Chicken", "quantity": 1, "unit": "lb" },
-      { "item": "Honey", "quantity": 0, "unit": "to taste" },
-      { "item": "Garlic", "quantity": 0, "unit": "to taste" },
-      { "item": "Soy Sauce", "quantity": 0.5, "unit": "cup" },
-      { "item": "Onion powder", "quantity": 0, "unit": "to taste" },
-      { "item": "Rice wine", "quantity": 0, "unit": "to taste" },
-      { "item": "Lemon", "quantity": 0, "unit": "to taste" },
-      { "item": "Red Pepper Flakes", "quantity": 0, "unit": "to taste" },
-      { "item": "Sesame Oil", "quantity": 0, "unit": "few drops" }
+      {
+        "item": "Chicken",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "item": "Honey",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Garlic",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Soy Sauce",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "Onion powder",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Rice wine",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Lemon",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Red Pepper Flakes",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Sesame Oil",
+        "quantity": 0,
+        "unit": "few drops"
+      }
     ],
     "instructions": [
       "Cut chicken into bit size pieces and place into a hot pan, seasoning with salt and pepper.",
@@ -1700,28 +3951,92 @@
     "title": "Potatoes Au Gratin",
     "thumbnail": "/images/potatoes-au-gratin.jpg",
     "category": "Side Dish",
-    "cuisines": ["French", "American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Saucepan", "Baking Dish"],
-    "time": { "prep": 15, "cook": 40, "rest": 0 },
+    "cuisines": [
+      "French",
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Saucepan",
+      "Baking Dish"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 40,
+      "rest": 0
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A classic side dish of tender potatoes baked in a creamy, homemade cheese sauce and topped with crispy breadcrumbs.",
     "ingredients": [
-      { "item": "chicken bouillon cube", "quantity": 1, "unit": "count" },
-      { "item": "large potatoes", "quantity": 4, "unit": "count" },
-      { "item": "butter", "quantity": 3, "unit": "tbsp" },
-      { "item": "flour", "quantity": 0.25, "unit": "cup" },
-      { "item": "salt", "quantity": 0.25, "unit": "tsp" },
-      { "item": "pepper", "quantity": 0.25, "unit": "tsp" },
-      { "item": "Season-All", "quantity": 1, "unit": "tsp" },
-      { "item": "dry mustard", "quantity": 0.25, "unit": "tsp" },
-      { "item": "milk", "quantity": 2, "unit": "cup" },
-      { "item": "shredded cheddar", "quantity": 1.5, "unit": "cup" },
-      { "item": "soft breadcrumbs", "quantity": 1, "unit": "cup" },
-      { "item": "melted butter", "quantity": 2, "unit": "tbsp" },
-      { "item": "Paprika", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "chicken bouillon cube",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "large potatoes",
+        "quantity": 4,
+        "unit": "count"
+      },
+      {
+        "item": "butter",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "flour",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "salt",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "Season-All",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "dry mustard",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "milk",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "shredded cheddar",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "item": "soft breadcrumbs",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "melted butter",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "Paprika",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "Peel potatoes and quarter, cover with water and add chicken bouillon.",
@@ -1744,25 +4059,76 @@
     "title": "Pretzel Jello Salad",
     "thumbnail": "/images/pretzel-jello-salad.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["9x13 Baking Dish", "Large Bowl"],
-    "time": { "prep": 20, "cook": 13, "rest": 480 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "9x13 Baking Dish",
+      "Large Bowl"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 13,
+      "rest": 480
+    },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A layered dessert with a crunchy pretzel crust, a creamy cheese filling, and a sweet strawberry Jello topping.",
     "ingredients": [
-      { "item": "pretzels crushed", "quantity": 2.66, "unit": "cup" },
-      { "item": "sugar", "quantity": 3, "unit": "tbsp" },
-      { "item": "butter melted", "quantity": 0.75, "unit": "cup" },
-      { "item": "cream cheese", "quantity": 8, "unit": "oz" },
-      { "item": "sugar", "quantity": 1, "unit": "cup" },
-      { "item": "Cool Whip thawed", "quantity": 8, "unit": "oz" },
-      { "item": "Strawberry Jello", "quantity": 1, "unit": "6oz box" },
-      { "item": "boiling water", "quantity": 2, "unit": "cup" },
-      { "item": "cold water", "quantity": 1, "unit": "cup" },
-      { "item": "fresh strawberries", "quantity": 8, "unit": "oz" }
+      {
+        "item": "pretzels crushed",
+        "quantity": 2.66,
+        "unit": "cup"
+      },
+      {
+        "item": "sugar",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "butter melted",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "item": "cream cheese",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "item": "sugar",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "Cool Whip thawed",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "item": "Strawberry Jello",
+        "quantity": 1,
+        "unit": "6oz box"
+      },
+      {
+        "item": "boiling water",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "cold water",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "fresh strawberries",
+        "quantity": 8,
+        "unit": "oz"
+      }
     ],
     "instructions": [
       "Preheat oven to 350o.",
@@ -1784,36 +4150,130 @@
     "title": "Tandoori Chicken Wings with Yogurt Sauce",
     "thumbnail": "/images/tandoori-chicken-wings-with-yogurt-sauce.jpg",
     "category": "Appetizer",
-    "cuisines": ["Indian"],
+    "cuisines": [
+      "Indian"
+    ],
     "diets": [],
-    "cookware": ["Large Bowl", "Medium Bowl", "Grill"],
-    "time": { "prep": 15, "cook": 25, "rest": 360 },
+    "cookware": [
+      "Large Bowl",
+      "Medium Bowl",
+      "Grill"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 25,
+      "rest": 360
+    },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "Spicy, yogurt-marinated chicken wings grilled until charred and tender, served with a cool mint-yogurt sauce.",
     "ingredients": [
-      { "item": "greek yogurt", "quantity": 0.5, "unit": "c." },
-      { "item": "minced peeled fresh ginger", "quantity": 2, "unit": "tbsp" },
-      { "item": "garlic cloves, minced", "quantity": 6, "unit": "count" },
-      { "item": "garam masala", "quantity": 3, "unit": "tbsp" },
-      { "item": "finely grated lemon zest", "quantity": 1, "unit": "tsp" },
-      { "item": "fresh lemon juice", "quantity": 2, "unit": "tbsp" },
-      { "item": "hot paprika", "quantity": 1, "unit": "tbsp" },
-      { "item": "vegetable oil", "quantity": 2, "unit": "tbsp" },
-      { "item": "salt", "quantity": 2.5, "unit": "tsp" },
-      { "item": "turmeric", "quantity": 1, "unit": "tsp" },
-      { "item": "chicken wings", "quantity": 18, "unit": "count" },
-      { "item": "Cilantro", "quantity": 0, "unit": "to taste" },
-      { "item": "White onion", "quantity": 0, "unit": "to taste" },
-      { "item": "Lemon wedges, for serving", "quantity": 0, "unit": "to taste" },
-      { "item": "greek yogurt (for sauce)", "quantity": 1, "unit": "c" },
-      { "item": "cream cheese, softened (for sauce)", "quantity": 0.25, "unit": "c" },
-      { "item": "finely chopped mint (for sauce)", "quantity": 0.5, "unit": "c" },
-      { "item": "fresh lemon juice (for sauce)", "quantity": 3, "unit": "tbsp" },
-      { "item": "garlic cloves, minced (for sauce)", "quantity": 2, "unit": "count" },
-      { "item": "ground cumin (for sauce)", "quantity": 1, "unit": "tsp" },
-      { "item": "Salt & pepper (for sauce)", "quantity": 0, "unit": "to taste" }
+      {
+        "item": "greek yogurt",
+        "quantity": 0.5,
+        "unit": "c."
+      },
+      {
+        "item": "minced peeled fresh ginger",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "garlic cloves, minced",
+        "quantity": 6,
+        "unit": "count"
+      },
+      {
+        "item": "garam masala",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "finely grated lemon zest",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "fresh lemon juice",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "hot paprika",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "vegetable oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "salt",
+        "quantity": 2.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "turmeric",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "chicken wings",
+        "quantity": 18,
+        "unit": "count"
+      },
+      {
+        "item": "Cilantro",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "White onion",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "Lemon wedges, for serving",
+        "quantity": 0,
+        "unit": "to taste"
+      },
+      {
+        "item": "greek yogurt (for sauce)",
+        "quantity": 1,
+        "unit": "c"
+      },
+      {
+        "item": "cream cheese, softened (for sauce)",
+        "quantity": 0.25,
+        "unit": "c"
+      },
+      {
+        "item": "finely chopped mint (for sauce)",
+        "quantity": 0.5,
+        "unit": "c"
+      },
+      {
+        "item": "fresh lemon juice (for sauce)",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "item": "garlic cloves, minced (for sauce)",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "ground cumin (for sauce)",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "Salt & pepper (for sauce)",
+        "quantity": 0,
+        "unit": "to taste"
+      }
     ],
     "instructions": [
       "In a large bowl, whisk together all of the ingredients except the chicken wings, cilantro, white onion and lemon wedges.",
@@ -1832,20 +4292,53 @@
     "title": "Apple Butter",
     "thumbnail": "/images/apple-butter.jpg",
     "category": "Condiment",
-    "cuisines": ["American"],
-    "diets": ["Vegan", "Vegetarian", "Gluten-Free", "Dairy-Free"],
-    "cookware": ["Slow Cooker"],
-    "time": { "prep": 15, "cook": 660, "rest": 0 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegan",
+      "Vegetarian",
+      "Gluten-Free",
+      "Dairy-Free"
+    ],
+    "cookware": [
+      "Slow Cooker"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 660,
+      "rest": 0
+    },
     "servings": 32,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A rich, dark, and intensely flavored fruit spread made by slow-cooking apples with sugar and spices.",
     "ingredients": [
-      { "item": "apples", "quantity": 5.5, "unit": "lbs" },
-      { "item": "white sugar", "quantity": 4, "unit": "cup" },
-      { "item": "cinnamon", "quantity": 2, "unit": "tsp" },
-      { "item": "cloves", "quantity": 0.25, "unit": "tsp" },
-      { "item": "salt", "quantity": 0.25, "unit": "tsp" }
+      {
+        "item": "apples",
+        "quantity": 5.5,
+        "unit": "lbs"
+      },
+      {
+        "item": "white sugar",
+        "quantity": 4,
+        "unit": "cup"
+      },
+      {
+        "item": "cinnamon",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "item": "cloves",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "item": "salt",
+        "quantity": 0.25,
+        "unit": "tsp"
+      }
     ],
     "instructions": [
       "Peel, core and chop the apples, place into slow cooker/ crock pot.",
@@ -1862,26 +4355,80 @@
     "title": "Creamy Cheesecake Pie",
     "thumbnail": "/images/creamy-cheesecake-pie.jpg",
     "category": "Dessert",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Pie Pan"],
-    "time": { "prep": 15, "cook": 38, "rest": 120 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Pie Pan"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 38,
+      "rest": 120
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A rich and creamy cheesecake baked in a graham cracker crust, finished with a sweet sour cream topping.",
     "ingredients": [
-      { "item": "graham cracker crumbs", "quantity": 1.25, "unit": "cup" },
-      { "item": "melted butter", "quantity": 0.25, "unit": "cup" },
-      { "item": "cream cheese", "quantity": 8, "unit": "oz" },
-      { "item": "sugar", "quantity": 0.5, "unit": "cup" },
-      { "item": "lemon juice", "quantity": 1, "unit": "tbsp" },
-      { "item": "vanilla", "quantity": 0.5, "unit": "tsp" },
-      { "item": "salt", "quantity": 0, "unit": "dash" },
-      { "item": "eggs", "quantity": 2, "unit": "count" },
-      { "item": "sour cream", "quantity": 1, "unit": "cup" },
-      { "item": "sugar", "quantity": 2, "unit": "tbsp" },
-      { "item": "vanilla", "quantity": 0.5, "unit": "tsp" }
+      {
+        "item": "graham cracker crumbs",
+        "quantity": 1.25,
+        "unit": "cup"
+      },
+      {
+        "item": "melted butter",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "item": "cream cheese",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "item": "sugar",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "item": "lemon juice",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "vanilla",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "salt",
+        "quantity": 0,
+        "unit": "dash"
+      },
+      {
+        "item": "eggs",
+        "quantity": 2,
+        "unit": "count"
+      },
+      {
+        "item": "sour cream",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "item": "sugar",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "item": "vanilla",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
     ],
     "instructions": [
       "Combine graham cracker and ¼ cup of melted butter.",
@@ -1902,22 +4449,60 @@
     "title": "Whole Wheat Bread",
     "thumbnail": "/images/whole-wheat-bread.jpg",
     "category": "Bread",
-    "cuisines": ["American"],
-    "diets": ["Vegetarian"],
-    "cookware": ["Mixing Bowl"],
-    "time": { "prep": 20, "cook": 35, "rest": 90 },
+    "cuisines": [
+      "American"
+    ],
+    "diets": [
+      "Vegetarian"
+    ],
+    "cookware": [
+      "Mixing Bowl"
+    ],
+    "time": {
+      "prep": 20,
+      "cook": 35,
+      "rest": 90
+    },
     "servings": 24,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A hearty and wholesome homemade bread using a blend of whole wheat and white flour.",
     "ingredients": [
-      { "item": "warm water", "quantity": 4, "unit": "cup" },
-      { "item": "yeast", "quantity": 2, "unit": "pkg" },
-      { "item": "salt", "quantity": 1, "unit": "tbsp" },
-      { "item": "olive oil", "quantity": 0.33, "unit": "cup" },
-      { "item": "honey", "quantity": 0.33, "unit": "cup" },
-      { "item": "whole wheat flour", "quantity": "3-4", "unit": "cup" },
-      { "item": "white flour", "quantity": "5-6", "unit": "cup" }
+      {
+        "item": "warm water",
+        "quantity": 4,
+        "unit": "cup"
+      },
+      {
+        "item": "yeast",
+        "quantity": 2,
+        "unit": "pkg"
+      },
+      {
+        "item": "salt",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "item": "olive oil",
+        "quantity": 0.33,
+        "unit": "cup"
+      },
+      {
+        "item": "honey",
+        "quantity": 0.33,
+        "unit": "cup"
+      },
+      {
+        "item": "whole wheat flour",
+        "quantity": "3-4",
+        "unit": "cup"
+      },
+      {
+        "item": "white flour",
+        "quantity": "5-6",
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Mix warm water, yeast, salt, olive oil, and honey and allow to proof.",
@@ -1935,24 +4520,68 @@
     "title": "Split Pea Soup",
     "thumbnail": "/images/split-pea-soup.jpg",
     "category": "Soup",
-    "cuisines": ["American"],
+    "cuisines": [
+      "American"
+    ],
     "diets": [],
-    "cookware": ["Large Pot"],
-    "time": { "prep": 15, "cook": 180, "rest": 480 },
+    "cookware": [
+      "Large Pot"
+    ],
+    "time": {
+      "prep": 15,
+      "cook": 180,
+      "rest": 480
+    },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
     "description": "A thick and hearty soup made from dried split peas and a meaty ham bone.",
     "ingredients": [
-      { "item": "split green peas", "quantity": 2, "unit": "lbs" },
-      { "item": "cold water", "quantity": 4, "unit": "quart" },
-      { "item": "meaty ham bone", "quantity": 1, "unit": "count" },
-      { "item": "sliced onion", "quantity": 3, "unit": "cup" },
-      { "item": "salt", "quantity": 2, "unit": "tsp" },
-      { "item": "pepper", "quantity": 1, "unit": "tsp" },
-      { "item": "marjoram", "quantity": 0.5, "unit": "tsp" },
-      { "item": "diced celery", "quantity": 2, "unit": "cup" },
-      { "item": "diced carrots", "quantity": 2, "unit": "cup" }
+      {
+        "item": "split green peas",
+        "quantity": 2,
+        "unit": "lbs"
+      },
+      {
+        "item": "cold water",
+        "quantity": 4,
+        "unit": "quart"
+      },
+      {
+        "item": "meaty ham bone",
+        "quantity": 1,
+        "unit": "count"
+      },
+      {
+        "item": "sliced onion",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "item": "salt",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "item": "pepper",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "item": "marjoram",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "item": "diced celery",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "item": "diced carrots",
+        "quantity": 2,
+        "unit": "cup"
+      }
     ],
     "instructions": [
       "Cover peas with 4 quarts of cold water and soak overnight.",
