@@ -4,24 +4,29 @@
 
 @layer base {
   body {
-    font-family: 'Inter', sans-serif;
-    @apply bg-slate-50 text-slate-800;
+    @apply bg-slate-50 text-slate-800 transition-all duration-300 dark:bg-slate-900 dark:text-slate-200;
   }
-  h1 { @apply text-4xl md:text-5xl font-bold text-slate-900; }
-  h2 { @apply text-2xl md:text-3xl font-semibold text-slate-900; }
-  h3 { @apply text-xl font-semibold text-slate-900; }
-  a { @apply text-green-700 hover:text-green-600 transition-colors; }
-  @media (min-width: 1024px) and (max-width: 2400px) {
-    body.sidebar-open main,
-    body.sidebar-open footer {
-      @apply pr-[12rem];
-    }
+  h1 { @apply text-4xl md:text-5xl font-bold text-slate-900 dark:text-white; }
+  h2 { @apply text-2xl md:text-3xl font-semibold text-slate-900 dark:text-white; }
+  h3 { @apply text-xl font-semibold text-slate-900 dark:text-slate-100; }
+  a { @apply text-green-600 hover:text-green-500 dark:text-green-400 dark:hover:text-green-300 transition-colors; }
+  .main-content-shifted { @apply lg:mr-[12rem]; }
+}
+
+@media (min-width: 1024px) and (max-width: 2048px) {
+  body.sidebar-open main,
+  body.sidebar-open footer {
+    @apply pr-[12rem];
   }
 }
 
 @layer components {
+  /* Cards */
   .card {
-    @apply block bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300;
+    @apply block bg-white border border-slate-200 rounded-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 dark:bg-slate-800 dark:border-slate-700;
+  }
+  .card-static {
+    @apply bg-white border border-slate-200 rounded-lg transition-all duration-300 dark:bg-slate-800 dark:border-slate-700;
   }
   .card-image {
     @apply w-full aspect-video object-cover;
@@ -44,17 +49,15 @@
   .card-btn.active-plus {
     @apply bg-green-600 text-white opacity-100;
   }
+  /* Buttons */
   .btn {
     @apply px-4 py-2 rounded-md font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
-  .sort-btn:disabled {
-    @apply bg-slate-100 text-slate-400 cursor-not-allowed hover:bg-slate-100;
-  }
   .btn-primary {
-    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500 dark:bg-green-500 dark:hover:bg-green-600;
   }
   .btn-secondary {
-    @apply bg-slate-200 text-slate-800 hover:bg-slate-300 focus:ring-green-500;
+    @apply bg-slate-200 text-slate-800 hover:bg-slate-300 focus:ring-green-500 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600;
   }
   .btn-favorite.active {
     @apply bg-pink-600 text-white hover:bg-pink-700 focus:ring-pink-500;
@@ -62,26 +65,31 @@
   .btn-remove {
     @apply flex items-center justify-center h-7 w-7 rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-all;
   }
-  .recipe-header {
-    @apply flex items-center justify-between p-3 mb-2 bg-slate-200 rounded-lg;
-  }
   .sort-group {
     @apply flex flex-wrap items-center gap-2 mb-6;
   }
   .sort-btn {
-    @apply px-3 py-1 text-sm rounded-full cursor-pointer transition-colors bg-slate-200 text-slate-700 hover:bg-slate-300;
+    @apply px-3 py-1 text-sm rounded-full cursor-pointer transition-colors bg-slate-200 text-slate-700 hover:bg-slate-300 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600;
   }
   .sort-btn.active {
-    @apply bg-green-600 text-white font-semibold shadow-md;
+    @apply bg-green-600 text-white font-semibold shadow-md dark:bg-green-500;
   }
-  .ingredient-item {
-    @apply flex items-center p-3 bg-white border rounded-lg cursor-pointer;
+  .sort-btn:disabled {
+    @apply bg-slate-100 text-slate-400 cursor-not-allowed hover:bg-slate-100;
   }
+  /* Sidebar */
   .collapse-arrow {
     @apply transition-transform duration-300;
   }
   .collapse-arrow.open {
     @apply rotate-90;
+  }
+  /* Other */
+  .recipe-header {
+    @apply flex items-center justify-between p-3 mb-2 bg-slate-200 rounded-lg transition-all duration-300 dark:bg-slate-700;
+  }
+  .ingredient-item {
+    @apply flex items-center p-3 bg-white border rounded-lg cursor-pointer transition-all duration-300 dark:bg-slate-800 dark:border-slate-700;
   }
 }
 

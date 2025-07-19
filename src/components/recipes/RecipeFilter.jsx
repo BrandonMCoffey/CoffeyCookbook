@@ -152,7 +152,7 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
 
   return (
     <div>
-      <div className="space-y-4 mb-12 p-4 border rounded-lg bg-white">
+      <div className="space-y-4 mb-12 p-4 card-static">
         <div className="flex justify-between items-center"><h2 className="text-xl font-bold">Filters</h2><button onClick={clearAllFilters} className="text-sm text-blue-600 hover:underline">Clear All</button></div>
         <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
         <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>

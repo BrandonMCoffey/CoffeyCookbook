@@ -36,7 +36,7 @@ export default function ActiveRecipeSidebar({ allRecipes }) {
 
   return (
     <div className="hidden lg:block">
-      <aside className={`fixed top-16 right-0 h-[calc(100vh-4rem)] w-full max-w-sm bg-white shadow-xl z-20 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <aside className={`fixed top-16 right-0 h-[calc(100vh-4rem)] w-full max-w-sm card-static shadow-xl z-20 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <button 
             onClick={() => setIsOpen(!isOpen)}
             className="absolute top-4 -left-10 bg-slate-800 text-white p-2 rounded-l-md shadow-lg z-40 hover:bg-slate-700 transition-colors"

@@ -146,8 +146,8 @@ export default function ShoppingList({ allRecipes }) {
 
   return (
     <div>
-      <div className="space-y-4 mb-8 p-4 border rounded-lg bg-white">
-        <div className="sort-group"><span className="font-semibold text-slate-800">Sort by:</span>{PRIMARY_SORT_OPTIONS.map(option => <button key={option} onClick={() => setPrimarySort(option)} className={`sort-btn ${primarySort === option ? 'active' : ''}`}>{option}</button>)}</div>
+      <div className="space-y-4 mb-8 p-4 card-static">
+        <div className="sort-group"><span className="font-semibold">Sort by:</span>{PRIMARY_SORT_OPTIONS.map(option => <button key={option} onClick={() => setPrimarySort(option)} className={`sort-btn ${primarySort === option ? 'active' : ''}`}>{option}</button>)}</div>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
            <div className="flex items-center"><input type="checkbox" id="combined-toggle" checked={combinedList} onChange={handleCombinedToggle} className="h-4 w-4 rounded text-green-600 focus:ring-green-500" /><label htmlFor="combined-toggle" className="ml-2 text-sm text-slate-700 cursor-pointer">Combined list</label></div>
            <div className="flex items-center"><input type="checkbox" id="group-checked-toggle" checked={groupChecked} onChange={handleGroupToggle} className="h-4 w-4 rounded text-green-600 focus:ring-green-500" /><label htmlFor="group-checked-toggle" className="ml-2 text-sm text-slate-700 cursor-pointer">Group checked at bottom</label></div>
@@ -164,7 +164,7 @@ export default function ShoppingList({ allRecipes }) {
                 return (
                 <label key={ing.item + ing.unit} className="ingredient-item">
                     <input type="checkbox" checked={isChecked} onChange={() => handleCheckChange(ing.sources, true)} className="h-5 w-5 rounded text-green-600 focus:ring-green-500" />
-                    <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : 'text-gray-800'}`}>
+                    <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : ''}`}>
                     {ing.totalQuantity === 0
                         ? `${ing.item}, to taste`
                         : `${formatQuantity(ing.totalQuantity)} ${ing.unit} ${ing.item}`

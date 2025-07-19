@@ -25,7 +25,7 @@ const totalTime = (recipe.time.prep || 0) + (recipe.time.cook || 0) + (recipe.ti
   <main class="max-w-4xl mx-auto p-4">
     <h1 class="text-5xl font-bold mb-2">{recipe.title}</h1>
     <p class="text-lg text-slate-600 mb-4">{recipe.description}</p>
-    <img src={recipe.thumbnail} onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} alt={`Image of ${recipe.title}`} class="w-full h-96 object-cover rounded-lg mb-6" />
+    <img src={recipe.thumbnail} alt={`Image of ${recipe.title}`} class="w-full h-96 object-cover rounded-lg mb-6" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} />
 
     <ActionButtons recipeId={recipe.id} client:load />
 
