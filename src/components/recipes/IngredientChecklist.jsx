@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { formatQuantity } from '../../utils/formatters.js';
 
 export default function IngredientChecklist({ ingredients }) {
   const [checkedItems, setCheckedItems] = useState(new Set());
@@ -22,7 +23,10 @@ export default function IngredientChecklist({ ingredients }) {
               className="h-5 w-5 rounded text-green-600 focus:ring-green-500"
             />
             <span className={`ml-3 ${isChecked ? 'text-gray-400 line-through' : 'text-gray-800'}`}>
-              {ing.quantity} {ing.unit} {ing.item}
+              {ing.quantity === 0
+                ? `${ing.item}, to taste`
+                : `${formatQuantity(ing.quantity)} ${ing.unit} ${ing.item}`
+              }
             </span>
           </label>
         );

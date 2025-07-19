@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { formatQuantity } from '../../utils/formatters.js';
 
 const PRIMARY_SORT_OPTIONS = ['Default', 'Alphabetical (A-Z)'];
 
@@ -17,14 +18,19 @@ function RecipeIngredientGroup({ recipe, checkedItems, handleCheckChange, primar
   }, [recipe.ingredients, primarySort, groupChecked, checkedItems]);
 
   return (
-    <div className="space-y-3">
+    <div className="space-y-3 mt-3 pl-4 border-l-2">
       {sortedIngredients.map((ing, index) => {
         const key = `${recipe.id}_${ing.item.toLowerCase()}_${ing.unit}`;
         const isChecked = checkedItems.has(key);
         return (
           <label key={index} className="ingredient-item">
             <input type="checkbox" checked={isChecked} onChange={() => handleCheckChange(key)} className="h-5 w-5 rounded text-green-600 focus:ring-green-500" />
-            <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : 'text-gray-800'}`}>{ing.quantity} {ing.unit} {ing.item}</span>
+            <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : 'text-gray-800'}`}>
+              {ing.quantity === 0
+                ? `${ing.item}, to taste`
+                : `${formatQuantity(ing.quantity)} ${ing.unit} ${ing.item}`
+              }
+            </span>
           </label>
         );
       })}
@@ -150,21 +156,26 @@ export default function ShoppingList({ allRecipes }) {
 
       {combinedList ? (
         <div className="space-y-3">
-          {sortedAggregatedIngredients.map((ing) => {
-            const isChecked = ing.sources.length > 0 && ing.sources.every(s => checkedItems.has(`${s.recipeId}_${s.item.toLowerCase()}_${s.unit}`));
-            //const checkedCount = ing.sources.filter(s => checkedItems.has(`${s.recipeId}_${s.item.toLowerCase()}_${s.unit}`)).length;
-            const totalSources = ing.sources.length;
+            {sortedAggregatedIngredients.map((ing) => {
+                const isChecked = ing.sources.length > 0 && ing.sources.every(s => checkedItems.has(`${s.recipeId}_${s.item.toLowerCase()}_${s.unit}`));
+                const checkedCount = ing.sources.filter(s => checkedItems.has(`${s.recipeId}_${s.item.toLowerCase()}_${s.unit}`)).length;
+                const totalSources = ing.sources.length;
 
-            return (
-              <label key={ing.item + ing.unit} className="ingredient-item">
-                <input type="checkbox" checked={isChecked} onChange={() => handleCheckChange(ing.sources, true)} className="h-5 w-5 rounded text-green-600 focus:ring-green-500" />
-                <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : 'text-gray-800'}`}>{ing.totalQuantity} {ing.unit} {ing.item}</span>
-                {totalSources > 1 && (<span className="text-sm text-slate-500 ml-2 whitespace-nowrap">({totalSources} recipes)</span>)}
-              </label>
-            );
-          })}
-        </div>
-      ) : (
+                return (
+                <label key={ing.item + ing.unit} className="ingredient-item">
+                    <input type="checkbox" checked={isChecked} onChange={() => handleCheckChange(ing.sources, true)} className="h-5 w-5 rounded text-green-600 focus:ring-green-500" />
+                    <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : 'text-gray-800'}`}>
+                    {ing.totalQuantity === 0
+                        ? `${ing.item}, to taste`
+                        : `${formatQuantity(ing.totalQuantity)} ${ing.unit} ${ing.item}`
+                    }
+                    </span>
+                    {totalSources > 1 && (<span className="text-sm text-slate-500 ml-2 whitespace-nowrap">({checkedCount}/{totalSources})</span>)}
+                </label>
+                );
+            })}
+            </div>
+        ) : (
         <div className="space-y-4">
           {activeRecipes.map(recipe => {
             const isCollapsed = collapsedRecipes.has(recipe.id);
