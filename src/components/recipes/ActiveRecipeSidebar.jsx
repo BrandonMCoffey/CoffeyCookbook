@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { formatTime } from '../../utils/formatters.js';
 
 export default function ActiveRecipeSidebar({ allRecipes }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,14 +7,9 @@ export default function ActiveRecipeSidebar({ allRecipes }) {
 
   useEffect(() => {
     const bodyEl = document.body;
-    if (isOpen) {
-      bodyEl.classList.add('sidebar-open');
-    } else {
-      bodyEl.classList.remove('sidebar-open');
-    }
-    return () => {
-      bodyEl.classList.remove('sidebar-open');
-    };
+    if (isOpen) bodyEl.classList.add('sidebar-open');
+    else bodyEl.classList.remove('sidebar-open');
+    return () => bodyEl.classList.remove('sidebar-open');
   }, [isOpen]);
 
   const updateActiveRecipes = useCallback(() => {
@@ -37,8 +33,6 @@ export default function ActiveRecipeSidebar({ allRecipes }) {
     localStorage.setItem('active_recipes', JSON.stringify(activeIds));
     window.dispatchEvent(new Event('storageupdate'));
   };
-
-  const calculateTotalTime = (time) => (time.prep || 0) + (time.cook || 0) + (time.rest || 0);
 
   return (
     <div className="hidden lg:block">
@@ -66,19 +60,22 @@ export default function ActiveRecipeSidebar({ allRecipes }) {
             </div>
             
             <div className="flex-grow overflow-y-auto p-4 space-y-4">
-                {activeRecipes.length > 0 ? activeRecipes.map(recipe => (
-                    <div key={recipe.id} className="flex gap-4 p-2 border rounded-md">
-                        <img src={recipe.thumbnail} onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} alt="" className="w-20 h-20 object-cover rounded-md flex-shrink-0" />
-                        <div className="flex-grow">
-                            <h3 className="font-semibold">{recipe.title}</h3>
-                            <p className="text-sm text-slate-500">Time: {calculateTotalTime(recipe.time)} min</p>
-                            <p className="text-sm text-slate-500">Cookware: {recipe.cookware?.length || 0} items</p>
+                {activeRecipes.length > 0 ? activeRecipes.map(recipe => {
+                    const totalTime = (recipe.time.prep || 0) + (recipe.time.cook || 0) + (recipe.time.rest || 0);
+                    return (
+                        <div key={recipe.id} className="flex gap-4 p-2 border rounded-md">
+                            <img src={recipe.thumbnail} onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} alt="" className="w-20 h-20 object-cover rounded-md flex-shrink-0" />
+                            <div className="flex-grow">
+                                <h3 className="font-semibold">{recipe.title}</h3>
+                                <p className="text-sm text-slate-500">Time: {formatTime(totalTime)}</p>
+                                <p className="text-sm text-slate-500">Cookware: {recipe.cookware?.length || 0} items</p>
+                            </div>
+                            <button onClick={(e) => handleRemoveRecipe(e, recipe.id)} className="btn-remove self-start flex-shrink-0" title="Remove Recipe">
+                                <span className="font-bold text-sm">×</span>
+                            </button>
                         </div>
-                        <button onClick={(e) => handleRemoveRecipe(e, recipe.id)} className="btn-remove self-start flex-shrink-0" title="Remove Recipe">
-                            <span className="font-bold text-sm">×</span>
-                        </button>
-                    </div>
-                )) : <p className="text-slate-500 text-center mt-8">No active recipes.</p>}
+                    );
+                }) : <p className="text-slate-500 text-center mt-8">No active recipes.</p>}
             </div>
         </div>
       </aside>
