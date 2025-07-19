@@ -23,8 +23,26 @@
   .card-body {
     @apply p-4;
   }
+  .card-actions {
+    @apply absolute top-2 right-2 flex flex-col gap-2 z-10;
+  }
+  .card-btn {
+    @apply h-10 w-10 rounded-full flex items-center justify-center transition-all duration-200;
+  }
+  .card-btn.inactive {
+    @apply bg-white/70 text-slate-800 backdrop-blur-sm opacity-0 group-hover:opacity-100 hover:bg-white;
+  }
+  .card-btn.active-heart {
+    @apply bg-pink-600 text-white opacity-100;
+  }
+  .card-btn.active-plus {
+    @apply bg-green-600 text-white opacity-100;
+  }
   .btn {
     @apply px-4 py-2 rounded-md font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .sort-btn:disabled {
+    @apply bg-slate-100 text-slate-400 cursor-not-allowed hover:bg-slate-100;
   }
   .btn-primary {
     @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
