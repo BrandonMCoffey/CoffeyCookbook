@@ -5,11 +5,9 @@
     "thumbnail": "/images/baked-ziti.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "30 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Skillet", "Large Pot", "9x13 Baking Dish"],
+    "time": { "prep": 15, "cook": 30, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Brandon",
@@ -42,11 +40,9 @@
     "thumbnail": "/images/mini-skillet-cookie.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "17-19 min",
-      "rest": "10 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Small Saucepan", "Handheld Mixer", "Mini Cast Iron Skillet"],
+    "time": { "prep": 15, "cook": 18, "rest": 10 },
     "servings": 2,
     "date": "2025-07-17",
     "author": "Brandon",
@@ -82,11 +78,9 @@
     "thumbnail": "/images/christmas-crack.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "10 min",
-      "cook": "6 min",
-      "rest": "30 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Cookie Sheet", "Medium Saucepan"],
+    "time": { "prep": 10, "cook": 6, "rest": 30 },
     "servings": 20,
     "date": "2025-07-17",
     "author": "Brandon",
@@ -119,11 +113,9 @@
     "thumbnail": "/images/white-bean-chicken-chili.jpg",
     "category": "Soup",
     "cuisines": ["American", "Mexican"],
-    "time": {
-      "prep": "10 min",
-      "cook": "30 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pot", "Wooden Spoon"],
+    "time": { "prep": 10, "cook": 30, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -166,11 +158,9 @@
     "thumbnail": "/images/chicken-florentine.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "French"],
-    "time": {
-      "prep": "10 min",
-      "cook": "25 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pan"],
+    "time": { "prep": 10, "cook": 25, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -214,11 +204,9 @@
     "thumbnail": "/images/homemade-hamburger-helper-cheeseburger-macaroni.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
-    "time": {
-      "prep": "5 min",
-      "cook": "25 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Skillet", "Saucepan"],
+    "time": { "prep": 5, "cook": 25, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -260,11 +248,9 @@
     "thumbnail": "/images/easy-chickpea-curry.jpg",
     "category": "Main Course",
     "cuisines": ["Indian"],
-    "time": {
-      "prep": "5 min",
-      "cook": "25 min",
-      "rest": "0 min"
-    },
+    "diets": ["Vegan", "Vegetarian", "Dairy-Free", "Gluten-Free"],
+    "cookware": ["Large Pot"],
+    "time": { "prep": 5, "cook": 25, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -304,11 +290,9 @@
     "thumbnail": "/images/arroz-con-leche.jpg",
     "category": "Dessert",
     "cuisines": ["Mexican", "Latin American"],
-    "time": {
-      "prep": "5 min",
-      "cook": "30 min",
-      "rest": "0 min"
-    },
+    "diets": ["Vegetarian", "Gluten-Free"],
+    "cookware": ["Medium Saucepan"],
+    "time": { "prep": 5, "cook": 30, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -345,11 +329,9 @@
     "thumbnail": "/images/tres-leches.jpg",
     "category": "Dessert",
     "cuisines": ["Mexican", "Latin American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "30 min",
-      "rest": "60 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Baking Dish", "Mixer"],
+    "time": { "prep": 15, "cook": 30, "rest": 60 },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -386,11 +368,9 @@
     "thumbnail": "/images/fideo.jpg",
     "category": "Main Course",
     "cuisines": ["Mexican"],
-    "time": {
-      "prep": "10 min",
-      "cook": "20 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Medium Pot", "Medium Saucepan"],
+    "time": { "prep": 10, "cook": 20, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -429,11 +409,9 @@
     "thumbnail": "/images/chicken-noodle-soup.jpg",
     "category": "Soup",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "45 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pot"],
+    "time": { "prep": 15, "cook": 45, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -465,11 +443,9 @@
     "thumbnail": "/images/chocolate-chip-cookies.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "12-15 min",
-      "rest": "30 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Large Bowl", "Baking Sheet"],
+    "time": { "prep": 15, "cook": 14, "rest": 30 },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -507,11 +483,9 @@
     "thumbnail": "/images/quiche.jpg",
     "category": "Main Course",
     "cuisines": ["French"],
-    "time": {
-      "prep": "20 min",
-      "cook": "45-55 min",
-      "rest": "15 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Pie Dish", "Mixer", "Large Bowl"],
+    "time": { "prep": 20, "cook": 50, "rest": 15 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -547,11 +521,9 @@
     "thumbnail": "/images/royal-broccoli-souffle.jpg",
     "category": "Side Dish",
     "cuisines": ["French"],
-    "time": {
-      "prep": "20 min",
-      "cook": "30-35 min",
-      "rest": "30 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Souffle Dish", "Food Processor", "Small Saucepan", "Large Bowl"],
+    "time": { "prep": 20, "cook": 33, "rest": 30 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -594,11 +566,9 @@
     "thumbnail": "/images/king-ranch-chicken-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["American", "Tex-Mex"],
-    "time": {
-      "prep": "20 min",
-      "cook": "40 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Bowl", "Casserole Dish"],
+    "time": { "prep": 20, "cook": 40, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Jackie",
@@ -631,11 +601,9 @@
     "thumbnail": "/images/orange-chicken.jpg",
     "category": "Main Course",
     "cuisines": ["Chinese-American"],
-    "time": {
-      "prep": "10 min",
-      "cook": "15 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Skillet"],
+    "time": { "prep": 10, "cook": 15, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -660,11 +628,9 @@
     "thumbnail": "/images/slow-cooked-bacon-ranch-chicken-pasta.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
-    "time": {
-      "prep": "10 min",
-      "cook": "3-6 hours",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Slow Cooker", "Medium Bowl"],
+    "time": { "prep": 10, "cook": 240, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -696,11 +662,9 @@
     "thumbnail": "/images/chicken-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
-    "time": {
-      "prep": "10 min",
-      "cook": "30 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["9x13 Baking Dish"],
+    "time": { "prep": 10, "cook": 30, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -728,11 +692,9 @@
     "thumbnail": "/images/grandmas-chicken-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
-    "time": {
-      "prep": "10 min",
-      "cook": "30-35 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["9x13 Baking Dish", "Medium Bowl"],
+    "time": { "prep": 10, "cook": 33, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -760,11 +722,9 @@
     "thumbnail": "/images/taco-soup.jpg",
     "category": "Soup",
     "cuisines": ["Mexican", "American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "45 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pot"],
+    "time": { "prep": 15, "cook": 45, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -805,11 +765,9 @@
     "thumbnail": "/images/honey-walnut-shrimp.jpg",
     "category": "Main Course",
     "cuisines": ["Chinese-American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "10 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Small Saucepan", "Large Skillet", "Medium Bowl"],
+    "time": { "prep": 15, "cook": 10, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -847,11 +805,9 @@
     "thumbnail": "/images/enchilada-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["Mexican", "Tex-Mex"],
-    "time": {
-      "prep": "15 min",
-      "cook": "35 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["9x13 Baking Dish"],
+    "time": { "prep": 15, "cook": 35, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -886,11 +842,9 @@
     "thumbnail": "/images/shrimp-jambalaya.jpg",
     "category": "Main Course",
     "cuisines": ["Cajun", "Creole"],
-    "time": {
-      "prep": "15 min",
-      "cook": "30 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pot"],
+    "time": { "prep": 15, "cook": 30, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -927,11 +881,9 @@
     "thumbnail": "/images/chicken-parmesan.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "20 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Mixing Bowls", "Deep Skillet", "9x13 Baking Dish"],
+    "time": { "prep": 15, "cook": 20, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -968,11 +920,9 @@
     "thumbnail": "/images/white-wine-braised-chicken.jpg",
     "category": "Main Course",
     "cuisines": ["French"],
-    "time": {
-      "prep": "10 min",
-      "cook": "40 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Dutch Oven"],
+    "time": { "prep": 10, "cook": 40, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Andrew",
@@ -1006,11 +956,9 @@
     "thumbnail": "/images/ratatouille.jpg",
     "category": "Main Course",
     "cuisines": ["French"],
-    "time": {
-      "prep": "30 min",
-      "cook": "60 min",
-      "rest": "0 min"
-    },
+    "diets": ["Vegan", "Vegetarian", "Gluten-Free", "Dairy-Free"],
+    "cookware": ["Cast Iron Skillet"],
+    "time": { "prep": 30, "cook": 60, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1047,11 +995,9 @@
     "thumbnail": "/images/deep-dish-pizza.jpg",
     "category": "Main Course",
     "cuisines": ["American", "Italian"],
-    "time": {
-      "prep": "30 min",
-      "cook": "25-30 min",
-      "rest": "120 min"
-    },
+    "diets": [],
+    "cookware": ["Cast Iron Skillet", "Medium Bowl"],
+    "time": { "prep": 30, "cook": 28, "rest": 120 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1101,11 +1047,9 @@
     "thumbnail": "/images/pie-crust.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "10 min",
-      "cook": "0 min",
-      "rest": "30 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Mixing Bowl"],
+    "time": { "prep": 10, "cook": 0, "rest": 30 },
     "servings": 2,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1131,11 +1075,9 @@
     "thumbnail": "/images/dutch-apple-pie.jpg",
     "category": "Dessert",
     "cuisines": ["American", "Dutch"],
-    "time": {
-      "prep": "20 min",
-      "cook": "45-55 min",
-      "rest": "30 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Pie Plate", "Mixing Bowl"],
+    "time": { "prep": 20, "cook": 50, "rest": 30 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1170,11 +1112,9 @@
     "thumbnail": "/images/chicken-pot-pie.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
-    "time": {
-      "prep": "20 min",
-      "cook": "45 min",
-      "rest": "10 min"
-    },
+    "diets": [],
+    "cookware": ["Cast Iron Skillet", "Pie Plate"],
+    "time": { "prep": 20, "cook": 45, "rest": 10 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1220,11 +1160,9 @@
     "thumbnail": "/images/chicken-tikka-masala.jpg",
     "category": "Main Course",
     "cuisines": ["Indian"],
-    "time": {
-      "prep": "10 min",
-      "cook": "20 min",
-      "rest": "30 min"
-    },
+    "diets": [],
+    "cookware": ["Skillet", "Mixing Bowl"],
+    "time": { "prep": 10, "cook": 20, "rest": 30 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1264,11 +1202,9 @@
     "thumbnail": "/images/sausage-rigatoni.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "American"],
-    "time": {
-      "prep": "10 min",
-      "cook": "20 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pot", "Skillet"],
+    "time": { "prep": 10, "cook": 20, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1300,11 +1236,9 @@
     "thumbnail": "/images/white-mom-pork-chops.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
-    "time": {
-      "prep": "5 min",
-      "cook": "15 min",
-      "rest": "30 min"
-    },
+    "diets": [],
+    "cookware": ["Skillet"],
+    "time": { "prep": 5, "cook": 15, "rest": 30 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1345,11 +1279,9 @@
     "thumbnail": "/images/chocolate-eclair-cake.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "20 min",
-      "cook": "0 min",
-      "rest": "24 hours"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["9x13 Pan"],
+    "time": { "prep": 20, "cook": 0, "rest": 1440 },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1388,11 +1320,9 @@
     "thumbnail": "/images/biscuits-and-gravy.jpg",
     "category": "Breakfast",
     "cuisines": ["American"],
-    "time": {
-      "prep": "5 min",
-      "cook": "15 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Skillet", "Baking Sheet"],
+    "time": { "prep": 5, "cook": 15, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1418,11 +1348,9 @@
     "thumbnail": "/images/sugar-tarts.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "20 min",
-      "rest": "30 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Pie Pan"],
+    "time": { "prep": 15, "cook": 20, "rest": 30 },
     "servings": 18,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1452,11 +1380,9 @@
     "thumbnail": "/images/pot-roast.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "5 hours",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Dutch Oven"],
+    "time": { "prep": 15, "cook": 300, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1497,11 +1423,9 @@
     "thumbnail": "/images/stuffed-pork-tenderloin.jpg",
     "category": "Main Course",
     "cuisines": ["American", "French"],
-    "time": {
-      "prep": "20 min",
-      "cook": "25 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Cast Iron Skillet"],
+    "time": { "prep": 20, "cook": 25, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1537,11 +1461,9 @@
     "thumbnail": "/images/potato-and-lentil-soup.jpg",
     "category": "Soup",
     "cuisines": ["Vegetarian"],
-    "time": {
-      "prep": "10 min",
-      "cook": "35 min",
-      "rest": "0 min"
-    },
+    "diets": ["Vegan", "Vegetarian", "Dairy-Free", "Gluten-Free"],
+    "cookware": ["Dutch Oven"],
+    "time": { "prep": 10, "cook": 35, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1581,11 +1503,9 @@
     "thumbnail": "/images/banana-muffins-or-banana-bread.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "16-60 min",
-      "rest": "10 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Large Bowl", "Muffin Pan", "Loaf Pan"],
+    "time": { "prep": 15, "cook": 40, "rest": 10 },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1619,11 +1539,9 @@
     "thumbnail": "/images/shepherds-pie-or-cottage-pie.jpg",
     "category": "Main Course",
     "cuisines": ["British", "Irish"],
-    "time": {
-      "prep": "30 min",
-      "cook": "45 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pot", "Skillet", "Pie Plate"],
+    "time": { "prep": 30, "cook": 45, "rest": 0 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1674,11 +1592,9 @@
     "thumbnail": "/images/alfredo-sauce.jpg",
     "category": "Sauce",
     "cuisines": ["Italian"],
-    "time": {
-      "prep": "2 min",
-      "cook": "10 min",
-      "rest": "0 min"
-    },
+    "diets": ["Vegetarian", "Gluten-Free"],
+    "cookware": ["Saucepan"],
+    "time": { "prep": 2, "cook": 10, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1703,11 +1619,9 @@
     "thumbnail": "/images/bolognese-pasta.jpg",
     "category": "Main Course",
     "cuisines": ["Italian"],
-    "time": {
-      "prep": "20 min",
-      "cook": "3-4 hours",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Large Pot", "Dutch Oven"],
+    "time": { "prep": 20, "cook": 210, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1750,11 +1664,9 @@
     "thumbnail": "/images/improv-garlic-honey-chicken.jpg",
     "category": "Main Course",
     "cuisines": ["Asian"],
-    "time": {
-      "prep": "5 min",
-      "cook": "15 min",
-      "rest": "0 min"
-    },
+    "diets": [],
+    "cookware": ["Pan"],
+    "time": { "prep": 5, "cook": 15, "rest": 0 },
     "servings": 4,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1789,11 +1701,9 @@
     "thumbnail": "/images/potatoes-au-gratin.jpg",
     "category": "Side Dish",
     "cuisines": ["French", "American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "40 min",
-      "rest": "0 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Saucepan", "Baking Dish"],
+    "time": { "prep": 15, "cook": 40, "rest": 0 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1831,15 +1741,13 @@
   },
   {
     "id": "pretzel-jello-salad",
-    "title": "Pretzel JellO Salad",
+    "title": "Pretzel Jello Salad",
     "thumbnail": "/images/pretzel-jello-salad.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "20 min",
-      "cook": "10-15 min",
-      "rest": "8 hours"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["9x13 Baking Dish", "Large Bowl"],
+    "time": { "prep": 20, "cook": 13, "rest": 480 },
     "servings": 12,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1877,11 +1785,9 @@
     "thumbnail": "/images/tandoori-chicken-wings-with-yogurt-sauce.jpg",
     "category": "Appetizer",
     "cuisines": ["Indian"],
-    "time": {
-      "prep": "15 min",
-      "cook": "25 min",
-      "rest": "6 hours"
-    },
+    "diets": [],
+    "cookware": ["Large Bowl", "Medium Bowl", "Grill"],
+    "time": { "prep": 15, "cook": 25, "rest": 360 },
     "servings": 6,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1927,11 +1833,9 @@
     "thumbnail": "/images/apple-butter.jpg",
     "category": "Condiment",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "10-12 hours",
-      "rest": "0 min"
-    },
+    "diets": ["Vegan", "Vegetarian", "Gluten-Free", "Dairy-Free"],
+    "cookware": ["Slow Cooker"],
+    "time": { "prep": 15, "cook": 660, "rest": 0 },
     "servings": 32,
     "date": "2025-07-17",
     "author": "Eric",
@@ -1959,11 +1863,9 @@
     "thumbnail": "/images/creamy-cheesecake-pie.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "35-40 min",
-      "rest": "2 hours"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Pie Pan"],
+    "time": { "prep": 15, "cook": 38, "rest": 120 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",
@@ -2001,11 +1903,9 @@
     "thumbnail": "/images/whole-wheat-bread.jpg",
     "category": "Bread",
     "cuisines": ["American"],
-    "time": {
-      "prep": "20 min",
-      "cook": "35 min",
-      "rest": "90 min"
-    },
+    "diets": ["Vegetarian"],
+    "cookware": ["Mixing Bowl"],
+    "time": { "prep": 20, "cook": 35, "rest": 90 },
     "servings": 24,
     "date": "2025-07-17",
     "author": "Eric",
@@ -2036,11 +1936,9 @@
     "thumbnail": "/images/split-pea-soup.jpg",
     "category": "Soup",
     "cuisines": ["American"],
-    "time": {
-      "prep": "15 min",
-      "cook": "3 hours",
-      "rest": "8 hours"
-    },
+    "diets": [],
+    "cookware": ["Large Pot"],
+    "time": { "prep": 15, "cook": 180, "rest": 480 },
     "servings": 8,
     "date": "2025-07-17",
     "author": "Eric",

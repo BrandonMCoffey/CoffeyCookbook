@@ -3,23 +3,25 @@ import Layout from '../../layouts/Layout.astro';
 import RecipeFilter from '../../components/recipes/RecipeFilter.jsx';
 import type { Recipe } from '../../types';
 
-const allJsonFiles = await import.meta.glob('/src/content/recipes/*.json');
+const allJsonFiles = await import.meta.glob('/src/data/*.json');
 const allRecipes = (await Promise.all(
   Object.values(allJsonFiles).map(async (getJson) => (await getJson() as { default: Recipe[] }).default)
 )).flat() as Recipe[];
 
 const categoryCounts: Record<string, number> = {};
 const cuisineCounts: Record<string, number> = {};
+const dietCounts: Record<string, number> = {};
 
 allRecipes.forEach(recipe => {
   if (recipe.category) {
     categoryCounts[recipe.category] = (categoryCounts[recipe.category] || 0) + 1;
   }
-  if (recipe.cuisines) {
-    recipe.cuisines.forEach(cuisine => {
-      cuisineCounts[cuisine] = (cuisineCounts[cuisine] || 0) + 1;
-    });
-  }
+  recipe.cuisines?.forEach(cuisine => {
+    cuisineCounts[cuisine] = (cuisineCounts[cuisine] || 0) + 1;
+  });
+  recipe.diets?.forEach(diet => {
+    dietCounts[diet] = (dietCounts[diet] || 0) + 1;
+  });
 });
 
 type TagCount = {
@@ -35,6 +37,7 @@ const toSortedArray = (countsObj: Record<string, number>): TagCount[] => {
 
 const sortedCategories = toSortedArray(categoryCounts);
 const sortedCuisines = toSortedArray(cuisineCounts);
+const sortedDiets = toSortedArray(dietCounts);
 ---
 
 <Layout title="All Recipes">
@@ -45,6 +48,7 @@ const sortedCuisines = toSortedArray(cuisineCounts);
       allRecipes={allRecipes}
       categories={sortedCategories}
       cuisines={sortedCuisines}
+      diets={sortedDiets}
       client:load
     />
   </main>

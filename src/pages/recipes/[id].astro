@@ -21,10 +21,9 @@ export async function getStaticPaths() {
 
 const { recipe } = Astro.props;
 
-const prepMinutes = parseInt(recipe.time.prep) || 0;
-const cookMinutes = parseInt(recipe.time.cook) || 0;
-const restMinutes = parseInt(recipe.time.rest) || 0;
-recipe.time.total = `${prepMinutes + cookMinutes + restMinutes} min`;
+const prepMinutes = recipe.time.prep;
+const cookMinutes = recipe.time.cook;
+const restMinutes = recipe.time.rest;
 ---
 <Layout title={recipe.title}>
   <main class="container mx-auto p-4 max-w-4xl">
@@ -35,9 +34,9 @@ recipe.time.total = `${prepMinutes + cookMinutes + restMinutes} min`;
     <ActionButtons recipeId={recipe.id} client:load />
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8 text-center">
-      <div><div class="font-bold">Prep Time</div><div>{recipe.time.prep}</div></div>
-      <div><div class="font-bold">Cook Time</div><div>{recipe.time.cook}</div></div>
-      <div><div class="font-bold">Total Time</div><div>{recipe.time.total}</div></div>
+      <div><div class="font-bold">Prep Time</div><div>{recipe.time.prep} min</div></div>
+      <div><div class="font-bold">Cook Time</div><div>{recipe.time.cook} min</div></div>
+      <div><div class="font-bold">Total Time</div><div>{prepMinutes + cookMinutes + restMinutes} min</div></div>
       <div><div class="font-bold">Servings</div><div>{recipe.servings}</div></div>
     </div>
 
@@ -55,5 +54,26 @@ recipe.time.total = `${prepMinutes + cookMinutes + restMinutes} min`;
         </ol>
       </div>
     </div>
+
+    <div class="my-8 flex flex-wrap gap-4">
+    {recipe.cookware?.length > 0 && (
+      <div>
+        <h3 class="font-semibold mb-2">Cookware</h3>
+        <div class="flex flex-wrap gap-2">
+          {recipe.cookware.map(item => <span class="bg-slate-200 text-slate-700 text-sm px-3 py-1 rounded-full">{item}</span>)}
+        </div>
+      </div>
+    )}
+    {recipe.diets?.length > 0 && (
+      <div>
+        <h3 class="font-semibold mb-2">Diets</h3>
+        <div class="flex flex-wrap gap-2">
+          {recipe.diets.map(item => <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">{item}</span>)}
+        </div>
+      </div>
+    )}
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8"></div>
   </main>
 </Layout>

@@ -1,23 +1,23 @@
-// src/types.ts
 export type Recipe = {
   id: string;
   title: string;
+  description: string;
   thumbnail: string;
-  category: string;
-  cuisines: string[];
-  time: {
-    prep: string;
-    cook: string;
-    rest: string;
-    total?: string; // Optional property
-  };
-  servings: number;
   date: string;
   author: string;
-  description: string;
+  category: string;
+  cuisines: string[];
+  diets: string[];
+  cookware: string[];
+  time: {
+    prep: number;
+    cook: number;
+    rest: number;
+  };
+  servings: number;
   ingredients: {
     item: string;
-    quantity: number;
+    quantity: number | string;
     unit: string;
   }[];
   instructions: string[];
