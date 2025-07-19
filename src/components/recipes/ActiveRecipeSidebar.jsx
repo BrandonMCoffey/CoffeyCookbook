@@ -4,6 +4,18 @@ export default function ActiveRecipeSidebar({ allRecipes }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeRecipes, setActiveRecipes] = useState([]);
 
+  useEffect(() => {
+    const bodyEl = document.body;
+    if (isOpen) {
+      bodyEl.classList.add('sidebar-open');
+    } else {
+      bodyEl.classList.remove('sidebar-open');
+    }
+    return () => {
+      bodyEl.classList.remove('sidebar-open');
+    };
+  }, [isOpen]);
+
   const updateActiveRecipes = useCallback(() => {
     const activeIds = JSON.parse(localStorage.getItem('active_recipes') || '[]');
     const filtered = allRecipes.filter(recipe => activeIds.includes(recipe.id));
@@ -12,10 +24,8 @@ export default function ActiveRecipeSidebar({ allRecipes }) {
   
   useEffect(() => {
     updateActiveRecipes();
-    
     const handleStorageUpdate = () => updateActiveRecipes();
     window.addEventListener('storageupdate', handleStorageUpdate);
-    
     return () => {
       window.removeEventListener('storageupdate', handleStorageUpdate);
     };

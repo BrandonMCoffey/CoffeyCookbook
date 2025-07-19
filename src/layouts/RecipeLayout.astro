@@ -21,16 +21,14 @@ const { title } = Astro.props;
 		<title>{title} | My Recipes</title>
 	</head>
 	<body class="bg-slate-50 text-slate-800">
-		<header class="bg-white shadow-md sticky top-0 z-50">
+		<header class="bg-white shadow-md sticky top-0 z-30">
 			<nav class="container mx-auto px-4 flex justify-between items-center h-16">
-				<a href="/recipes/" class="text-2xl font-bold text-green-700">Recipe Site</a>
-
+				<a href="/" class="text-2xl font-bold text-green-700">Recipe Site</a>
 				<div class="hidden md:flex space-x-6 items-center">
 					<a href="/recipes">All Recipes</a>
-					<a href="/recipes/favorites">Favorites</a>
+					<a href="/favorites">Favorites</a>
 					<a href="/recipes/shopping-list">Shopping List</a>
 				</div>
-				
 				<div class="md:hidden">
 					<button id="menu-btn" type="button" class="z-50 block hamburger md:hidden focus:outline-none">
 						<span class="hamburger-top"></span>
@@ -39,32 +37,30 @@ const { title } = Astro.props;
 					</button>
 				</div>
 			</nav>
-
 			<div id="menu" class="hidden md:hidden">
 				<div class="absolute z-40 flex flex-col items-center self-end py-8 mt-1 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
 					<a href="/recipes" class="hover:text-green-700">All Recipes</a>
-					<a href="/recipes/favorites" class="hover:text-green-700">Favorites</a>
+					<a href="/favorites" class="hover:text-green-700">Favorites</a>
 					<a href="/recipes/shopping-list" class="hover:text-green-700">Shopping List</a>
 				</div>
 			</div>
 		</header>
 		
-		<main class="container mx-auto p-4 md:py-8">
+		<main class="container mx-auto p-4 md:py-8 transition-all duration-300 ease-in-out">
 			<slot />
 		</main>
 
-		<footer class="text-center p-8 mt-16 text-slate-500">
+		<footer class="text-center p-8 mt-16 text-slate-500 transition-all duration-300 ease-in-out">
 			<p></p>
 		</footer>
-
+        
 		<script>
-      const btn = document.getElementById('menu-btn')
-      const menu = document.getElementById('menu')
-
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('open')
-        menu.classList.toggle('hidden')
-      })
-    </script>
+            const btn = document.getElementById('menu-btn')
+            const menu = document.getElementById('menu')
+            btn.addEventListener('click', () => {
+                btn.classList.toggle('open')
+                menu.classList.toggle('hidden')
+            })
+        </script>
 	</body>
 </html>
