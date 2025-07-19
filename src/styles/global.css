@@ -11,9 +11,11 @@
   h2 { @apply text-2xl md:text-3xl font-semibold text-slate-900; }
   h3 { @apply text-xl font-semibold text-slate-900; }
   a { @apply text-green-700 hover:text-green-600 transition-colors; }
-  body.sidebar-open main,
-  body.sidebar-open footer {
-    @apply lg:pr-[24rem];
+  @media (min-width: 1024px) and (max-width: 2400px) {
+    body.sidebar-open main,
+    body.sidebar-open footer {
+      @apply pr-[12rem];
+    }
   }
 }
 
