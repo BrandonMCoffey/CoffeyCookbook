@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import RecipeFilter from '../../components/recipes/RecipeFilter.jsx';
+import ActiveRecipeSidebar from '../../components/recipes/ActiveRecipeSidebar.jsx';
 import type { Recipe } from '../../types';
 
 const allJsonFiles = await import.meta.glob('/src/content/recipes/*.json');
@@ -50,5 +51,8 @@ const sortedDiets = toSortedArray(dietCounts);
       diets={sortedDiets}
       client:load
     />
+
+    <ActiveRecipeSidebar allRecipes={allRecipes} client:load />
   </main>
 </Layout>
+

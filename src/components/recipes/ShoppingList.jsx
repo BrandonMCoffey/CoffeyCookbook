@@ -118,6 +118,7 @@ export default function ShoppingList({ allRecipes }) {
     const newCheckedItems = new Set([...checkedItems].filter(key => !key.startsWith(recipeId)));
     setCheckedItems(newCheckedItems);
     localStorage.setItem('shopping_list_checked', JSON.stringify(Array.from(newCheckedItems)));
+    window.dispatchEvent(new Event('storageupdate'));
   };
 
   const sortedAggregatedIngredients = useMemo(() => {

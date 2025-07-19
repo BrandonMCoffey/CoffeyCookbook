@@ -34,6 +34,7 @@ export default function CardActionButtons({ recipeId }) {
     e.preventDefault();
     updateStorage('active_recipes', recipeId);
     setIsActive(!isActive);
+    window.dispatchEvent(new Event('storageupdate'));
   };
 
   return (

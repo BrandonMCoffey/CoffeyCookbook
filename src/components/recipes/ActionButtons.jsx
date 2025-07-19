@@ -33,6 +33,7 @@ export default function ActionButtons({ recipeId }) {
   const handleActiveClick = () => {
     updateStorage('active_recipes', recipeId);
     setIsActive(!isActive);
+    window.dispatchEvent(new Event('storageupdate'));
   };
 
   return (
