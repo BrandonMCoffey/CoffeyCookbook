@@ -2,14 +2,12 @@
 import Layout from '../../layouts/RecipeLayout.astro';
 import ActionButtons from '../../components/recipes/ActionButtons.jsx';
 import IngredientChecklist from '../../components/recipes/IngredientChecklist.jsx';
-import { formatTime } from '../../utils/formatters.js';
 import type { Recipe } from '../../types';
+import { formatTime } from '../../utils/formatters.js';
 
 export async function getStaticPaths() {
   const allJsonFiles = await import.meta.glob('/src/content/recipes/*.json');
-  const allRecipes = (await Promise.all(
-    Object.values(allJsonFiles).map(async (getJson) => (await getJson() as { default: Recipe[] }).default)
-  )).flat();
+  const allRecipes = (await Promise.all(Object.values(allJsonFiles).map(async (getJson) => (await getJson() as { default: Recipe[] }).default))).flat();
 
   return allRecipes.map(recipe => ({
     params: { id: recipe.id },

@@ -16,6 +16,8 @@ export default function FavoritesList({ allRecipes }) {
   }
 
   return (
+    <div>
+    <h1 class="text-4xl font-bold mb-8">Your Favorites</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {favoriteRecipes.map((recipe) => (
           <a key={recipe.id} href={`/recipes/${recipe.id}/`} className="card group relative">
@@ -27,6 +29,7 @@ export default function FavoritesList({ allRecipes }) {
               </div>
           </a>
       ))}
+  </div>
   </div>
   );
 }

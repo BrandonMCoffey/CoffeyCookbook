@@ -146,6 +146,8 @@ export default function ShoppingList({ allRecipes }) {
 
   return (
     <div>
+      <h1 class="text-4xl font-bold mb-8">Shopping List</h1>
+      
       <div className="space-y-4 mb-8 p-4 card-static">
         <div className="sort-group"><span className="font-semibold">Sort by:</span>{PRIMARY_SORT_OPTIONS.map(option => <button key={option} onClick={() => setPrimarySort(option)} className={`sort-btn ${primarySort === option ? 'active' : ''}`}>{option}</button>)}</div>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2">

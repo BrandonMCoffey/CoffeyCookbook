@@ -152,6 +152,7 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
 
   return (
     <div>
+      <h1 class="text-4xl font-bold mb-8">All Recipes</h1>
       <div className="space-y-4 mb-12 p-4 card-static">
         <div className="flex justify-between items-center"><h2 className="text-xl font-bold">Filters</h2><button onClick={clearAllFilters} className="text-sm text-blue-600 hover:underline">Clear All</button></div>
         <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
