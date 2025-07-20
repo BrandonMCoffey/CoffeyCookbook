@@ -207,7 +207,7 @@ export default function ShoppingList({ allRecipes }) {
                     )}
                 </div>
                  <div className="flex items-center gap-2 flex-shrink-0">
-                    <a href={`/recipes/${recipe.id}/`} className="btn btn-secondary text-xs !px-2 !py-1">Visit Recipe</a>
+                    <a href={`/cookbook/${recipe.id}/`} className="btn btn-secondary text-xs !px-2 !py-1">Visit Recipe</a>
                     <button onClick={() => handleRemoveRecipe(recipe.id)} className="btn-remove" title="Remove Recipe"><span className="font-bold text-sm">×</span></button>
                 </div>
               </div>

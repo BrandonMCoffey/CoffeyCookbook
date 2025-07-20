@@ -1,13 +1,13 @@
 ---
 import Layout from '../../layouts/RecipeLayout.astro';
-import ActionButtons from '../../components/recipes/ActionButtons.jsx';
-import IngredientChecklist from '../../components/recipes/IngredientChecklist.jsx';
-import RecipeCard from '../../components/recipes/RecipeCard';
+import ActionButtons from '../../components/cookbook/ActionButtons.jsx';
+import IngredientChecklist from '../../components/cookbook/IngredientChecklist.jsx';
+import RecipeCard from '../../components/cookbook/RecipeCard';
 import type { Recipe } from '../../types';
 import { formatTime } from '../../utils/formatters.js';
 
 export async function getStaticPaths() {
-  const allJsonFiles = await import.meta.glob('/src/content/recipes/*.json');
+  const allJsonFiles = await import.meta.glob('/src/content/cookbook/*.json');
   const allRecipes = (await Promise.all(Object.values(allJsonFiles).map(async (getJson) => (await getJson() as { default: Recipe[] }).default))).flat() as Recipe[];
 
   return allRecipes.map(recipe => ({

@@ -53,7 +53,7 @@ export default function RecipeCard({ recipe }) {
   };
 
   return (
-    <a href={`/recipes/${recipe.id}/`} className="card group relative">
+    <a href={`/cookbook/${recipe.id}/`} className="card group relative">
         <div className="card-actions">
             <button
                 onClick={handleActiveClick}
