@@ -41,7 +41,7 @@
     @apply h-10 w-10 rounded-full flex items-center justify-center transition-all duration-200;
   }
   .card-btn.inactive {
-    @apply bg-white/70 text-slate-800 backdrop-blur-sm opacity-0 group-hover:opacity-100 hover:bg-white;
+    @apply bg-white/70 text-slate-800 backdrop-blur-sm opacity-0 group-hover:opacity-100 hover:bg-white dark:bg-slate-900/70 dark:text-slate-200 dark:hover:bg-slate-700;
   }
   .card-btn.active-heart {
     @apply bg-pink-600 text-white opacity-100;
@@ -49,18 +49,16 @@
   .card-btn.active-plus {
     @apply bg-green-600 text-white opacity-100;
   }
+  
   /* Buttons */
   .btn {
     @apply px-4 py-2 rounded-md font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
   .btn-primary {
-    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500 dark:bg-green-500 dark:hover:bg-green-600;
+    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500 dark:text-white dark:bg-green-500 dark:hover:bg-green-600;
   }
   .btn-secondary {
     @apply bg-slate-200 text-slate-800 hover:bg-slate-300 focus:ring-green-500 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600;
-  }
-  .btn-favorite.active {
-    @apply bg-pink-600 text-white hover:bg-pink-700 focus:ring-pink-500;
   }
   .btn-remove {
     @apply flex items-center justify-center h-7 w-7 rounded-full bg-slate-200 text-slate-600 hover:bg-red-500 hover:text-white transition-all;
@@ -75,21 +73,38 @@
     @apply bg-green-600 text-white font-semibold shadow-md dark:bg-green-500;
   }
   .sort-btn:disabled {
-    @apply bg-slate-100 text-slate-400 cursor-not-allowed hover:bg-slate-100;
+    @apply bg-slate-100 text-slate-400 cursor-not-allowed hover:bg-slate-100 dark:bg-slate-800 dark:text-slate-500 dark:hover:bg-slate-800;
   }
-  /* Sidebar */
+  
+  /* Badges & Tags */
+  .badge {
+    @apply text-sm px-3 py-1 rounded-full;
+  }
+  .badge-slate {
+    @apply badge bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300;
+  }
+  .badge-blue {
+    @apply badge bg-blue-100 text-blue-800 dark:bg-blue-900/70 dark:text-blue-300;
+  }
+  
+  /* Other Components */
+  .text-muted {
+    @apply text-slate-600 dark:text-slate-400;
+  }
+  .well {
+      @apply p-4 border-l-4 bg-green-50 border-green-400 text-green-800 dark:bg-green-900/50 dark:border-green-500 dark:text-green-300;
+  }
   .collapse-arrow {
     @apply transition-transform duration-300;
   }
   .collapse-arrow.open {
     @apply rotate-90;
   }
-  /* Other */
   .recipe-header {
     @apply flex items-center justify-between p-3 mb-2 bg-slate-200 rounded-lg transition-all duration-300 dark:bg-slate-700;
   }
   .ingredient-item {
-    @apply flex items-center p-3 bg-white border rounded-lg cursor-pointer transition-all duration-300 dark:bg-slate-800 dark:border-slate-700;
+    @apply flex items-center p-3 bg-white border border-slate-200 rounded-lg cursor-pointer transition-all duration-300 dark:bg-slate-800 dark:border-slate-700;
   }
 }
 
@@ -110,7 +125,7 @@
   left: 0;
   width: 24px;
   height: 2px;
-  background: #000;
+  @apply bg-slate-900 dark:bg-white;
   transform: rotate(0);
   transition: all 0.5s;
 }

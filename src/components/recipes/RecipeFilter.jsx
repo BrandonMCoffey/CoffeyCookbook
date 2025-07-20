@@ -154,24 +154,24 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
     <div>
       <h1 class="text-4xl font-bold mb-8">All Recipes</h1>
       <div className="space-y-4 mb-12 p-4 card-static">
-        <div className="flex justify-between items-center"><h2 className="text-xl font-bold">Filters</h2><button onClick={clearAllFilters} className="text-sm text-blue-600 hover:underline">Clear All</button></div>
+        <div className="flex justify-between items-center"><h2 className="text-xl font-bold">Filters</h2><button onClick={clearAllFilters} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">Clear All</button></div>
         <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
-        <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
+        <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div> 
         <div><h3 className="font-semibold mb-2">Diet</h3><div className="flex flex-wrap gap-2">{diets.map(({ name }) => { const count = dynamicDietCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeDiets, setActiveDiets, name)} className={`sort-btn ${activeDiets.has(name) ? 'active' : ''}`} disabled={!activeDiets.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t">
-          <div><h3 className="font-semibold mb-2">Max Time</h3><div className="flex flex-wrap gap-2">{TIME_RANGES.map(range => { const count = getCountForRange(range, 'time'); return (<button key={range.label} onClick={() => setTimeFilter(range)} className={`sort-btn ${timeFilter.label === range.label ? 'active' : ''}`} disabled={timeFilter.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-slate-200 dark:border-slate-700">
+          <div><h3 className="font-semibold mb-2">Max Time</h3><div className="flex flex-wrap gap-2">{TIME_RANGES.map(range => { const count = getCountForRange(range, 'time'); return (<button key={range.label} onClick={() => setTimeFilter(range)} className={`sort-btn ${timeFilter.label === range.label ? 'active' : ''}`} disabled={timeFilter.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div> 
           <div><h3 className="font-semibold mb-2">Cookware Items</h3><div className="flex flex-wrap gap-2">{COOKWARE_RANGES.map(range => { const count = getCountForRange(range, 'cookware'); return (<button key={range.label} onClick={() => setCookwareFilter(range)} className={`sort-btn ${cookwareFilter.label === range.label ? 'active' : ''}`} disabled={cookwareFilter.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
         </div>
       </div>
       <div className="mb-4"><p className="text-lg font-semibold">{filteredRecipes.length} Recipes Found</p></div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
         {filteredRecipes.map((recipe) => (
           <a key={recipe.id} href={`/recipes/${recipe.id}/`} className="card group relative">
             <CardActionButtons recipeId={recipe.id} />
-            <img src={recipe.thumbnail} alt={`Image of ${recipe.title}`} className="card-image" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} />
+            <img src={recipe.thumbnail} alt={`Image of ${recipe.title}`} className="card-image" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} /> 
             <div className="card-body">
               <h2>{recipe.title}</h2>
-              <p className="text-slate-600 mt-2">{recipe.description}</p>
+              <p className="text-muted mt-2">{recipe.description}</p>
             </div>
           </a>
         ))}

@@ -22,12 +22,12 @@ export default function ActiveList({ allRecipes }) {
         {activeRecipes.map((recipe) => (
             <a key={recipe.id} href={`/recipes/${recipe.id}/`} className="card group relative">
                 <CardActionButtons recipeId={recipe.id} />
-                <img src={recipe.thumbnail} alt={`Image of ${recipe.title}`} className="card-image" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} />
+                <img src={recipe.thumbnail} alt={`Image of ${recipe.title}`} className="card-image" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} /> 
                 <div className="card-body">
                     <h2>{recipe.title}</h2>
-                    <p className="text-slate-600 mt-2">{recipe.description}</p>
+                    <p className="text-muted mt-2">{recipe.description}</p>
                 </div>
-            </a>
+            </a> 
         ))}
       </div>
     </div>

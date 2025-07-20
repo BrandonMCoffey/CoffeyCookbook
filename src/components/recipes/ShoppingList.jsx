@@ -18,14 +18,14 @@ function RecipeIngredientGroup({ recipe, checkedItems, handleCheckChange, primar
   }, [recipe.ingredients, primarySort, groupChecked, checkedItems]);
 
   return (
-    <div className="space-y-3 mt-3 pl-4 border-l-2">
+    <div className="space-y-3 mt-3 pl-4 border-l-2 border-slate-200 dark:border-slate-700">
       {sortedIngredients.map((ing, index) => {
         const key = `${recipe.id}_${ing.item.toLowerCase()}_${ing.unit}`;
         const isChecked = checkedItems.has(key);
         return (
           <label key={index} className="ingredient-item">
             <input type="checkbox" checked={isChecked} onChange={() => handleCheckChange(key)} className="h-5 w-5 rounded text-green-600 focus:ring-green-500" />
-            <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : 'text-gray-800'}`}>
+            <span className={`ml-3 text-lg w-full ${isChecked ? 'text-slate-500 dark:text-slate-400 line-through' : ''}`}>
               {ing.quantity === 0
                 ? `${ing.item}, to taste`
                 : `${formatQuantity(ing.quantity)} ${ing.unit} ${ing.item}`
@@ -151,8 +151,8 @@ export default function ShoppingList({ allRecipes }) {
       <div className="space-y-4 mb-8 p-4 card-static">
         <div className="sort-group"><span className="font-semibold">Sort by:</span>{PRIMARY_SORT_OPTIONS.map(option => <button key={option} onClick={() => setPrimarySort(option)} className={`sort-btn ${primarySort === option ? 'active' : ''}`}>{option}</button>)}</div>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-           <div className="flex items-center"><input type="checkbox" id="combined-toggle" checked={combinedList} onChange={handleCombinedToggle} className="h-4 w-4 rounded text-green-600 focus:ring-green-500" /><label htmlFor="combined-toggle" className="ml-2 text-sm text-slate-700 cursor-pointer">Combined list</label></div>
-           <div className="flex items-center"><input type="checkbox" id="group-checked-toggle" checked={groupChecked} onChange={handleGroupToggle} className="h-4 w-4 rounded text-green-600 focus:ring-green-500" /><label htmlFor="group-checked-toggle" className="ml-2 text-sm text-slate-700 cursor-pointer">Group checked at bottom</label></div>
+           <div className="flex items-center"><input type="checkbox" id="combined-toggle" checked={combinedList} onChange={handleCombinedToggle} className="h-4 w-4 rounded text-green-600 focus:ring-green-500" /><label htmlFor="combined-toggle" className="ml-2 text-sm text-slate-700 dark:text-slate-300 cursor-pointer">Combined list</label></div> 
+           <div className="flex items-center"><input type="checkbox" id="group-checked-toggle" checked={groupChecked} onChange={handleGroupToggle} className="h-4 w-4 rounded text-green-600 focus:ring-green-500" /><label htmlFor="group-checked-toggle" className="ml-2 text-sm text-slate-700 dark:text-slate-300 cursor-pointer">Group checked at bottom</label></div>
         </div>
       </div>
 
@@ -163,16 +163,16 @@ export default function ShoppingList({ allRecipes }) {
                 const checkedCount = ing.sources.filter(s => checkedItems.has(`${s.recipeId}_${s.item.toLowerCase()}_${s.unit}`)).length;
                 const totalSources = ing.sources.length;
 
-                return (
+            return (
                 <label key={ing.item + ing.unit} className="ingredient-item">
                     <input type="checkbox" checked={isChecked} onChange={() => handleCheckChange(ing.sources, true)} className="h-5 w-5 rounded text-green-600 focus:ring-green-500" />
-                    <span className={`ml-3 text-lg w-full ${isChecked ? 'text-gray-400 line-through' : ''}`}>
-                    {ing.totalQuantity === 0
+                    <span className={`ml-3 text-lg w-full ${isChecked ? 'text-slate-500 dark:text-slate-400 line-through' : ''}`}>
+                     {ing.totalQuantity === 0
                         ? `${ing.item}, to taste`
                         : `${formatQuantity(ing.totalQuantity)} ${ing.unit} ${ing.item}`
                     }
-                    </span>
-                    {totalSources > 1 && (<span className="text-sm text-slate-500 ml-2 whitespace-nowrap">({checkedCount}/{totalSources})</span>)}
+                   </span>
+                    {totalSources > 1 && (<span className="text-sm text-muted ml-2 whitespace-nowrap">({checkedCount}/{totalSources})</span>)}
                 </label>
                 );
             })}
@@ -191,19 +191,19 @@ export default function ShoppingList({ allRecipes }) {
                     <button onClick={() => handleCollapseToggle(recipe.id)} className="p-1">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className={`w-4 h-4 text-slate-500 collapse-arrow ${!isCollapsed && 'open'}`}><path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
                     </button>
-                    <h3 className="font-bold text-slate-800">{recipe.title}</h3>
+                    <h3 className="font-bold">{recipe.title}</h3>
                     {totalIngredients > 0 && (
-                      <span className="text-sm font-normal text-slate-500">
+                       <span className="text-sm font-normal text-muted">
                         ({checkedIngredientsCount}/{totalIngredients})
                       </span>
                     )}
                 </div>
-                <div className="flex items-center gap-2 flex-shrink-0">
+                 <div className="flex items-center gap-2 flex-shrink-0">
                     <a href={`/recipes/${recipe.id}/`} className="btn btn-secondary text-xs !px-2 !py-1">Visit Recipe</a>
                     <button onClick={() => handleRemoveRecipe(recipe.id)} className="btn-remove" title="Remove Recipe"><span className="font-bold text-sm">×</span></button>
                 </div>
               </div>
-              {!isCollapsed && (<RecipeIngredientGroup recipe={recipe} checkedItems={checkedItems} handleCheckChange={handleCheckChange} primarySort={primarySort} groupChecked={groupChecked} />)}
+               {!isCollapsed && (<RecipeIngredientGroup recipe={recipe} checkedItems={checkedItems} handleCheckChange={handleCheckChange} primarySort={primarySort} groupChecked={groupChecked} />)}
             </div>
           )})}
         </div>

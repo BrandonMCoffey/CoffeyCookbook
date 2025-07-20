@@ -25,7 +25,6 @@ const { title } = Astro.props;
 				}
 				return 'light';
 			})();
-
 			if (theme === 'dark') {
 				document.documentElement.classList.add('dark');
 			} else {
@@ -38,8 +37,8 @@ const { title } = Astro.props;
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 		<title>{title} | My Recipes</title>
 	</head>
-	<body class="bg-slate-50 text-slate-800">
-    <header class="bg-white dark:bg-slate-800/70 dark:backdrop-blur-sm shadow-md sticky top-0 z-30">
+	<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200">
+    <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm shadow-md sticky top-0 z-30">
         <nav class="container mx-auto px-4 flex justify-between items-center h-16">
             <a href="/recipes" class="text-2xl font-bold text-green-700 dark:text-green-400">Recipe Site</a>
             <div class="flex items-center gap-4">
@@ -51,18 +50,18 @@ const { title } = Astro.props;
                 <ThemeToggleButton client:load />
                 <div class="md:hidden">
                     <button id="menu-btn" type="button" class="z-50 block hamburger md:hidden focus:outline-none">
-                        <span class="hamburger-top dark:bg-white"></span>
-                        <span class="hamburger-middle dark:bg-white"></span>
-                        <span class="hamburger-bottom dark:bg-white"></span>
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
                     </button>
                 </div>
             </div>
         </nav>
 			<div id="menu" class="hidden md:hidden">
-				<div class="absolute z-40 flex flex-col items-center self-end py-8 mt-1 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
-					<a href="/recipes" class="hover:text-green-700">All Recipes</a>
-					<a href="/favorites" class="hover:text-green-700">Favorites</a>
-					<a href="/recipes/shopping-list" class="hover:text-green-700">Shopping List</a>
+				<div class="absolute z-40 flex flex-col items-center self-end py-8 mt-1 space-y-6 font-bold bg-white dark:bg-slate-800 sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
+					<a href="/recipes" class="dark:hover:text-green-300">All Recipes</a>
+					<a href="/recipes/favorites" class="dark:hover:text-green-300">Favorites</a>
+					<a href="/recipes/shopping-list" class="dark:hover:text-green-300">Shopping List</a>
 				</div>
 			</div>
 		</header>
@@ -73,7 +72,7 @@ const { title } = Astro.props;
 			</div>
 		</main>
 
-		<footer class="text-center p-8 mt-16 text-slate-500 transition-all duration-300 ease-in-out">
+		<footer class="text-center p-8 mt-16 text-slate-500 dark:text-slate-400 transition-all duration-300 ease-in-out">
 			<p></p>
 		</footer>
         
