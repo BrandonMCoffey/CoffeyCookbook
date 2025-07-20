@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import CardActionButtons from './CardActionButtons';
+import React, { useState, useEffect, useMemo } from 'react';
+import RecipeCard from './RecipeCard';
+
+const MAX_RANDOM_SUGGESTIONS = 3;
 
 export default function FavoritesList({ allRecipes }) {
   const [favoriteRecipes, setFavoriteRecipes] = useState([]);
@@ -11,8 +13,27 @@ export default function FavoritesList({ allRecipes }) {
     setFavoriteRecipes(filtered);
   }, [allRecipes]);
 
+  const randomRecipes = useMemo(() => {
+    if (favoriteRecipes.length > 0) return [];
+    
+    return [...allRecipes]
+      .sort(() => 0.5 - Math.random())
+      .slice(0, MAX_RANDOM_SUGGESTIONS);
+  }, [allRecipes, favoriteRecipes]);
+
   if (favoriteRecipes.length === 0) {
-    return <p>You haven't favorited any recipes yet. Click the heart icon on a recipe to add it here!</p>;
+    return (
+      <div>
+        <h1 class="text-4xl font-bold mb-8">Your Favorites</h1>
+        <p>You haven't favorited any recipes yet. Click the heart icon on a recipe to add it here!</p>
+        <br></br>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {randomRecipes.map((recipe) => (
+                <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -20,14 +41,7 @@ export default function FavoritesList({ allRecipes }) {
     <h1 class="text-4xl font-bold mb-8">Your Favorites</h1>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {favoriteRecipes.map((recipe) => (
-          <a key={recipe.id} href={`/recipes/${recipe.id}/`} className="card group relative">
-              <CardActionButtons recipeId={recipe.id} />
-              <img src={recipe.thumbnail} alt={`Image of ${recipe.title}`} className="card-image" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} />
-               <div className="card-body"> 
-                  <h2>{recipe.title}</h2>
-                  <p className="text-muted mt-2">{recipe.description}</p>
-              </div>
-          </a>
+        <RecipeCard key={recipe.id} recipe={recipe} />
       ))}
     </div>
   </div>

@@ -2,81 +2,133 @@
 import Layout from '../../layouts/RecipeLayout.astro';
 import ActionButtons from '../../components/recipes/ActionButtons.jsx';
 import IngredientChecklist from '../../components/recipes/IngredientChecklist.jsx';
+import RecipeCard from '../../components/recipes/RecipeCard';
 import type { Recipe } from '../../types';
 import { formatTime } from '../../utils/formatters.js';
 
 export async function getStaticPaths() {
   const allJsonFiles = await import.meta.glob('/src/content/recipes/*.json');
-  const allRecipes = (await Promise.all(Object.values(allJsonFiles).map(async (getJson) => (await getJson() as { default: Recipe[] }).default))).flat();
+  const allRecipes = (await Promise.all(Object.values(allJsonFiles).map(async (getJson) => (await getJson() as { default: Recipe[] }).default))).flat() as Recipe[];
 
   return allRecipes.map(recipe => ({
     params: { id: recipe.id },
-    props: { recipe },
+    props: { recipe, allRecipes },
   }));
 }
 
-const { recipe } = Astro.props;
+const { recipe: currentRecipe, allRecipes } = Astro.props;
+const totalTime = (currentRecipe.time.prep || 0) + (currentRecipe.time.cook || 0) + (currentRecipe.time.rest || 0);
+const MAX_RECOMMENDATIONS = 3;
 
-const totalTime = (recipe.time.prep || 0) + (recipe.time.cook || 0) + (recipe.time.rest || 0);
+const recommendations = allRecipes
+  .map(otherRecipe => {
+    if (currentRecipe.id === otherRecipe.id) {
+      return { recipe: otherRecipe, score: -1 };
+    }
+
+    const complementaryCategories: Record<string, string[]> = {
+      "Main Course": ["Side Dish", "Appetizer", "Dessert", "Bread", "Salad"],
+      "Soup": ["Bread", "Side Dish", "Salad"],
+      "Breakfast": ["Side Dish", "Dessert"],
+    };
+
+    const matchingCuisines = currentRecipe.cuisines?.filter(c => otherRecipe.cuisines?.includes(c)) || [];
+    const complementRule = complementaryCategories[currentRecipe.category];
+    const matchingDiets = currentRecipe.diets?.filter(d => otherRecipe.diets?.includes(d)) || [];
+    
+    let score = 0;
+    if (complementRule?.includes(otherRecipe.category)) { score += 3; }
+    if (currentRecipe.category === otherRecipe.category) { score += 1; }
+    if (currentRecipe.author === otherRecipe.author) { score += 2; }
+    score += matchingCuisines.length * 5;
+    score += matchingDiets.length * 1;
+    score += Math.floor(Math.random() * 4);
+
+    return { recipe: otherRecipe, score };
+  })
+  .filter(item => item.score > 0)
+  .sort((a, b) => b.score - a.score)
+  .map(item => item.recipe)
+  .slice(0, MAX_RECOMMENDATIONS);
+
+if (recommendations.length < MAX_RECOMMENDATIONS) {
+  const existingIds = new Set([currentRecipe.id, ...recommendations.map(r => r.id)]);
+  const fallbacks = allRecipes
+    .filter(r => !existingIds.has(r.id))
+    .sort(() => 0.5 - Math.random())
+    .slice(0, MAX_RECOMMENDATIONS - recommendations.length);
+  recommendations.push(...fallbacks);
+}
 ---
-<Layout title={recipe.title}>
+<Layout title={currentRecipe.title}>
   <main class="max-w-4xl mx-auto p-4">
-    <h1 class="text-5xl font-bold mb-2">{recipe.title}</h1>
-    <p class="text-lg text-muted mb-4">{recipe.description}</p>
-    <img src={recipe.thumbnail} alt={`Image of ${recipe.title}`} class="w-full h-96 object-cover rounded-lg mb-6" onError={(e) => { e.currentTarget.onerror = null; e.currentTarget.src = '/images/default.jpg'; }} /> 
+    <h1 class="text-5xl font-bold mb-2">{currentRecipe.title}</h1>
+    <p class="text-lg text-muted mb-4">{currentRecipe.description}</p>
+    <img src={currentRecipe.thumbnail} alt={`Image of ${currentRecipe.title}`} class="w-full h-96 object-cover rounded-lg mb-6" /> 
 
-    <ActionButtons recipeId={recipe.id} client:load />
+    <ActionButtons recipeId={currentRecipe.id} client:load />
 
     <div class="my-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-center border-y border-slate-200 dark:border-slate-700 py-4">
       <div>
         <h3 class="font-semibold mb-2">Servings</h3>
-        <div>{recipe.servings || 'N/A'}</div> 
+        <div>{currentRecipe.servings || 'N/A'}</div> 
       </div>
-      {recipe.cookware?.length > 0 && (
+      {currentRecipe.cookware?.length > 0 && (
         <div>
           <h3 class="font-semibold mb-2">Cookware</h3>
           <div class="flex flex-wrap justify-center gap-2">
-            {recipe.cookware.map(item => <span class="badge-slate">{item}</span>)}
+            {currentRecipe.cookware.map(item => <span class="badge-slate">{item}</span>)}
           </div>
         </div>
       )}
       
-      {recipe.diets?.length > 0 && ( 
+      {currentRecipe.diets?.length > 0 && ( 
         <div>
           <h3 class="font-semibold mb-2">Diets</h3>
           <div class="flex flex-wrap justify-center gap-2">
-            {recipe.diets.map(item => <span class="badge-blue">{item}</span>)}
+            {currentRecipe.diets.map(item => <span class="badge-blue">{item}</span>)}
           </div>
         </div>
       )}
     </div>
 
     <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 my-8 text-center">
-       {recipe.time.prep > 0 && (<div><div class="font-bold">Prep Time</div><div>{formatTime(recipe.time.prep)}</div></div>)} 
-      {recipe.time.cook > 0 && (<div><div class="font-bold">Cook Time</div><div>{formatTime(recipe.time.cook)}</div></div>)}
-      {recipe.time.rest > 0 && (<div><div class="font-bold">Rest Time</div><div>{formatTime(recipe.time.rest)}</div></div>)}
+      {currentRecipe.time.prep > 0 && (<div><div class="font-bold">Prep Time</div><div>{formatTime(currentRecipe.time.prep)}</div></div>)} 
+      {currentRecipe.time.cook > 0 && (<div><div class="font-bold">Cook Time</div><div>{formatTime(currentRecipe.time.cook)}</div></div>)}
+      {currentRecipe.time.rest > 0 && (<div><div class="font-bold">Rest Time</div><div>{formatTime(currentRecipe.time.rest)}</div></div>)}
       <div><div class="font-bold text-green-700 dark:text-green-500">Total Time</div><div class="text-green-700 dark:text-green-500">{formatTime(totalTime)}</div></div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="md:col-span-1">
         <h2 class="text-3xl font-semibold mb-4">Ingredients</h2>
-        <IngredientChecklist ingredients={recipe.ingredients} client:load />
+        <IngredientChecklist ingredients={currentRecipe.ingredients} client:load />
       </div>
       <div class="md:col-span-2">
          <h2 class="text-3xl font-semibold mb-4">Instructions</h2> 
         <ol class="list-decimal list-inside space-y-4 text-muted">
-          {recipe.instructions.map(step => (
+          {currentRecipe.instructions.map(step => (
             <li class="pl-2">{step}</li>
           ))}
         </ol>
       </div>
     </div>
 
-    {recipe.tips && (
+    {currentRecipe.tips && (
       <div class="mt-12">
           <h2 class="text-3xl font-semibold mb-4">Tips & Hints</h2>
-           <p class="well">{recipe.tips}</p> 
+           <p class="well">{currentRecipe.tips}</p> 
+      </div>
+    )}
+
+    {recommendations.length > 0 && (
+      <div class="mt-16 border-t pt-8">
+        <h2 class="text-3xl font-semibold mb-4">You Might Also Like</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {recommendations.map((recipe) => (
+              <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
+        </div>
       </div>
     )}
   </main>
