@@ -38,6 +38,11 @@ export default function RecipeCard({ recipe }) {
 
   const handleActiveClick = (e) => {
     e.preventDefault();
+    if (isActive) {
+      const checkedItems = JSON.parse(localStorage.getItem('shopping_list_checked') || '[]');
+      const newCheckedItems = checkedItems.filter(key => !key.startsWith(recipe.id));
+      localStorage.setItem('shopping_list_checked', JSON.stringify(newCheckedItems));
+    }
     updateStorage('active_recipes', recipe.id);
     setIsActive(!isActive);
     window.dispatchEvent(new Event('storageupdate'));

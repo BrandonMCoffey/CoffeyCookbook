@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { formatQuantity } from '../../utils/formatters.js';
 
 const PRIMARY_SORT_OPTIONS = ['Default', 'Alphabetical (A-Z)'];
@@ -48,7 +48,7 @@ export default function ShoppingList({ allRecipes }) {
   const [combinedList, setCombinedList] = useState(false);
   const [collapsedRecipes, setCollapsedRecipes] = useState(new Set());
 
-  useEffect(() => {
+  const updateDataFromStorage = useCallback(() => {
     const storedActive = JSON.parse(localStorage.getItem('active_recipes') || '[]');
     const currentActiveRecipes = allRecipes.filter(recipe => storedActive.includes(recipe.id));
     setActiveRecipes(currentActiveRecipes);
@@ -82,6 +82,14 @@ export default function ShoppingList({ allRecipes }) {
       setAggregatedIngredients([]);
     }
   }, [allRecipes]);
+
+  useEffect(() => {
+    updateDataFromStorage();
+    window.addEventListener('storageupdate', updateDataFromStorage);
+    return () => {
+      window.removeEventListener('storageupdate', updateDataFromStorage);
+    };
+  }, [updateDataFromStorage]);
 
   const handleCheckChange = (keyOrSources, isAggregated = false) => {
     const newCheckedItems = new Set(checkedItems);
