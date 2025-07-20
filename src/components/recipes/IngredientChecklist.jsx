@@ -20,7 +20,7 @@ export default function IngredientChecklist({ ingredients }) {
               type="checkbox"
               checked={isChecked}
               onChange={() => handleCheck(index)}
-              className="h-5 w-5 rounded text-green-600 focus:ring-green-500"
+              className="h-5 w-5 rounded text-green-600 focus:ring-green-500 flex-shrink-0"
             />
             <span className={`ml-3 ${isChecked ? 'text-slate-500 dark:text-slate-400 line-through' : ''}`}>
               {ing.quantity === 0

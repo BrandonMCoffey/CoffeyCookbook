@@ -2,8 +2,7 @@ import React, { useState, useMemo } from 'react';
 import RecipeCard from './RecipeCard';
 
 const TIME_RANGES = [
-  { label: '< 15 min', maxMinutes: 15 },
-  { label: '15-30 min', minMinutes: 15, maxMinutes: 30 },
+  { label: '<30 min', maxMinutes: 30 },
   { label: '30m - 1hr', minMinutes: 30, maxMinutes: 60 },
   { label: '1-2 hr', minMinutes: 60, maxMinutes: 120 },
   { label: '2-4 hr', minMinutes: 120, maxMinutes: 240 },
@@ -21,6 +20,7 @@ const MANUAL_CATEGORY_ORDER = [
 ];
 
 export default function RecipeFilter({ allRecipes, categories, cuisines, diets }) {
+  const [searchQuery, setSearchQuery] = useState('');
   const [activeCategories, setActiveCategories] = useState(new Set());
   const [activeCuisines, setActiveCuisines] = useState(new Set());
   const [activeDiets, setActiveDiets] = useState(new Set());
@@ -35,14 +35,12 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
   };
 
   const handleRangeToggle = (currentFilter, setter, range) => {
-    if (currentFilter?.label === range.label) {
-      setter(null);
-    } else {
-      setter(range);
-    }
+    if (currentFilter?.label === range.label) setter(null);
+    else setter(range);
   };
 
   const clearAllFilters = () => {
+    setSearchQuery('');
     setActiveCategories(new Set());
     setActiveCuisines(new Set());
     setActiveDiets(new Set());
@@ -60,13 +58,31 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
     });
   }, [categories]);
 
+  const searchedRecipes = useMemo(() => {
+    if (!searchQuery) return allRecipes;
+    const lowerCaseQuery = searchQuery.toLowerCase();
+    return allRecipes.filter(recipe => {
+      const searchableContent = [
+        recipe.title,
+        recipe.description,
+        recipe.category,
+        recipe.author,
+        ...(recipe.cuisines || []),
+        ...(recipe.diets || []),
+        ...(recipe.cookware || []),
+        ...(recipe.ingredients?.map(i => i.item) || [])
+      ].join(' ').toLowerCase();
+      return searchableContent.includes(lowerCaseQuery);
+    });
+  }, [allRecipes, searchQuery]);
+
   const baseFilters = useMemo(() => {
-    let filtered = allRecipes;
+    let filtered = searchedRecipes;
     if (activeCategories.size > 0) filtered = filtered.filter(r => activeCategories.has(r.category));
     if (activeCuisines.size > 0) filtered = filtered.filter(r => r.cuisines?.some(c => activeCuisines.has(c)));
     if (activeDiets.size > 0) filtered = filtered.filter(r => r.diets?.some(d => activeDiets.has(d)));
     return filtered;
-  }, [allRecipes, activeCategories, activeCuisines, activeDiets]);
+  }, [searchedRecipes, activeCategories, activeCuisines, activeDiets]);
 
   const calculateDynamicCounts = (filterType) => {
     return useMemo(() => {
@@ -142,7 +158,7 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
         const max = range.maxMinutes || Infinity;
         return totalTime > min && totalTime <= max;
       }).length;
-    } else { // cookware
+    } else {
       return filtered.filter(recipe => {
         const count = recipe.cookware?.length || 0;
         const min = range.min || 0;
@@ -154,18 +170,32 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
 
   return (
     <div>
-      <h1 class="text-4xl font-bold mb-8">All Recipes</h1>
       <div className="space-y-4 mb-12 p-4 card-static">
         <div className="flex justify-between items-center">
           <h2 className="text-xl font-bold">Filters</h2>
           <button onClick={clearAllFilters} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">Clear All</button>
         </div>
+
         <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
         <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div> 
         <div><h3 className="font-semibold mb-2">Diet</h3><div className="flex flex-wrap gap-2">{diets.map(({ name }) => { const count = dynamicDietCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeDiets, setActiveDiets, name)} className={`sort-btn ${activeDiets.has(name) ? 'active' : ''}`} disabled={!activeDiets.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-slate-200 dark:border-slate-700">
           <div><h3 className="font-semibold mb-2">Max Time</h3><div className="flex flex-wrap gap-2">{TIME_RANGES.map(range => { const count = getCountForRange(range, 'time'); return (<button key={range.label} onClick={() => handleRangeToggle(timeFilter, setTimeFilter, range)} className={`sort-btn ${timeFilter?.label === range.label ? 'active' : ''}`} disabled={timeFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
           <div><h3 className="font-semibold mb-2">Cookware Items</h3><div className="flex flex-wrap gap-2">{COOKWARE_RANGES.map(range => { const count = getCountForRange(range, 'cookware'); return (<button key={range.label} onClick={() => handleRangeToggle(cookwareFilter, setCookwareFilter, range)} className={`sort-btn ${cookwareFilter?.label === range.label ? 'active' : ''}`} disabled={cookwareFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
+        </div>
+
+        <br></br>
+        <div className="relative">
+          <input 
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search recipes, ingredients, authors..."
+            className="w-full pl-10 pr-4 py-2 border rounded-full bg-slate-100 dark:bg-slate-700 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+          />
+          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+          </div>
         </div>
       </div>
       <div className="mb-4"><p className="text-lg font-semibold">{filteredRecipes.length} Recipes Found</p></div>
