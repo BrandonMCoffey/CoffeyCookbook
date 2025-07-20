@@ -2,7 +2,7 @@
   {
     "id": "baked-ziti",
     "title": "Baked Ziti",
-    "thumbnail": "/images/baked-ziti.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/baked-ziti.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "American"],
     "diets": [],
@@ -37,7 +37,7 @@
   {
     "id": "mini-skillet-cookie",
     "title": "Mini Skillet Cookie",
-    "thumbnail": "/images/mini-skillet-cookie.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/mini-skillet-cookie.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -75,7 +75,7 @@
   {
     "id": "christmas-crack",
     "title": "Christmas Crack",
-    "thumbnail": "/images/christmas-crack.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/christmas-crack.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -110,7 +110,7 @@
   {
     "id": "white-bean-chicken-chili",
     "title": "White Bean Chicken Chili",
-    "thumbnail": "/images/white-bean-chicken-chili.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/white-bean-chicken-chili.jpg",
     "category": "Soup",
     "cuisines": ["American", "Mexican"],
     "diets": [],
@@ -155,7 +155,7 @@
   {
     "id": "chicken-florentine",
     "title": "Chicken Florentine",
-    "thumbnail": "/images/chicken-florentine.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chicken-florentine.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "French"],
     "diets": [],
@@ -199,9 +199,9 @@
     "tips": ""
   },
   {
-    "id": "homemade-hamburger-helper-cheeseburger-macaroni",
-    "title": "Homemade Hamburger Helper Cheeseburger Macaroni",
-    "thumbnail": "/images/homemade-hamburger-helper-cheeseburger-macaroni.jpg",
+    "id": "homemade-hamburger-helper",
+    "title": "Homemade Hamburger Helper",
+    "thumbnail": "/images/cookbook/college-cookbook/homemade-hamburger-helper.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
     "diets": [],
@@ -245,7 +245,7 @@
   {
     "id": "easy-chickpea-curry",
     "title": "Easy Chickpea Curry",
-    "thumbnail": "/images/easy-chickpea-curry.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/easy-chickpea-curry.jpg",
     "category": "Main Course",
     "cuisines": ["Indian"],
     "diets": ["Vegan", "Vegetarian", "Dairy-Free", "Gluten-Free"],
@@ -287,7 +287,7 @@
   {
     "id": "arroz-con-leche",
     "title": "Arroz Con Leche",
-    "thumbnail": "/images/arroz-con-leche.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/arroz-con-leche.jpg",
     "category": "Dessert",
     "cuisines": ["Mexican", "Latin American"],
     "diets": ["Vegetarian", "Gluten-Free"],
@@ -326,7 +326,7 @@
   {
     "id": "tres-leches",
     "title": "Tres Leches",
-    "thumbnail": "/images/tres-leches.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/tres-leches.jpg",
     "category": "Dessert",
     "cuisines": ["Mexican", "Latin American"],
     "diets": ["Vegetarian"],
@@ -365,7 +365,7 @@
   {
     "id": "fideo",
     "title": "Fideo",
-    "thumbnail": "/images/fideo.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/fideo.jpg",
     "category": "Main Course",
     "cuisines": ["Mexican"],
     "diets": [],
@@ -406,7 +406,7 @@
   {
     "id": "chicken-noodle-soup",
     "title": "Chicken Noodle Soup",
-    "thumbnail": "/images/chicken-noodle-soup.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chicken-noodle-soup.jpg",
     "category": "Soup",
     "cuisines": ["American"],
     "diets": [],
@@ -440,7 +440,7 @@
   {
     "id": "chocolate-chip-cookies",
     "title": "Chocolate Chip Cookies",
-    "thumbnail": "/images/chocolate-chip-cookies.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chocolate-chip-cookies.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -480,7 +480,7 @@
   {
     "id": "quiche",
     "title": "Quiche",
-    "thumbnail": "/images/quiche.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/quiche.jpg",
     "category": "Main Course",
     "cuisines": ["French"],
     "diets": ["Vegetarian"],
@@ -518,7 +518,7 @@
   {
     "id": "royal-broccoli-souffle",
     "title": "Royal Broccoli Souffle",
-    "thumbnail": "/images/royal-broccoli-souffle.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/royal-broccoli-souffle.jpg",
     "category": "Side Dish",
     "cuisines": ["French"],
     "diets": ["Vegetarian"],
@@ -563,7 +563,7 @@
   {
     "id": "king-ranch-chicken-casserole",
     "title": "King Ranch Chicken Casserole",
-    "thumbnail": "/images/king-ranch-chicken-casserole.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/king-ranch-chicken-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["American", "Tex-Mex"],
     "diets": [],
@@ -598,7 +598,7 @@
   {
     "id": "orange-chicken",
     "title": "Orange Chicken",
-    "thumbnail": "/images/orange-chicken.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/orange-chicken.jpg",
     "category": "Main Course",
     "cuisines": ["Chinese-American"],
     "diets": [],
@@ -625,7 +625,7 @@
   {
     "id": "slow-cooked-bacon-ranch-chicken-pasta",
     "title": "Slow Cooked Bacon Ranch Chicken Pasta",
-    "thumbnail": "/images/slow-cooked-bacon-ranch-chicken-pasta.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/slow-cooked-bacon-ranch-chicken-pasta.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
     "diets": [],
@@ -659,7 +659,7 @@
   {
     "id": "chicken-casserole",
     "title": "Chicken Casserole",
-    "thumbnail": "/images/chicken-casserole.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chicken-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
     "diets": [],
@@ -689,7 +689,7 @@
   {
     "id": "grandmas-chicken-casserole",
     "title": "Grandma’s Chicken Casserole",
-    "thumbnail": "/images/grandmas-chicken-casserole.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/grandmas-chicken-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
     "diets": [],
@@ -719,7 +719,7 @@
   {
     "id": "taco-soup",
     "title": "Taco Soup",
-    "thumbnail": "/images/taco-soup.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/taco-soup.jpg",
     "category": "Soup",
     "cuisines": ["Mexican", "American"],
     "diets": [],
@@ -762,7 +762,7 @@
   {
     "id": "honey-walnut-shrimp",
     "title": "Honey Walnut Shrimp",
-    "thumbnail": "/images/honey-walnut-shrimp.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/honey-walnut-shrimp.jpg",
     "category": "Main Course",
     "cuisines": ["Chinese-American"],
     "diets": [],
@@ -802,7 +802,7 @@
   {
     "id": "enchilada-casserole",
     "title": "Enchilada Casserole",
-    "thumbnail": "/images/enchilada-casserole.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/enchilada-casserole.jpg",
     "category": "Main Course",
     "cuisines": ["Mexican", "Tex-Mex"],
     "diets": [],
@@ -839,7 +839,7 @@
   {
     "id": "shrimp-jambalaya",
     "title": "Shrimp Jambalaya",
-    "thumbnail": "/images/shrimp-jambalaya.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/shrimp-jambalaya.jpg",
     "category": "Main Course",
     "cuisines": ["Cajun", "Creole"],
     "diets": [],
@@ -878,7 +878,7 @@
   {
     "id": "chicken-parmesan",
     "title": "Chicken Parmesan",
-    "thumbnail": "/images/chicken-parmesan.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chicken-parmesan.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "American"],
     "diets": [],
@@ -917,7 +917,7 @@
   {
     "id": "white-wine-braised-chicken",
     "title": "White Wine Braised Chicken",
-    "thumbnail": "/images/white-wine-braised-chicken.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/white-wine-braised-chicken.jpg",
     "category": "Main Course",
     "cuisines": ["French"],
     "diets": [],
@@ -953,7 +953,7 @@
   {
     "id": "ratatouille",
     "title": "Ratatouille",
-    "thumbnail": "/images/ratatouille.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/ratatouille.jpg",
     "category": "Main Course",
     "cuisines": ["French"],
     "diets": ["Vegan", "Vegetarian", "Gluten-Free", "Dairy-Free"],
@@ -992,7 +992,7 @@
   {
     "id": "deep-dish-pizza",
     "title": "Deep Dish Pizza",
-    "thumbnail": "/images/deep-dish-pizza.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/deep-dish-pizza.jpg",
     "category": "Main Course",
     "cuisines": ["American", "Italian"],
     "diets": [],
@@ -1044,7 +1044,7 @@
   {
     "id": "pie-crust",
     "title": "Pie Crust",
-    "thumbnail": "/images/pie-crust.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/pie-crust.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -1072,7 +1072,7 @@
   {
     "id": "dutch-apple-pie",
     "title": "Dutch Apple Pie",
-    "thumbnail": "/images/dutch-apple-pie.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/dutch-apple-pie.jpg",
     "category": "Dessert",
     "cuisines": ["American", "Dutch"],
     "diets": ["Vegetarian"],
@@ -1109,7 +1109,7 @@
   {
     "id": "chicken-pot-pie",
     "title": "Chicken Pot Pie",
-    "thumbnail": "/images/chicken-pot-pie.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chicken-pot-pie.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
     "diets": [],
@@ -1157,7 +1157,7 @@
   {
     "id": "chicken-tikka-masala",
     "title": "Chicken Tikka Masala",
-    "thumbnail": "/images/chicken-tikka-masala.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chicken-tikka-masala.jpg",
     "category": "Main Course",
     "cuisines": ["Indian"],
     "diets": [],
@@ -1199,7 +1199,7 @@
   {
     "id": "sausage-rigatoni",
     "title": "Sausage Rigatoni",
-    "thumbnail": "/images/sausage-rigatoni.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/sausage-rigatoni.jpg",
     "category": "Main Course",
     "cuisines": ["Italian", "American"],
     "diets": [],
@@ -1233,7 +1233,7 @@
   {
     "id": "white-mom-pork-chops",
     "title": "White Mom Pork Chops",
-    "thumbnail": "/images/white-mom-pork-chops.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/white-mom-pork-chops.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
     "diets": [],
@@ -1276,7 +1276,7 @@
   {
     "id": "chocolate-eclair-cake",
     "title": "Chocolate Eclair Cake",
-    "thumbnail": "/images/chocolate-eclair-cake.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/chocolate-eclair-cake.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -1317,7 +1317,7 @@
   {
     "id": "biscuits-and-gravy",
     "title": "Biscuits and Gravy",
-    "thumbnail": "/images/biscuits-and-gravy.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/biscuits-and-gravy.jpg",
     "category": "Breakfast",
     "cuisines": ["American"],
     "diets": [],
@@ -1345,7 +1345,7 @@
   {
     "id": "sugar-tarts",
     "title": "Sugar Tarts",
-    "thumbnail": "/images/sugar-tarts.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/sugar-tarts.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -1377,7 +1377,7 @@
   {
     "id": "pot-roast",
     "title": "Pot Roast",
-    "thumbnail": "/images/pot-roast.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/pot-roast.jpg",
     "category": "Main Course",
     "cuisines": ["American"],
     "diets": [],
@@ -1420,7 +1420,7 @@
   {
     "id": "stuffed-pork-tenderloin",
     "title": "Stuffed Pork Tenderloin",
-    "thumbnail": "/images/stuffed-pork-tenderloin.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/stuffed-pork-tenderloin.jpg",
     "category": "Main Course",
     "cuisines": ["American", "French"],
     "diets": [],
@@ -1458,7 +1458,7 @@
   {
     "id": "potato-and-lentil-soup",
     "title": "Potato and Lentil Soup",
-    "thumbnail": "/images/potato-and-lentil-soup.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/potato-and-lentil-soup.jpg",
     "category": "Soup",
     "cuisines": ["Vegetarian"],
     "diets": ["Vegan", "Vegetarian", "Dairy-Free", "Gluten-Free"],
@@ -1500,7 +1500,7 @@
   {
     "id": "banana-muffins-or-banana-bread",
     "title": "Banana Muffins / Banana Bread",
-    "thumbnail": "/images/banana-muffins-or-banana-bread.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/banana-muffins-or-banana-bread.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -1536,7 +1536,7 @@
   {
     "id": "shepherds-pie-or-cottage-pie",
     "title": "Shepherd's Pie / Cottage Pie",
-    "thumbnail": "/images/shepherds-pie-or-cottage-pie.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/shepherds-pie-or-cottage-pie.jpg",
     "category": "Main Course",
     "cuisines": ["British", "Irish"],
     "diets": [],
@@ -1589,7 +1589,7 @@
   {
     "id": "alfredo-sauce",
     "title": "Alfredo Sauce",
-    "thumbnail": "/images/alfredo-sauce.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/alfredo-sauce.jpg",
     "category": "Sauce",
     "cuisines": ["Italian"],
     "diets": ["Vegetarian", "Gluten-Free"],
@@ -1616,7 +1616,7 @@
   {
     "id": "bolognese-pasta",
     "title": "Bolognese Pasta",
-    "thumbnail": "/images/bolognese-pasta.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/bolognese-pasta.jpg",
     "category": "Main Course",
     "cuisines": ["Italian"],
     "diets": [],
@@ -1661,7 +1661,7 @@
   {
     "id": "improv-garlic-honey-chicken",
     "title": "Improv Garlic Honey Chicken",
-    "thumbnail": "/images/improv-garlic-honey-chicken.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/improv-garlic-honey-chicken.jpg",
     "category": "Main Course",
     "cuisines": ["Asian"],
     "diets": [],
@@ -1698,7 +1698,7 @@
   {
     "id": "potatoes-au-gratin",
     "title": "Potatoes Au Gratin",
-    "thumbnail": "/images/potatoes-au-gratin.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/potatoes-au-gratin.jpg",
     "category": "Side Dish",
     "cuisines": ["French", "American"],
     "diets": ["Vegetarian"],
@@ -1742,7 +1742,7 @@
   {
     "id": "pretzel-jello-salad",
     "title": "Pretzel Jello Salad",
-    "thumbnail": "/images/pretzel-jello-salad.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/pretzel-jello-salad.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -1782,7 +1782,7 @@
   {
     "id": "tandoori-chicken-wings-with-yogurt-sauce",
     "title": "Tandoori Chicken Wings with Yogurt Sauce",
-    "thumbnail": "/images/tandoori-chicken-wings-with-yogurt-sauce.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/tandoori-chicken-wings-with-yogurt-sauce.jpg",
     "category": "Appetizer",
     "cuisines": ["Indian"],
     "diets": [],
@@ -1830,7 +1830,7 @@
   {
     "id": "apple-butter",
     "title": "Apple Butter",
-    "thumbnail": "/images/apple-butter.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/apple-butter.jpg",
     "category": "Condiment",
     "cuisines": ["American"],
     "diets": ["Vegan", "Vegetarian", "Gluten-Free", "Dairy-Free"],
@@ -1860,7 +1860,7 @@
   {
     "id": "creamy-cheesecake-pie",
     "title": "Creamy Cheesecake Pie",
-    "thumbnail": "/images/creamy-cheesecake-pie.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/creamy-cheesecake-pie.jpg",
     "category": "Dessert",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -1900,7 +1900,7 @@
   {
     "id": "whole-wheat-bread",
     "title": "Whole Wheat Bread",
-    "thumbnail": "/images/whole-wheat-bread.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/whole-wheat-bread.jpg",
     "category": "Bread",
     "cuisines": ["American"],
     "diets": ["Vegetarian"],
@@ -1933,7 +1933,7 @@
   {
     "id": "split-pea-soup",
     "title": "Split Pea Soup",
-    "thumbnail": "/images/split-pea-soup.jpg",
+    "thumbnail": "/images/cookbook/college-cookbook/split-pea-soup.jpg",
     "category": "Soup",
     "cuisines": ["American"],
     "diets": [],
