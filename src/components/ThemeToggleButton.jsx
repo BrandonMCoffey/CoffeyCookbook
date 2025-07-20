@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
 export default function ThemeToggleButton() {
-  const [theme, setTheme] = useState(() => {
-    if (typeof localStorage === 'undefined') {
-      return 'light';
-    }
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    return savedTheme || (prefersDark ? 'dark' : 'light');
-  });
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-  };
+  const [theme, setTheme] = useState(null);
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    setTheme(initialTheme);
+  }, []);
+
+  useEffect(() => {
+    if (theme === null) return;
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
@@ -23,6 +19,15 @@ export default function ThemeToggleButton() {
     }
     localStorage.setItem('theme', theme);
   }, [theme]);
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+  };
+
+  if (theme === null) {
+    return <div className="w-10 h-10"></div>;
+  }
 
   return (
     <button onClick={toggleTheme} className="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="Toggle Theme">
