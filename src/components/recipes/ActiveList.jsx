@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import RandomRecipes from './RandomRecipes';
 import RecipeCard from './RecipeCard';
 
 export default function ActiveList({ allRecipes }) {
@@ -12,7 +13,11 @@ export default function ActiveList({ allRecipes }) {
   }, [allRecipes]);
 
   if (activeRecipes.length === 0) {
-    return <p>You have no active recipes. Add some to build a shopping list!</p>;
+    return (
+      <div>
+        <RandomRecipes allRecipes={allRecipes} count={3} />
+      </div>
+    )
   }
 
   return (
