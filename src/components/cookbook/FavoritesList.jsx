@@ -17,8 +17,12 @@ export default function FavoritesList({ allRecipes }) {
       <div>
         <h1 class="text-4xl font-bold mb-8">Your Favorites</h1>
         <p>You haven't favorited any recipes yet. Click the heart icon on a recipe to add it here!</p>
-        <br></br>
-        <RandomRecipes allRecipes={allRecipes} count={3} />
+        <hr class="mt-16 pt-16"/>
+        <div>
+          <h1 class="text-4xl font-bold mb-8">You Also Might Like</h1>
+          <br></br>
+          <RandomRecipes allRecipes={allRecipes} count={3} />
+        </div>
       </div>
     )
   }
@@ -30,6 +34,12 @@ export default function FavoritesList({ allRecipes }) {
       {favoriteRecipes.map((recipe) => (
         <RecipeCard key={recipe.id} recipe={recipe} />
       ))}
+    </div>
+    <hr class="mt-16 pt-16"/>
+    <div>
+      <h1 class="text-4xl font-bold mb-8">You Also Might Like</h1>
+      <br></br>
+      <RandomRecipes allRecipes={allRecipes} count={3} />
     </div>
   </div>
   );

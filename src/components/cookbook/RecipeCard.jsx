@@ -58,7 +58,7 @@ export default function RecipeCard({ recipe }) {
   const cookwareCount = recipe.cookware?.length || 0;
 
   return (
-    <a href={`/recipes/${recipe.id}/`} className="card group">
+    <a href={`/cookbook/${recipe.id}/`} className="card group">
       <div className="relative overflow-hidden">
         <img
           src={hasError ? '/images/default.jpg' : recipe.thumbnail}
