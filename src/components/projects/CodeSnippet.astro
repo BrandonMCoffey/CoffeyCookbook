@@ -1,0 +1,60 @@
+---
+interface Props {
+	title: string;
+	lang: string;
+}
+
+const { title, lang } = Astro.props;
+---
+<div class="code-snippet-wrapper my-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50">
+	<div class="header flex justify-between items-center p-3 border-b border-slate-200 dark:border-slate-700">
+		<p class="font-semibold text-sm text-slate-700 dark:text-slate-300">{title}</p>
+		<div class="flex items-center gap-4">
+			<span class="lang-tag uppercase text-xs font-bold text-slate-500">{lang}</span>
+			<button class="expand-btn text-sm font-semibold text-green-600 dark:text-green-400 hover:underline">Show More</button>
+		</div>
+	</div>
+	<div class="code-content relative">
+		<slot />
+		<div class="fade-overlay pointer-events-none absolute bottom-0 left-0 w-full h-12 bg-gradient-to-t from-slate-50 dark:from-slate-800/50 to-transparent"></div>
+	</div>
+</div>
+
+<script>
+	document.querySelectorAll('.code-snippet-wrapper').forEach(wrapper => {
+		const button = wrapper.querySelector('.expand-btn') as HTMLButtonElement | null;
+		const codeContent = wrapper.querySelector('.code-content') as HTMLElement | null;
+		const fadeOverlay = wrapper.querySelector('.fade-overlay') as HTMLElement | null;
+
+		button?.addEventListener('click', () => {
+			const isOpen = wrapper.classList.toggle('is-open');
+
+			if (button) {
+				button.textContent = isOpen ? 'Show Less' : 'Show More';
+			}
+			if (fadeOverlay) {
+				fadeOverlay.style.display = isOpen ? 'none' : 'block';
+			}
+		});
+	});
+</script>
+
+<style>
+	.code-content :global(pre) {
+		@apply my-0 rounded-t-none border-0;
+	}
+	.code-content {
+		max-height: 70px; 
+		overflow: hidden;
+		transition: max-height 0.4s ease-in-out;
+	}
+	.fade-overlay {
+		transition: opacity 0.4s ease;
+	}
+	.is-open .code-content {
+		max-height: 1000px;
+	}
+	.is-open .fade-overlay {
+		opacity: 0;
+	}
+</style>

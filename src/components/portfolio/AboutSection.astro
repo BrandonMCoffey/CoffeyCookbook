@@ -1,0 +1,35 @@
+---
+import SectionWrapper from './SectionWrapper.astro';
+
+const skills = {
+	"Languages": ["C++", "C#", "HLSL", "GLSL", "Python", "JavaScript"],
+	"Engines & APIs": ["Unreal Engine", "Unity", "DirectX 12", "Vulkan", "OpenGL"],
+	"Tools": ["Git", "Perforce", "Blender", "RenderDoc", "PIX", "JIRA"],
+};
+---
+
+<SectionWrapper id="about" title="About & Skills">
+	<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+		<div class="text-lg text-muted space-y-4">
+			<p>
+				Hello! I'm Brandon, a programmer and technical artist with a deep passion for real-time graphics and game development. From writing low-level rendering code to architecting gameplay systems, I thrive on solving complex problems to create performant and visually stunning interactive experiences.
+			</p>
+			<p>
+				My journey started with a fascination for how games create their worlds, which led me to get a B.A. in Arts, Technology, and Emerging Communications – Animation and Games and a minor in Computer Science, and a career dedicated to understanding and mastering the technology behind them.
+			</p>
+		</div>
+
+		<div class="space-y-6">
+			{Object.entries(skills).map(([category, items]) => (
+				<div>
+					<h3 class="mb-3">{category}</h3>
+					<div class="flex flex-wrap gap-2">
+						{items.map(skill => (
+							<span class="badge badge-slate">{skill}</span>
+						))}
+					</div>
+				</div>
+			))}
+		</div>
+	</div>
+</SectionWrapper>

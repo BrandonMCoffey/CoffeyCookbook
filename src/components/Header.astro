@@ -1,46 +1,70 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import ThemeToggle from './ThemeToggle.astro';
+
+const { pathname: currentPath } = Astro.url;
+const isHomepage = currentPath === '/';
+
+const navLinks = [
+	{ href: 'projects', text: 'Projects' },
+	{ href: 'experience', text: 'Experience' },
+	{ href: 'about', text: 'About' },
+	{ href: 'contact', text: 'Contact' },
+];
 ---
 
-<header>
-	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/cookbook">Cookbook</HeaderLink>
-		</div>
-	</nav>
-</header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
+<header class="bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+	<div class="container mx-auto px-4">
+		<div class="flex items-center justify-between h-16">
+			<a href={isHomepage ? '#home' : '/'} class="text-lg font-bold text-slate-900 dark:text-white hover:text-green-600 dark:hover:text-green-400 transition-colors">
+				Brandon Coffey
+			</a>
 
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-</style>
+			<nav class="hidden md:flex items-center gap-6">
+				{navLinks.map(link => (
+					<a href={`${isHomepage ? '#' : '/#'}${link.href}`} class="text-sm font-semibold text-slate-700 hover:text-green-600 dark:text-slate-300 dark:hover:text-green-400 transition-colors">
+						{link.text}
+					</a>
+				))}
+			</nav>
+
+			<div class="flex items-center gap-4">
+				<ThemeToggle />
+				<button id="menu-btn" class="hamburger md:hidden focus:outline-none" aria-label="Open mobile menu">
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="menu" class="hidden md:hidden">
+		<div class="container mx-auto px-4 pb-4">
+			<nav class="flex flex-col gap-4">
+				{navLinks.map(link => (
+					<a href={`${isHomepage ? '#' : '/#'}${link.href}`} class="mobile-nav-link text-center text-lg font-semibold text-slate-700 hover:text-green-600 dark:text-slate-300 dark:hover:text-green-400 p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+						{link.text}
+					</a>
+				))}
+			</nav>
+		</div>
+	</div>
+</header>
+
+<script>
+	const btn = document.getElementById('menu-btn');
+	const menu = document.getElementById('menu');
+
+	btn?.addEventListener('click', () => {
+		btn.classList.toggle('open');
+		menu?.classList.toggle('hidden');
+	});
+
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      btn?.classList.remove('open');
+      menu?.classList.add('hidden');
+    });
+  });
+</script>

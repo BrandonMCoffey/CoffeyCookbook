@@ -1,0 +1,28 @@
+<button id="scroll-btn" title="Go to top" class="scroll-to-top">
+	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+  	<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+	</svg>
+</button>
+
+<script>
+	const scrollBtn = document.getElementById('scroll-btn');
+	const scrollThreshold = 400;
+
+	const handleScroll = () => {
+		if (window.scrollY > scrollThreshold) {
+			scrollBtn?.classList.add('visible');
+		} else {
+			scrollBtn?.classList.remove('visible');
+		}
+	};
+
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
+	};
+
+	document.addEventListener('scroll', handleScroll);
+	scrollBtn?.addEventListener('click', scrollToTop);
+</script>

@@ -1,0 +1,53 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+	project: CollectionEntry<'projects'>['data'];
+}
+
+const { project } = Astro.props;
+
+const { title, tagline, role, tech, platform, liveUrl, githubUrl, videoUrl } = project;
+---
+
+<BaseLayout title={`${title} | Brandon Coffey`} description={tagline}>
+	<div class="container mx-auto px-4 py-16 sm:py-24 max-w-4xl">
+		<div class="text-center mb-8">
+			<h1 class="mb-2">{title}</h1>
+			<p class="text-muted text-lg italic">{tagline}</p>
+		</div>
+
+		<div class="well mb-12">
+			<ul class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+				<li>
+					<span class="font-bold text-sm block">ROLE</span>
+					<span class="text-sm">{role}</span>
+				</li>
+				<li>
+					<span class="font-bold text-sm block">PLATFORM</span>
+					<div class="flex flex-wrap gap-1">
+						{platform.map((p: string) => <span class="text-sm">{p}</span>)}
+					</div>
+				</li>
+				<li class="col-span-2">
+					<span class="font-bold text-sm block">TECH STACK</span>
+					<div class="flex flex-wrap gap-x-2 gap-y-1">
+						{tech.map((t: string) => <span class="badge badge-slate text-xs">{t}</span>)}
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<article class="prose prose-slate dark:prose-invert max-w-none
+      prose-h3:border-b prose-h3:border-slate-200 dark:prose-h3:border-slate-700 prose-h3:pb-2 prose-h3:mb-4
+      prose-a:text-green-600 dark:prose-a:text-green-400">
+			<slot /> </article>
+
+		<div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700 flex flex-wrap gap-4 justify-center">
+			{liveUrl && <a href={liveUrl} class="btn btn-primary" target="_blank">Live Demo</a>}
+			{githubUrl && <a href={githubUrl} class="btn btn-secondary" target="_blank">View on GitHub</a>}
+			{videoUrl && <a href={videoUrl} class="btn btn-secondary" target="_blank">Watch Video</a>}
+		</div>
+	</div>
+</BaseLayout>

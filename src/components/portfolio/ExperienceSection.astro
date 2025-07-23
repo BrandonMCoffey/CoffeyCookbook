@@ -1,0 +1,72 @@
+---
+import SectionWrapper from './SectionWrapper.astro';
+
+interface Experience {
+	role: string;
+	company: string;
+	time: string;
+	description: string;
+	takeaways: string[];
+}
+
+const experiences: Experience[] = [
+	{
+		role: "Lead Technical Artist",
+		company: "VAST Lab",
+		time: "June 2023 - Present",
+		description: "Developed augmented and virtual reality experiences, metaverse spaces, and interactive media.",
+		takeaways: [
+			"Developed augmented and virtual reality experiences, metaverse spaces, and interactive media.",
+			"Won three Silver Davey Awards in Emerging Tech for projects I led.",
+		]
+	},
+	{
+		role: "Lead Programmer",
+		company: "UTD Game Lab",
+		time: "Jan 2022 – Dec 2022",
+		description: "Collaborated with other leads to design, build, and release Tobor Quest & Ghost House within a studio-like setting with 40+ developers.",
+		takeaways: [
+			"Ensured all the game systems func�oned together and were usable by game and level designers.",
+			"- Maintained source control through a GitHub Repo and trained others on how to use Git properly.",
+		]
+	},
+	{
+		role: "VR Programmer",
+		company: "Multimodal Interaction Lab",
+		time: "Feb 2022 – May 2023",
+		description: "Designed VR tools with mid-air haptic and thermal feedback alongside Computer Science PhD students",
+		takeaways: [
+			"Built complex VR Unity Projects involving Oculus, MRTK toolkit, and Ultraleap haptics.",
+			"Researched and designed a Metaverse-style experience that syncs a real and virtual space, allowing for remote collaboration.",
+		]
+	}
+]
+---
+
+<SectionWrapper id="experience" title="Work Experience">
+	<div class="relative max-w-3xl mx-auto">
+		<div class="absolute left-4 sm:left-1/2 top-2 h-full w-0.5 bg-slate-200 dark:bg-slate-700"></div>
+
+		{experiences.map((exp: Experience, index: number) => (
+			<div class="relative mb-12">
+				<div class="flex items-center mb-1">
+					<div class="absolute left-4 sm:left-1/2 top-2 z-10 w-4 h-4 -translate-x-1/2 bg-green-500 rounded-full border-4 border-slate-50 dark:border-slate-900"></div>
+					<div class:list={["w-full pl-10 sm:pl-0", { "sm:w-1/2": true, "sm:text-right sm:pr-8": index % 2 === 0, "sm:w-1/2 sm:pl-8 sm:text-left": index % 2 !== 0, "sm:ml-auto": index % 2 !== 0 }]}>
+						<time class="text-sm text-muted">{exp.time}</time>
+					</div>
+				</div>
+
+				<div class:list={["w-full pl-10 sm:pl-0", { "sm:w-1/2": true, "sm:pr-8": index % 2 === 0, "sm:w-1/2 sm:pl-8 sm:ml-auto": index % 2 !== 0 }]}>
+					<div class="card-static p-6">
+						<h3 class="mb-1">{exp.role}</h3>
+						<p class="text-green-600 dark:text-green-400 font-semibold mb-3">{exp.company}</p>
+						<p class="text-muted text-sm mb-4">{exp.description}</p>
+						<ul class="list-disc list-inside space-y-2">
+							{exp.takeaways.map((item: string) => <li class="text-sm">{item}</li>)}
+						</ul>
+					</div>
+				</div>
+			</div>
+		))}
+	</div>
+</SectionWrapper>

@@ -1,6 +1,8 @@
 ---
+import BaseHead from '../components/BaseHead.astro';
+import RecipeHeader from '../components/cookbook/RecipeHeader.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-import ThemeToggleButton from '../components/ThemeToggleButton.jsx';
 
 interface Props {
 	title: string;
@@ -11,78 +13,18 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="description" content="A personal recipe collection" />
-	<meta name="viewport" content="width=device-width" />
-	<script is:inline>
-		const theme = (() => {
-			if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
-				return localStorage.getItem('theme');
-			}
-			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				return 'dark';
-			}
-			return 'light';
-		})();
-		if (theme === 'dark') {
-			document.documentElement.classList.add('dark');
-		} else {
-			document.documentElement.classList.remove('dark');
-		}
-	</script>
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-	<title>{title} | My Recipes</title>
-</head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200">
-	<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm shadow-md sticky top-0 z-30">
-		<nav class="container mx-auto px-4 flex justify-between items-center h-16">
-			<a href="/cookbook" class="text-2xl font-bold text-green-700 dark:text-green-400">Recipe Site</a>
-			<div class="flex items-center gap-4">
-				<div class="hidden md:flex space-x-6 items-center">
-					<a href="/cookbook">All Recipes</a>
-					<a href="/cookbook/favorites">Favorites</a>
-					<a href="/cookbook/shopping-list">Shopping List</a>
-				</div>
-				<ThemeToggleButton client:load />
-				<div class="md:hidden">
-					<button id="menu-btn" type="button" class="z-50 block hamburger md:hidden focus:outline-none">
-						<span class="hamburger-top"></span>
-						<span class="hamburger-middle"></span>
-						<span class="hamburger-bottom"></span>
-					</button>
-				</div>
+	<head>
+		<BaseHead title={title + " | Coffey Cookbook"} description={"A personal recipe collection"} />
+	</head>
+	<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200">
+		<RecipeHeader />
+		
+		<main class="transition-all duration-300 ease-in-out">
+			<div class="container mx-auto p-4 md:py-8">
+				<slot />
 			</div>
-		</nav>
-		<div id="menu" class="hidden md:hidden">
-			<div class="absolute top-14 z-40 flex flex-col items-center self-end py-8 mt-1 space-y-6 font-bold bg-white dark:bg-slate-800 sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
-				<a href="/cookbook" class="dark:hover:text-green-300">All Recipes</a>
-				<a href="/cookbook/favorites" class="dark:hover:text-green-300">Favorites</a>
-				<a href="/cookbook/shopping-list" class="dark:hover:text-green-300">Shopping List</a>
-			</div>
-		</div>
-	</header>
-	
-	<main class="transition-all duration-300 ease-in-out">
-		<div class="container mx-auto p-4 md:py-8">
-			<slot />
-		</div>
-	</main>
-	
-	<footer class="text-center p-8 mt-16 text-slate-500 dark:text-slate-400 transition-all duration-300 ease-in-out">
-		<p></p>
-	</footer>
-	
-	<script>
-		const btn = document.getElementById('menu-btn')
-		const menu = document.getElementById('menu')
-		btn.addEventListener('click', () => {
-			btn.classList.toggle('open')
-			menu.classList.toggle('hidden')
-		})
-	</script>
-</body>
+		</main>
+		
+		<Footer />
+	</body>
 </html>
