@@ -56,7 +56,7 @@ export default function ActiveRecipeSidebar({ allRecipes }) {
                 <div className="flex justify-between items-center">
                      <h2 className="text-2xl font-bold">Active Recipes</h2> 
                 </div>
-                <a href="/cookbook/shopping-list" className="block w-full text-center mt-4 btn btn-primary">Go to Shopping List</a>
+                <a href="cookbook/shopping-list" className="block w-full text-center mt-4 btn btn-primary">Go to Shopping List</a>
             </div>
             
             <div className="flex-grow overflow-y-auto p-4 space-y-4"> 
