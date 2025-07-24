@@ -13,7 +13,7 @@ const allRecipes = (await Promise.all(Object.values(allJsonFiles).map(async (get
     <ShoppingList allRecipes={allRecipes} client:load />
   </main>
 
-  <br><hr><br>
+  <br /><hr /><br />
 
   <main class="container mx-auto p-4">
     <ActiveList allRecipes={allRecipes} client:load />

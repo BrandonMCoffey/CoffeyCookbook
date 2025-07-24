@@ -1,0 +1,116 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/projects/ProjectCard.astro';
+
+const projects = await getCollection('projects');
+projects.sort((a, b) => a.data.priority - b.data.priority);
+
+const allFilters = [...new Set(projects.flatMap(p => p.data.filters || []))];
+---
+
+<BaseLayout title="All Projects" description="A collection of my professional work, technical demos, and personal projects.">
+	<div class="container mx-auto px-4 py-16 sm:py-24">
+		<div class="text-center mb-16">
+			<h1 class="mb-4">All Projects</h1>
+			<p class="text-lg text-muted max-w-2xl mx-auto">
+				A collection of my professional work, technical demos, and personal projects.
+			</p>
+		</div>
+
+		<div id="controls" class="mb-12 flex flex-col md:flex-row gap-4 md:items-center">
+			<div class="filter-group flex flex-wrap gap-2 items-center">
+				<span class="font-semibold mr-2">Filter by:</span>
+				{allFilters.map(filter => (
+					<button class="sort-btn" data-filter={filter}>{filter}</button>
+				))}
+			</div>
+
+			<div class="sort-group flex flex-wrap gap-2 items-center md:ml-auto">
+				<span class="font-semibold mr-2">Sort by:</span>
+				<button class="sort-btn active" data-sort="priority_asc">Priority</button>
+				<button class="sort-btn" data-sort="year_desc">Year (Newest)</button>
+				<button class="sort-btn" data-sort="year_asc">Year (Oldest)</button>
+			</div>
+		</div>
+
+		<div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+			{projects.map(project => (
+				<ProjectCard project={project} />
+			))}
+		</div>
+	</div>
+</BaseLayout>
+
+<script define:vars={{ allProjects: projects }}>
+	const activeFilters = new Set();
+	let currentSort = 'priority_asc';
+
+	const projectGrid = document.getElementById('project-grid');
+	const filterButtons = document.querySelectorAll('.filter-group .sort-btn');
+	const sortButtons = document.querySelectorAll('.sort-group .sort-btn');
+
+	function renderProjects() {
+		let filteredProjects = allProjects.filter(project => {
+			if (activeFilters.size === 0) return true;
+			return [...activeFilters].every(filter => project.data.filters?.includes(filter));
+		});
+
+		filteredProjects.sort((a, b) => {
+			switch (currentSort) {
+				case 'year_desc':
+					return b.data.year - a.data.year;
+				case 'year_asc':
+					return a.data.year - b.data.year;
+				case 'priority_asc':
+				default:
+					return a.data.priority - b.data.priority;
+			}
+		});
+
+		projectGrid.innerHTML = '';
+		if (filteredProjects.length === 0) {
+			projectGrid.innerHTML = `<p class="text-muted col-span-full text-center">No projects match the current filters.</p>`;
+			return;
+		}
+
+		filteredProjects.forEach(project => {
+			const cardHTML = `
+				<a href="/projects/${project.slug}" class="card">
+					<img src="${project.data.thumbnail}" alt="Thumbnail for ${project.data.title}" class="card-image" />
+					<div class="card-body">
+						<div class="flex flex-wrap gap-2 mb-2">
+							<span class="badge badge-blue">${project.data.tech[0] || ''}</span>
+							<span class="badge badge-slate">${project.data.platform[0] || ''}</span>
+						</div>
+						<h3 class="mb-2">${project.data.title}</h3>
+						<p class="text-muted text-sm italic">${project.data.tagline}</p>
+					</div>
+				</a>`;
+			projectGrid.insertAdjacentHTML('beforeend', cardHTML);
+		});
+	}
+
+	filterButtons.forEach(button => {
+		button.addEventListener('click', () => {
+			const filter = button.dataset.filter;
+			if (activeFilters.has(filter)) {
+				activeFilters.delete(filter);
+				button.classList.remove('active');
+			} else {
+				activeFilters.add(filter);
+				button.classList.add('active');
+			}
+			renderProjects();
+		});
+	});
+
+	sortButtons.forEach(button => {
+		button.addEventListener('click', () => {
+			currentSort = button.dataset.sort;
+			sortButtons.forEach(btn => btn.classList.remove('active'));
+			button.classList.add('active');
+      renderProjects();
+		});
+	});
+</script>

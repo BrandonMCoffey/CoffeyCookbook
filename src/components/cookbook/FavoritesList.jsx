@@ -20,7 +20,7 @@ export default function FavoritesList({ allRecipes }) {
         <hr class="mt-16 pt-16"/>
         <div>
           <h1 class="text-4xl font-bold mb-8">You Also Might Like</h1>
-          <br></br>
+          <br />
           <RandomRecipes allRecipes={allRecipes} count={3} />
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function FavoritesList({ allRecipes }) {
     <hr class="mt-16 pt-16"/>
     <div>
       <h1 class="text-4xl font-bold mb-8">You Also Might Like</h1>
-      <br></br>
+      <br />
       <RandomRecipes allRecipes={allRecipes} count={3} />
     </div>
   </div>

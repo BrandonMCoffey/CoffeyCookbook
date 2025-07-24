@@ -7,7 +7,7 @@ interface Props {
 
 const { project } = Astro.props;
 const { slug, data } = project;
-const { title, thumbnail, platform, tech, tagline } = data;
+const { title, thumbnail, platform = [], tech = [], tagline } = data;
 ---
 <a href={`/projects/${slug}`} class="card">
 	<img src={thumbnail} alt={`Thumbnail for ${title}`} class="card-image" />

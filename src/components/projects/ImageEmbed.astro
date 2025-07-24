@@ -1,0 +1,21 @@
+---
+interface Props {
+	file: string;
+	alt: string;
+}
+
+const { file, alt } = Astro.props;
+
+const imagePath = `/images/projects/${file}`;
+const defaultImagePath = '/images/default.jpg';
+---
+
+<div class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <img 
+    src={imagePath} 
+    alt={alt} 
+    class="aspect-video w-full h-full object-cover"
+    loading="lazy"
+    onerror={`this.onerror=null; this.src='${defaultImagePath}';`}
+  />
+</div>
