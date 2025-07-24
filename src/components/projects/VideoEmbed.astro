@@ -1,0 +1,19 @@
+---
+interface Props {
+	videoId: string;
+    playlistId?: string;
+}
+
+const { videoId, playlistId } = Astro.props;
+---
+<div class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <div class="aspect-video">
+    <iframe
+      src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playsinline=1&${playlistId ? "list="+playlistId : "playlist="+videoId}`}
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="w-full h-full"
+    ></iframe>
+  </div>
+</div>

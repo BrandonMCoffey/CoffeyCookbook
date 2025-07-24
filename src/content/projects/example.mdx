@@ -8,8 +8,11 @@ thumbnail: '/images/projects/thumbnail.gif'
 githubUrl: 'https://github.com/BrandonMCoffey'
 videoUrl: 'https://youtube.com'
 ---
+import { Image } from 'astro:assets';
+import VideoEmbed from '../../components/projects/VideoEmbed.astro'
 import CodeSnippet from '../../components/projects/CodeSnippet.astro'
 import ProjectHighlight from '../../components/projects/ProjectHighlight.astro'
+import gameScreenshot from '../../assets/projects/painting-angle.png';
 
 ### Project Overview
 
@@ -17,7 +20,17 @@ This is about a game?
 
 ### Technical Breakdown
 
+<VideoEmbed videoId="g29ADLrQ65E" />
+
 #### Gravity-Well Combat System
+
+<div class="my-8 rounded-lg overflow-hidden shadow-lg">
+  <Image 
+    src={gameScreenshot} 
+    alt="A screenshot of the Aetherfall game in action" 
+    class="aspect-video object-cover" 
+  />
+</div>
 
 The core mechanic is...
 

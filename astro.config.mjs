@@ -7,7 +7,6 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://brandonmcoffey.github.io',
-    base: '/CoffeyCookbook',
+    site: 'https://brandoncoffey.com',
     integrations: [react(), tailwind(), sitemap(), mdx()],
 });
