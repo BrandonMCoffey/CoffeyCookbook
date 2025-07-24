@@ -4,12 +4,12 @@ import ThemeToggle from '../ThemeToggle.astro';
 
 <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm shadow-md sticky top-0 z-30">
     <nav class="container mx-auto px-4 flex justify-between items-center h-16">
-        <a href="cookbook" class="text-2xl font-bold text-green-700 dark:text-green-400">Recipe Site</a>
+        <a href="/cookbook" class="text-2xl font-bold text-green-700 dark:text-green-400">Recipe Site</a>
         <div class="flex items-center gap-4">
             <div class="hidden md:flex space-x-6 items-center">
-                <a href="cookbook">All Recipes</a>
-                <a href="cookbook/favorites">Favorites</a>
-                <a href="cookbook/shopping-list">Shopping List</a>
+                <a href="/cookbook">All Recipes</a>
+                <a href="/cookbook/favorites">Favorites</a>
+                <a href="/cookbook/shopping-list">Shopping List</a>
             </div>
 			<ThemeToggle />
             <div class="md:hidden">
@@ -23,9 +23,9 @@ import ThemeToggle from '../ThemeToggle.astro';
     </nav>
     <div id="menu" class="hidden md:hidden">
         <div class="absolute top-14 z-40 flex flex-col items-center self-end py-8 mt-1 space-y-6 font-bold bg-white dark:bg-slate-800 sm:w-auto sm:self-center left-0 right-0 drop-shadow-md">
-            <a href="cookbook" class="dark:hover:text-green-300">All Recipes</a>
-            <a href="cookbook/favorites" class="dark:hover:text-green-300">Favorites</a>
-            <a href="cookbook/shopping-list" class="dark:hover:text-green-300">Shopping List</a>
+            <a href="/cookbook" class="dark:hover:text-green-300">All Recipes</a>
+            <a href="/cookbook/favorites" class="dark:hover:text-green-300">Favorites</a>
+            <a href="/cookbook/shopping-list" class="dark:hover:text-green-300">Shopping List</a>
         </div>
     </div>
 </header>
