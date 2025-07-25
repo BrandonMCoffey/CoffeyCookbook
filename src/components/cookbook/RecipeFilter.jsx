@@ -199,28 +199,14 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
 
   return (
     <div>
-      <div className="space-y-4 mb-12 p-4 card-static">
-        <div className="flex justify-between items-center">
-          <h2 className="text-xl font-bold">Filter & Sort</h2>
-          <button onClick={clearAllFilters} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">Clear All</button>
-        </div>
-
-        <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
-        <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div> 
-        <div><h3 className="font-semibold mb-2">Diet</h3><div className="flex flex-wrap gap-2">{diets.map(({ name }) => { const count = dynamicDietCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeDiets, setActiveDiets, name)} className={`sort-btn ${activeDiets.has(name) ? 'active' : ''}`} disabled={!activeDiets.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <div><h3 className="font-semibold mb-2">Max Time</h3><div className="flex flex-wrap gap-2">{TIME_RANGES.map(range => { const count = getCountForRange(range, 'time'); return (<button key={range.label} onClick={() => handleRangeToggle(timeFilter, setTimeFilter, range)} className={`sort-btn ${timeFilter?.label === range.label ? 'active' : ''}`} disabled={timeFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
-          <div><h3 className="font-semibold mb-2">Max Cookware</h3><div className="flex flex-wrap gap-2">{COOKWARE_RANGES.map(range => { const count = getCountForRange(range, 'cookware'); return (<button key={range.label} onClick={() => handleRangeToggle(cookwareFilter, setCookwareFilter, range)} className={`sort-btn ${cookwareFilter?.label === range.label ? 'active' : ''}`} disabled={cookwareFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
-        </div>
-
-        <br />
+      <div className="space-y-4 mb-4 p-8 card-static">
         <div className="relative">
           <input 
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search recipes, ingredients, authors..."
-            className="w-full pl-10 pr-4 py-2 border rounded-full bg-slate-100 dark:bg-slate-700 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full pl-10 pr-4 py-4 text-xl border rounded-full bg-slate-100 dark:bg-slate-700 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-green-500"
           />
           <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
@@ -228,8 +214,8 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
         </div>
 
         <div>
-          <h3 className="font-semibold mb-2">Sort Mode</h3>
-          <div className="flex flex-wrap gap-2">
+          <h2 className="font-semibold mb-4 my-8">Sort Mode</h2>
+          <div className="flex flex-wrap gap-4">
             {SORT_MODES.map(mode => {
               let buttonText = mode;
               if (sortMode === mode) {
@@ -244,6 +230,20 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className="space-y-4 mb-12 p-8 card-static">
+        <div className="flex justify-between items-center">
+          <h2 className="font-semibold mb-4">Filters</h2>
+          <button onClick={clearAllFilters} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">Clear All</button>
+        </div>
+
+        <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
+        <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div> 
+        <div><h3 className="font-semibold mb-2">Diet</h3><div className="flex flex-wrap gap-2">{diets.map(({ name }) => { const count = dynamicDietCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeDiets, setActiveDiets, name)} className={`sort-btn ${activeDiets.has(name) ? 'active' : ''}`} disabled={!activeDiets.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div><h3 className="font-semibold mb-2">Max Time</h3><div className="flex flex-wrap gap-2">{TIME_RANGES.map(range => { const count = getCountForRange(range, 'time'); return (<button key={range.label} onClick={() => handleRangeToggle(timeFilter, setTimeFilter, range)} className={`sort-btn ${timeFilter?.label === range.label ? 'active' : ''}`} disabled={timeFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
+          <div><h3 className="font-semibold mb-2">Max Cookware</h3><div className="flex flex-wrap gap-2">{COOKWARE_RANGES.map(range => { const count = getCountForRange(range, 'cookware'); return (<button key={range.label} onClick={() => handleRangeToggle(cookwareFilter, setCookwareFilter, range)} className={`sort-btn ${cookwareFilter?.label === range.label ? 'active' : ''}`} disabled={cookwareFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
         </div>
       </div>
       <div className="mb-4"><p className="text-lg font-semibold">{sortedRecipes.length} Recipes Found</p></div>

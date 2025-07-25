@@ -70,7 +70,7 @@
     @apply flex flex-wrap items-center gap-2 mb-6;
   }
   .sort-btn {
-    @apply px-3 py-1 text-sm rounded-full cursor-pointer transition-colors bg-slate-200 text-slate-700 hover:bg-slate-300 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600;
+    @apply px-3 py-1 text-lg rounded-full cursor-pointer transition-colors bg-slate-200 text-slate-700 hover:bg-slate-300 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600;
   }
   .sort-btn.active {
     @apply bg-green-600 text-white font-semibold shadow-md dark:bg-green-500;
