@@ -21,7 +21,7 @@ const MANUAL_CATEGORY_ORDER = [
 
 const SORT_MODES = ['Default', 'Alphabetical', 'Complexity', 'Random'];
 
-export default function RecipeFilter({ allRecipes, categories, cuisines, diets }) {
+export default function RecipeFilter({ allRecipes, categories, cuisines, diets, base }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategories, setActiveCategories] = useState(new Set());
   const [activeCuisines, setActiveCuisines] = useState(new Set());
@@ -31,6 +31,7 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
   const [sortMode, setSortMode] = useState('Default');
   const [sortDirection, setSortDirection] = useState('asc');
   const [randomSeed, setRandomSeed] = useState(0);
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const handleTagToggle = (stateSet, setter, item) => {
     const newSet = new Set(stateSet);
@@ -152,7 +153,6 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
         const totalTime = (r.time.prep || 0) + (r.time.cook || 0) + (r.time.rest || 0);
         return totalTime > (timeFilter.minMinutes || 0) && totalTime <= (timeFilter.maxMinutes || Infinity);
     });
-
     if (type === 'time') return filtered.filter(r => {
         const totalTime = (r.time.prep || 0) + (r.time.cook || 0) + (r.time.rest || 0);
         return totalTime > (range.minMinutes || 0) && totalTime <= (range.maxMinutes || Infinity);
@@ -196,10 +196,9 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
       return counts;
   }, [searchedRecipes, activeCategories, activeCuisines, timeFilter, cookwareFilter]);
 
-
   return (
     <div>
-      <div className="space-y-4 mb-4 p-8 card-static">
+      <div className="space-y-4 mb-4 p-8 border rounded-lg bg-white dark:bg-slate-800 dark:border-slate-700">
         <div className="relative">
           <input 
             type="text"
@@ -208,14 +207,13 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
             placeholder="Search recipes, ingredients, authors..."
             className="w-full pl-10 pr-4 py-4 text-xl border rounded-full bg-slate-100 dark:bg-slate-700 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-green-500"
           />
-          <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5"><path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
           </div>
         </div>
-
         <div>
-          <h2 className="font-semibold mb-4 my-8">Sort Mode</h2>
-          <div className="flex flex-wrap gap-4">
+          <h3 className="font-semibold mb-2 mt-8">Sort Mode</h3>
+          <div className="flex flex-wrap gap-2">
             {SORT_MODES.map(mode => {
               let buttonText = mode;
               if (sortMode === mode) {
@@ -232,24 +230,36 @@ export default function RecipeFilter({ allRecipes, categories, cuisines, diets }
           </div>
         </div>
       </div>
-      <div className="space-y-4 mb-12 p-8 card-static">
-        <div className="flex justify-between items-center">
-          <h2 className="font-semibold mb-4">Filters</h2>
-          <button onClick={clearAllFilters} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">Clear All</button>
-        </div>
-
-        <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
-        <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div> 
-        <div><h3 className="font-semibold mb-2">Diet</h3><div className="flex flex-wrap gap-2">{diets.map(({ name }) => { const count = dynamicDietCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeDiets, setActiveDiets, name)} className={`sort-btn ${activeDiets.has(name) ? 'active' : ''}`} disabled={!activeDiets.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          <div><h3 className="font-semibold mb-2">Max Time</h3><div className="flex flex-wrap gap-2">{TIME_RANGES.map(range => { const count = getCountForRange(range, 'time'); return (<button key={range.label} onClick={() => handleRangeToggle(timeFilter, setTimeFilter, range)} className={`sort-btn ${timeFilter?.label === range.label ? 'active' : ''}`} disabled={timeFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
-          <div><h3 className="font-semibold mb-2">Max Cookware</h3><div className="flex flex-wrap gap-2">{COOKWARE_RANGES.map(range => { const count = getCountForRange(range, 'cookware'); return (<button key={range.label} onClick={() => handleRangeToggle(cookwareFilter, setCookwareFilter, range)} className={`sort-btn ${cookwareFilter?.label === range.label ? 'active' : ''}`} disabled={cookwareFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
+      
+      <div className="mb-12 border rounded-lg bg-white dark:bg-slate-800 dark:border-slate-700">
+        <button onClick={() => setFiltersOpen(!filtersOpen)} className="w-full flex justify-between items-center p-8">
+            <div className="flex items-center gap-4">
+              <h2 className="text-xl font-bold">Filters</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className={`w-7 h-7 transition-transform duration-300 ${filtersOpen && 'rotate-90'}`}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+              </svg>
+            </div>
+            <div className="flex items-center gap-4">
+              <span onClick={(e) => {e.stopPropagation(); clearAllFilters();}} className="text-sm text-blue-600 dark:text-blue-400 hover:underline">Clear All</span>
+            </div>
+        </button>
+        <div className={`transition-all duration-500 ease-in-out overflow-hidden ${filtersOpen ? 'max-h-[1000px]' : 'max-h-0'}`}>
+            <div className="px-8 pb-8 space-y-4">
+                <div><h3 className="font-semibold mb-2">Category</h3><div className="flex flex-wrap gap-2">{manuallySortedCategories.map(({ name }) => { const count = dynamicCategoryCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCategories, setActiveCategories, name)} className={`sort-btn ${activeCategories.has(name) ? 'active' : ''}`} disabled={!activeCategories.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
+                <div><h3 className="font-semibold mb-2">Cuisine</h3><div className="flex flex-wrap gap-2">{cuisines.map(({ name }) => { const count = dynamicCuisineCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeCuisines, setActiveCuisines, name)} className={`sort-btn ${activeCuisines.has(name) ? 'active' : ''}`} disabled={!activeCuisines.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div> 
+                <div><h3 className="font-semibold mb-2">Diet</h3><div className="flex flex-wrap gap-2">{diets.map(({ name }) => { const count = dynamicDietCounts.get(name) || 0; return (<button key={name} onClick={() => handleTagToggle(activeDiets, setActiveDiets, name)} className={`sort-btn ${activeDiets.has(name) ? 'active' : ''}`} disabled={!activeDiets.has(name) && count === 0}>{name} <span className="ml-1.5 opacity-75">({count})</span></button>);})}</div></div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div><h3 className="font-semibold mb-2">Max Time</h3><div className="flex flex-wrap gap-2">{TIME_RANGES.map(range => { const count = getCountForRange(range, 'time'); return (<button key={range.label} onClick={() => handleRangeToggle(timeFilter, setTimeFilter, range)} className={`sort-btn ${timeFilter?.label === range.label ? 'active' : ''}`} disabled={timeFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
+                <div><h3 className="font-semibold mb-2">Max Cookware</h3><div className="flex flex-wrap gap-2">{COOKWARE_RANGES.map(range => { const count = getCountForRange(range, 'cookware'); return (<button key={range.label} onClick={() => handleRangeToggle(cookwareFilter, setCookwareFilter, range)} className={`sort-btn ${cookwareFilter?.label === range.label ? 'active' : ''}`} disabled={cookwareFilter?.label !== range.label && count === 0}>{range.label} <span className="ml-1.5 opacity-75">({count})</span></button>)})}</div></div>
+                </div>
+            </div>
         </div>
       </div>
+      
       <div className="mb-4"><p className="text-lg font-semibold">{sortedRecipes.length} Recipes Found</p></div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {sortedRecipes.map((recipe) => (
-          <RecipeCard key={recipe.id} recipe={recipe} />
+          <RecipeCard key={recipe.id} recipe={recipe} base={base} />
         ))}
       </div>
     </div>
