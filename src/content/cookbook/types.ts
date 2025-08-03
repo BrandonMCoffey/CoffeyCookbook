@@ -3,8 +3,9 @@ export type Recipe = {
   title: string;
   description: string;
   thumbnail: string;
-  date: string;
   author: string;
+  date: string;
+  collections: string[];
   category: string;
   cuisines: string[];
   diets: string[];
@@ -21,5 +22,5 @@ export type Recipe = {
     unit: string;
   }[];
   instructions: string[];
-  tips: string;
+  tips: string[];
 }
