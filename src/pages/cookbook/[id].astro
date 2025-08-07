@@ -63,7 +63,8 @@ if (recommendations.length < MAX_RECOMMENDATIONS) {
 <Layout title={currentRecipe.title}>
   <main class="max-w-4xl mx-auto p-4">
     <h1 class="text-5xl font-bold mb-2">{currentRecipe.title}</h1>
-    <p class="text-lg text-muted mb-4">{currentRecipe.description}</p>
+    <p class="text-lg text-muted mb-2">{currentRecipe.description}</p>
+    <h3 class="text-lg font-bold mb-4">From: {currentRecipe.author}</h3>
     <img src={currentRecipe.thumbnail} alt={`Image of ${currentRecipe.title}`} class="w-full h-96 object-cover rounded-lg mb-6" /> 
 
     <ActionButtons recipeId={currentRecipe.id} client:load />
@@ -114,10 +115,14 @@ if (recommendations.length < MAX_RECOMMENDATIONS) {
       </div>
     </div>
 
-    {currentRecipe.tips && (
+    {currentRecipe.tips.length > 0 && (
       <div class="mt-12">
           <h2 class="text-3xl font-semibold mb-4">Tips & Hints</h2>
-           <p class="well">{currentRecipe.tips}</p> 
+          <div class="well">
+          {currentRecipe.tips.map(tip => (
+            <li>{tip}</li>
+          ))}
+          </div> 
       </div>
     )}
 

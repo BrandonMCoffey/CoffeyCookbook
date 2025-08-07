@@ -25,7 +25,7 @@ export default function IngredientChecklist({ ingredients }) {
             <span className={`ml-3 ${isChecked ? 'text-slate-500 dark:text-slate-400 line-through' : ''}`}>
               {ing.quantity === 0
                 ? `${ing.item}, to taste`
-                : `${formatQuantity(ing.quantity)} ${ing.unit} ${ing.item}`
+                : `${formatQuantity(ing.quantity)} ${ing.unit} ${ing.item} ${ing.note ? `(${ing.note})` : ``}`
               }
             </span>
           </label>

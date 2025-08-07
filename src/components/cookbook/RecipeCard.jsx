@@ -88,6 +88,10 @@ export default function RecipeCard({ recipe }) {
           </button>
         </div>
 
+        <div className="absolute top-2 left-2 z-10 rounded-full bg-black/50 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          From: {recipe.author}
+        </div>
+
         <div className="absolute bottom-0 left-0 right-0 p-2 bg-black/50 text-white text-sm backdrop-blur-sm transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
             <div className="flex justify-around items-center">
                 <div className="flex items-center gap-1">

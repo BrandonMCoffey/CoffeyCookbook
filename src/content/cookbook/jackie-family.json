@@ -1,0 +1,41 @@
+[
+  {
+    "id": "chocolate-cookies",
+    "title": "Chocolate Cookies",
+    "description": "Deliciously rich and chewy chocolate cookies, loaded with chocolate chips.",
+    "thumbnail": "/images/cookbook/college-cookbook/chocolate-cookies.jpg",
+    "author": "Chris Garza",
+    "date": "2025-08-07",
+    "collections": ["College"],
+    "category": "Dessert",
+    "cuisines": ["American"],
+    "diets": [],
+    "cookware": ["Baking Sheet", "Large Bowl", "Wire Rack"],
+    "time": { "prep": 15, "cook": 10, "rest": 5 },
+    "servings": 24,
+    "ingredients": [
+      { "item": "unsalted butter", "quantity": 0.5, "unit": "cup", "note": "softened" },
+      { "item": "white sugar", "quantity": 0.5, "unit": "cup" },
+      { "item": "brown sugar", "quantity": 0.5, "unit": "cup" },
+      { "item": "large egg", "quantity": 1, "unit": "count" },
+      { "item": "vanilla extract", "quantity": 1, "unit": "tsp" },
+      { "item": "all-purpose flour", "quantity": 1, "unit": "cup" },
+      { "item": "unsweetened cocoa powder", "quantity": 0.33, "unit": "cup" },
+      { "item": "baking soda", "quantity": 0.5, "unit": "tsp" },
+      { "item": "salt", "quantity": 0.25, "unit": "tsp" },
+      { "item": "chocolate chips", "quantity": 1, "unit": "cup", "note": "optional, but delicious" }
+    ],
+    "instructions": [
+      "Preheat oven to 350°F (175°C). Line a baking sheet with parchment paper.",
+      "In a large bowl, cream together softened butter, white sugar, and brown sugar until light and fluffy.",
+      "Beat in the egg and vanilla extract.",
+      "In a separate bowl, whisk together flour, cocoa powder, baking soda, and salt.",
+      "Gradually add the dry ingredients to the wet ingredients, mixing until just combined.",
+      "Fold in chocolate chips if using.",
+      "Drop spoonfuls of dough onto the prepared baking sheet (about 1.5-inch balls).",
+      "Bake for 8–10 minutes, until the edges are set. The cookies will continue to cook on the sheet.",
+      "Let the cookies cool for a few minutes on the baking sheet, then transfer to a wire rack."
+    ],
+    "tips": []
+  }
+]
