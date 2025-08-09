@@ -1,0 +1,81 @@
+[
+    {
+    "id": "baked-ziti",
+    "title": "Baked Ziti",
+    "description": "A classic layered pasta bake with ground beef, mozzarella, and a rich marinara sauce.",
+    "thumbnail": "/images/cookbook/brandon-family/baked-ziti.jpg",
+    "author": "Brandon",
+    "date": "2025-07-17",
+    "collections": [ "Brandon Family", "College Cookbook" ],
+    "category": "Main Course",
+    "cuisines": [ "Italian", "American" ],
+    "diets": [],
+    "cookware": [ "Large Skillet", "Large Pot", "9x13 Baking Dish" ],
+    "time": { "prep": 15, "cook": 30, "rest": 0 },
+    "servings": 8,
+    "ingredients": [
+      { "item": "ziti pasta", "quantity": 1, "unit": "lb", "note": "2lb for larger recipe" },
+      { "item": "ground beef", "quantity": 1, "unit": "lb", "note": "lean preferred" },
+      { "item": "onion", "quantity": 1, "unit": "", "note": "" },
+      { "item": "spaghetti sauce", "quantity": 52, "unit": "oz", "note": "marinara preferred" },
+      { "item": "mozzarella cheese, shredded", "quantity": 12, "unit": "oz", "note": "" },
+      { "item": "sour cream", "quantity": 1, "unit": "cup", "note": "optional" },
+      { "item": "parmesan cheese", "quantity": 0, "unit": "to taste", "note": "" }
+    ],
+    "instructions": [
+      "Dice the onion and butter a 9x13 inch baking dish.",
+      "Preheat the oven to 350°F (175°C).",
+      "In a large skillet, brown the diced onion and ground beef over medium heat.",
+      "Add spaghetti sauce and simmer 15 minutes.",
+      "Meanwhile, bring a large pot of lightly salted water to a boil.",
+      "Add ziti pasta and cook until al dente, about 8 minutes. Drain.",
+      "Layer as follows: ½ of the ziti, ½ mozzarella cheese, sour cream, ½ sauce mixture, remaining ziti, ½ mozzarella cheese, remaining sauce mixture.",
+      "Top with Parmesan cheese.",
+      "Bake for 30 minutes or until the cheeses are melted."
+    ],
+    "tips": [
+      "For a larger meal, use 2 lbs of pasta, but this will require an additional 7x9 inch baking dish.",
+      "Use other cheeses, such as Provolone, in addition to Mozzarella and Parmesan.",
+      "Serve with extra Parmesan cheese and a shredder."
+    ]
+  },
+  {
+    "id": "christmas-crack",
+    "title": "Christmas Crack",
+    "description": "An addictive holiday treat made with saltine crackers, homemade toffee, and melted chocolate.",
+    "thumbnail": "/images/cookbook/brandon-family/christmas-crack.jpg",
+    "author": "Brandon",
+    "date": "2025-07-17",
+    "collections": [ "Brandon Family", "College Cookbook" ],
+    "category": "Dessert",
+    "cuisines": [ "American" ],
+    "diets": [],
+    "cookware": [ "Baking Sheet", "Medium Saucepan" ],
+    "time": { "prep": 10, "cook": 6, "rest": 30 },
+    "servings": 20,
+    "ingredients": [
+      { "item": "saltine crackers", "quantity": 40, "unit": "", "note": "" },
+      { "item": "salted butter", "quantity": 1, "unit": "cup", "note": "" },
+      { "item": "light brown sugar", "quantity": 1, "unit": "cup", "note": "" },
+      { "item": "pure vanilla extract", "quantity": 1, "unit": "tsp", "note": "" },
+      { "item": "milk chocolate chips", "quantity": 12, "unit": "oz", "note": "" },
+      { "item": "nuts or sprinkles", "quantity": 0, "unit": "to taste", "note": "" }
+    ],
+    "instructions": [
+      "Line the cookie sheet with nonstick aluminum foil or use regular foil and spray generously with nonstick cooking spray. Prepare toppings such as chopped nuts or sprinkles.",
+      "Preheat the oven to 400°F.",
+      "Cover the cookie sheet with one layer of saltine crackers.",
+      "In a medium saucepan over medium high heat, bring butter and brown sugar to a boil, stirring continuously for about two minutes (it should be bubbly).",
+      "Remove from heat, stir in one teaspoon pure vanilla extract.",
+      "Pour toffee mixture over crackers, then bake for 6 minutes.",
+      "Remove from the oven, sprinkle tops of warm crackers with milk chocolate chips.",
+      "Allow chocolate to soften for a minute or two, then spread chocolate evenly on top of crackers.",
+      "Add sprinkles or chopped nuts to the top.",
+      "Allow to cool, then break up into bite size pieces."
+    ],
+    "tips": [
+      "You can speed the cooling process by popping the tray into the freezer.",
+      "You can also use white chocolate chips instead of milk chocolate chips."
+    ]
+  }
+]

@@ -112,7 +112,7 @@ const sortedMapEntries = (map: Map<string, string[]>) => Array.from(map.entries(
                 <h4 class="text-xl font-semibold mt-4 mb-2">Missing Thumbnails</h4>
                 {diag.missingThumbnails.length > 0 ? (
                     <ul class="list-disc list-inside text-sm text-red-600 dark:text-red-400">
-                        {diag.missingThumbnails.map(m => <li>{m.id} (path: <code>{m.path}</code>)</li>)}
+                        {diag.missingThumbnails.map(m => <li>{m.id} <i class="text-muted">(path: <code>{m.path.slice(16)}</code>)</i></li>)}
                     </ul>
                 ) : <p class="text-sm text-slate-500">All recipe thumbnails in this file exist.</p>}
                 
