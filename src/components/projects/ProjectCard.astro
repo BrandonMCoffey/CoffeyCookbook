@@ -13,8 +13,8 @@ const { title, thumbnail, platform = [], tech = [], tagline } = data;
 	<img src={thumbnail} alt={`Thumbnail for ${title}`} class="card-image" />
 	<div class="card-body">
 		<div class="flex flex-wrap gap-2 mb-2">
-			{tech.slice(0, 1).map((t: string) => <span class="badge badge-blue">{t}</span>)}
-			{platform.slice(0, 1).map((p: string) => <span class="badge badge-slate">{p}</span>)}
+			{tech.map((t: string) => <span class="badge badge-blue">{t}</span>)}
+			{platform.map((p: string) => <span class="badge badge-slate">{p}</span>)}
 		</div>
 		<h3 class="mb-2">{title}</h3>
 		<p class="text-muted text-sm italic">{tagline}</p>

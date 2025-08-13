@@ -42,9 +42,9 @@ const projectCollection = defineCollection({
     filters: z.array(z.string()).optional(),
     tech: z.array(z.string()),
     platform: z.array(z.string()),
-    liveUrl: z.string().url().optional(),
-    githubUrl: z.string().url().optional(),
-    videoUrl: z.string().url().optional(),
+    liveUrl: z.string().url().or(z.literal('')).optional(),
+    githubUrl: z.string().url().or(z.literal('')).optional(),
+    videoUrl: z.string().url().or(z.literal('')).optional(),
   }),
 });
 
