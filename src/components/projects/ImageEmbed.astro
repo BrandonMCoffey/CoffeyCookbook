@@ -1,21 +1,36 @@
 ---
 interface Props {
-	file: string;
-	alt: string;
+  file: string;
+  alt?: string;
+  file2?: string;
+  alt2?: string;
 }
 
-const { file, alt } = Astro.props;
+const { file, alt = '', file2, alt2 = '' } = Astro.props;
 
 const imagePath = `/images/projects/${file}`;
 const defaultImagePath = '/images/default.jpg';
+
+const gridCols = file2 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1';
 ---
 
-<div class="my-8 rounded-lg overflow-hidden shadow-lg">
-  <img 
-    src={imagePath} 
-    alt={alt} 
-    class="aspect-video w-full h-full object-cover"
+<div class={`my-8 grid ${gridCols} gap-4`}>
+  <img
+    src={imagePath}
+    alt={alt}
+    class="aspect-video overflow-hidden rounded-lg shadow-lg"
     loading="lazy"
+    decoding="async"
     onerror={`this.onerror=null; this.src='${defaultImagePath}';`}
   />
+  {file2 && (
+    <img
+      src={`/images/projects/${file2}`}
+      alt={alt2}
+      class="aspect-video overflow-hidden rounded-lg shadow-lg"
+      loading="lazy"
+      decoding="async"
+      onerror={`this.onerror=null; this.src='${defaultImagePath}';`}
+    />
+  )}
 </div>
