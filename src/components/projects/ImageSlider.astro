@@ -3,9 +3,11 @@ interface Props {
 	beforeImage: string;
 	afterImage: string;
 	alt: string;
+	beforeText?: string;
+	afterText?: string;
 }
 
-const { beforeImage, afterImage, alt } = Astro.props;
+const { beforeImage, afterImage, alt, beforeText = 'Before', afterText = 'After' } = Astro.props;
 
 const beforePath = `/images/projects/${beforeImage}`;
 const afterPath = `/images/projects/${afterImage}`;
@@ -13,10 +15,16 @@ const afterPath = `/images/projects/${afterImage}`;
 
 <div class="image-slider-wrapper my-8 aspect-video rounded-lg overflow-hidden select-none" data-testid="image-slider">
 	<img src={afterPath} alt={alt} class="slider-image" loading="lazy" draggable="false" />
+	<div class="slider-text-overlay">
+		<span class="slider-text slider-text-after">{afterText}</span>
+	</div>
 
 	<div class="slider-clipped-image" style="width: 50%;">
 		{/* The key change is adding the 'slider-image-before' class here */}
 		<img src={beforePath} alt={alt} class="slider-image slider-image-before" loading="lazy" draggable="false" />
+		<div class="slider-text-overlay">
+			<span class="slider-text slider-text-before">{beforeText}</span>
+		</div>
 	</div>
 
 	<div class="slider-line" style="left: 50%;">
@@ -74,6 +82,35 @@ const afterPath = `/images/projects/${afterImage}`;
 		align-items: center;
 		justify-content: center;
 		color: white;
+	}
+	.slider-text-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 4rem;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
+	.image-slider-wrapper:hover .slider-text-overlay {
+		opacity: 1;
+	}
+	.slider-text {
+		position: absolute;
+		bottom: 0.75rem;
+		color: white;
+		font-size: 1rem;
+		font-weight: 600;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+		white-space: nowrap;
+	}
+	.slider-text-before {
+		left: 1.5rem;
+	}
+	.slider-text-after {
+		right: 1.5rem;
 	}
 </style>
 
