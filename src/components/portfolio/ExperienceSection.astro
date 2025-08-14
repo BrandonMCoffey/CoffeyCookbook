@@ -48,15 +48,23 @@ const experiences: Experience[] = [
 		<div class="absolute left-4 sm:left-1/2 top-2 h-full w-0.5 bg-slate-200 dark:bg-slate-700"></div>
 
 		{experiences.map((exp: Experience, index: number) => (
-			<div class="relative mb-12">
+			<div class:list={["relative mb-12", { "sm:-mt-16": index > 0 }]}>
 				<div class="flex items-center mb-1">
 					<div class="absolute left-4 sm:left-1/2 top-2 z-10 w-4 h-4 -translate-x-1/2 bg-green-500 rounded-full border-4 border-slate-50 dark:border-slate-900"></div>
-					<div class:list={["w-full pl-10 sm:pl-0", { "sm:w-1/2": true, "sm:text-right sm:pr-8": index % 2 === 0, "sm:w-1/2 sm:pl-8 sm:text-left": index % 2 !== 0, "sm:ml-auto": index % 2 !== 0 }]}>
+					<div class:list={[
+						"w-full pl-10 sm:w-1/2 sm:pl-0",
+						index % 2 === 0
+							? "sm:text-right sm:pr-8"
+							: "sm:text-left sm:pl-8 sm:ml-auto"
+					]}>
 						<time class="text-sm text-muted">{exp.time}</time>
 					</div>
 				</div>
 
-				<div class:list={["w-full pl-10 sm:pl-0", { "sm:w-1/2": true, "sm:pr-8": index % 2 === 0, "sm:w-1/2 sm:pl-8 sm:ml-auto": index % 2 !== 0 }]}>
+				<div class:list={[
+					"w-full pl-10 sm:w-1/2 sm:pl-0",
+					index % 2 === 0 ? "sm:pr-8" : "sm:pl-8 sm:ml-auto"
+				]}>
 					<div class="card-static p-6">
 						<h3 class="mb-1">{exp.role}</h3>
 						<p class="text-green-600 dark:text-green-400 font-semibold mb-3">{exp.company}</p>
