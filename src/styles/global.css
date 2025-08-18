@@ -154,3 +154,41 @@
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
+
+.lightbox-overlay {
+  @apply fixed inset-0 z-[999] flex items-center justify-center bg-slate-50/90 p-4 backdrop-blur-sm dark:bg-slate-900/90;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+body.lightbox-open .lightbox-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox-content {
+  @apply relative flex h-full w-full items-center justify-center;
+}
+
+.lightbox-image {
+  @apply block h-auto w-auto max-h-[80vh] max-w-[80vw] rounded-lg shadow-2xl;
+}
+
+.lightbox-btn {
+  @apply absolute flex h-12 w-12 items-center justify-center rounded-full bg-slate-900/50 text-white backdrop-blur-sm transition-transform hover:scale-110;
+}
+
+.lightbox-close-btn {
+  @apply right-4 top-4;
+}
+
+.lightbox-fullscreen-btn {
+  @apply left-4 top-4;
+}
