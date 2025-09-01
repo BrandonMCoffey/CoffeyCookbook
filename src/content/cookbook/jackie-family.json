@@ -1,48 +1,12 @@
 [
   {
-    "id": "migas-and-bacon",
-    "title": "Migas and Bacon",
-    "description": "A simple Tex-Mex breakfast dish featuring fried tortilla strips scrambled with eggs, served alongside crispy bacon.",
-    "thumbnail": "/images/cookbook/new/migas-and-bacon.jpg",
-    "author": "Jackie's Mima",
-    "date": "2025-08-31",
-    "collections": [ "New" ],
-    "category": "Breakfast",
-    "cuisines": [ "Tex-Mex", "Mexican" ],
-    "diets": [],
-    "cookware": [ "Skillet", "Bowl" ],
-    "time": { "prep": 10, "cook": 15, "rest": 0 },
-    "servings": 2,
-    "ingredients": [
-      { "item": "oil", "quantity": 0, "unit": "to taste", "note": "" },
-      { "item": "bacon", "quantity": 4, "unit": "slice", "note": "" },
-      { "item": "corn tortillas", "quantity": 4, "unit": "", "note": "" },
-      { "item": "salt", "quantity": 0, "unit": "to taste", "note": "" },
-      { "item": "eggs", "quantity": 4, "unit": "", "note": "" },
-      { "item": "pepper", "quantity": 0, "unit": "to taste", "note": "" },
-      { "item": "butter", "quantity": 2, "unit": "tbsp", "note": "" }
-    ],
-    "instructions": [
-      "Cut bacon slices in half, cut tortillas into squares, and whisk eggs with pepper in a separate bowl.",
-      "Heat oil in a skillet over medium heat.",
-      "Add bacon and cook until dark or lightly blackened, keeping the skillet covered.",
-      "Remove bacon to a paper towel-lined plate.",
-      "Add tortilla squares to the skillet and stir, increasing heat slightly.",
-      "Once sizzling, reduce heat, remove tortillas to a plate, and lightly salt.",
-      "Add butter to the pan and let it melt.",
-      "Add the egg mixture and cook on medium-low heat, covered.",
-      "When the eggs are mostly cooked, stir in the tortilla squares and serve with bacon."
-    ],
-    "tips": []
-  },
-  {
     "id": "chocolate-cookies",
     "title": "Chocolate Cookies",
     "description": "Deliciously rich and chewy chocolate cookies, loaded with chocolate chips.",
-    "thumbnail": "/images/cookbook/college-cookbook/chocolate-cookies.jpg",
+    "thumbnail": "/images/cookbook/jackie-family/chocolate-cookies.jpg",
     "author": "Chris Garza",
     "date": "2025-08-07",
-    "collections": [ "College" ],
+    "collections": [ "Jackie Family" ],
     "category": "Dessert",
     "cuisines": [ "American" ],
     "diets": [],
@@ -71,6 +35,69 @@
       "Drop spoonfuls of dough onto the prepared baking sheet (about 1.5-inch balls).",
       "Bake for 8–10 minutes, until the edges are set. The cookies will continue to cook on the sheet.",
       "Let the cookies cool for a few minutes on the baking sheet, then transfer to a wire rack."
+    ],
+    "tips": []
+  },
+  {
+    "id": "cilantro-crema",
+    "title": "Cilantro Crema",
+    "description": "",
+    "thumbnail": "/images/cookbook/jackie-family/cilantro-crema.jpg",
+    "author": "Jackie's Mimaw",
+    "date": "2025-08-31",
+    "collections": [ "Jackie Family" ],
+    "category": "Sauce",
+    "cuisines": [ "Tex-Mex", "Mexican" ],
+    "diets": [],
+    "cookware": [ "Skillet", "Blender" ],
+    "time": { "prep": 10, "cook": 10, "rest": 0 },
+    "servings": 2,
+    "ingredients": [
+      { "item": "sour cream", "quantity": 1, "unit": "cup", "note": "" },
+      { "item": "cilantro", "quantity": 1, "unit": "bunch", "note": "" },
+      { "item": "jalapeno", "quantity": 1, "unit": "", "note": "" },
+      { "item": "lime", "quantity": 1, "unit": "to taste", "note": "" },
+      { "item": "garlic", "quantity": 1, "unit": "clove", "note": "" }
+    ],
+    "instructions": [
+      "Sear peppers on a cast iron skillet or in a toaster oven. Cut and remove seeds.",
+      "Add all ingredients to a blender or food processor and blend until creamy and smooth."
+    ],
+    "tips": [ "If you want a spicy version, add a serrano." ]
+  },
+  {
+    "id": "migas-and-bacon",
+    "title": "Migas and Bacon",
+    "description": "A simple Tex-Mex breakfast dish featuring fried tortilla strips scrambled with eggs, served alongside crispy bacon.",
+    "thumbnail": "/images/cookbook/jackie-family/migas-and-bacon.jpg",
+    "author": "Jackie's Mimaw",
+    "date": "2025-08-31",
+    "collections": [ "Jackie Family" ],
+    "category": "Breakfast",
+    "cuisines": [ "Tex-Mex", "Mexican" ],
+    "diets": [],
+    "cookware": [ "Skillet", "Bowl" ],
+    "time": { "prep": 10, "cook": 15, "rest": 0 },
+    "servings": 2,
+    "ingredients": [
+      { "item": "oil", "quantity": 0, "unit": "to taste", "note": "" },
+      { "item": "bacon", "quantity": 4, "unit": "slice", "note": "" },
+      { "item": "corn tortillas", "quantity": 4, "unit": "", "note": "" },
+      { "item": "salt", "quantity": 0, "unit": "to taste", "note": "" },
+      { "item": "eggs", "quantity": 4, "unit": "", "note": "" },
+      { "item": "pepper", "quantity": 0, "unit": "to taste", "note": "" },
+      { "item": "butter", "quantity": 2, "unit": "tbsp", "note": "" }
+    ],
+    "instructions": [
+      "Cut bacon slices in half, cut tortillas into squares, and whisk eggs with pepper in a separate bowl.",
+      "Heat oil in a skillet over medium heat.",
+      "Add bacon and cook until dark or lightly blackened, keeping the skillet covered.",
+      "Remove bacon to a paper towel-lined plate.",
+      "Add tortilla squares to the skillet and stir, increasing heat slightly.",
+      "Once sizzling, reduce heat, remove tortillas to a plate, and lightly salt.",
+      "Add butter to the pan and let it melt.",
+      "Add the egg mixture and cook on medium-low heat, covered.",
+      "When the eggs are mostly cooked, stir in the tortilla squares and serve with bacon."
     ],
     "tips": []
   }
