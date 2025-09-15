@@ -5,12 +5,19 @@ import { ref, get, set, onValue, off, push } from 'firebase/database';
 export default function GameController({ initialCode = '' }) {
     const [gameState, setGameState] = useState('joining');
     const [name, setName] = useState('');
-    const [roomCode, setRoomCode] = useState(initialCode);
+    const [roomCode, setRoomCode] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const params = new URLSearchParams(window.location.search);
+            const code = params.get('code');
+            if (code) {
+                return code.toUpperCase();
+            }
+        }
+        return '';
+    });
     const [prompt, setPrompt] = useState('Waiting for game to start...');
-    
     const [chatMessage, setChatMessage] = useState('');
     const [error, setError] = useState('');
-
     const [playerId] = useState('player_' + Math.random().toString(36).substring(2, 9));
     
     useEffect(() => {

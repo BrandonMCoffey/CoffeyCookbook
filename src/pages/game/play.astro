@@ -1,13 +1,10 @@
 ---
 import GameLayout from '../../layouts/GameLayout.astro';
 import GameController from '../../components/game/GameController.jsx';
-
-const { searchParams } = Astro.url;
-const roomCode = searchParams.get('code') || '';
 ---
 
 <GameLayout title="Game Controller">
   <div class="flex items-center justify-center min-h-screen">
-    <GameController client:only="react" initialCode={roomCode} />
+    <GameController client:only="react" />
   </div>
 </GameLayout>
