@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { database } from '../../lib/firebase';
-import { ref, get, set, onValue, off, push } from 'firebase/database';
+import { ref, get, set, onValue, off, push, onDisconnect } from 'firebase/database';
 
 export default function GameController({ initialCode = '' }) {
     const [gameState, setGameState] = useState('joining');
-    const [name, setName] = useState('');
+    const [name, setName] = useState(() => localStorage.getItem('playerName') || '');
+    const [playerId] = useState(() => 
+        localStorage.getItem('playerId') || `player_${Math.random().toString(36).substring(2, 9)}`
+    );
     const [roomCode, setRoomCode] = useState(() => {
         if (typeof window !== 'undefined') {
             const params = new URLSearchParams(window.location.search);
@@ -18,11 +21,10 @@ export default function GameController({ initialCode = '' }) {
     const [prompt, setPrompt] = useState('Waiting for game to start...');
     const [chatMessage, setChatMessage] = useState('');
     const [error, setError] = useState('');
-    const [playerId] = useState('player_' + Math.random().toString(36).substring(2, 9));
     
     useEffect(() => {
         if (gameState !== 'playing' || !roomCode) return;
-        const roomRef = ref(database, 'rooms/' + roomCode);
+        const roomRef = ref(database, `rooms/${roomCode}`);
         const unsubscribe = onValue(roomRef, (snapshot) => {
             const roomData = snapshot.val();
             if (roomData) {
@@ -44,12 +46,18 @@ export default function GameController({ initialCode = '' }) {
 
         try {
             const upperRoomCode = roomCode.toUpperCase();
-            const roomRef = ref(database, 'rooms/' + upperRoomCode);
+            const roomRef = ref(database, `rooms/${upperRoomCode}`);
             const snapshot = await get(roomRef);
 
             if (snapshot.exists()) {
+                localStorage.setItem('playerName', name);
+                localStorage.setItem('playerId', playerId);
+                
                 const playerRef = ref(database, `rooms/${upperRoomCode}/players/${playerId}`);
                 await set(playerRef, { name: name, score: 0 });
+                
+                onDisconnect(playerRef).remove();
+                
                 setGameState('playing');
             } else {
                 setError('Room not found! Please check the code.');
